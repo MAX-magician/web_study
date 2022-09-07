@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("请输入用户名");
+        var b = prompt("请输入密码");
+        if (a == null || b == null || a == "" || b == "") {
+            alert("缺少用户名或者密码");
+        }else{
+            if (a == "admin" && b == "admin123"){
+                alert("恭喜，登录成功！");
+            }else{
+                alert("对不起，用户名或密码不正确！");
+            }
+        }
+    </script>
+</body>
+</html>

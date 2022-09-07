@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.container {
+				width: 400px;
+				height: 400px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.aaa {
+				position: absolute;
+				width: 190px;
+				left: 50%;
+				margin-left: -95px;
+				bottom: 0;
+			}
+			.bbb {
+				position: absolute;
+				width: 340px;
+				left: 50%;
+				margin-left: -170px;
+				top: 70px;
+				animation: vvv 0.5s linear infinite alternate;
+			}
+			@keyframes vvv {
+				from {
+					opacity: 1;
+				}
+				to {
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="./imgs/dengpao.png" alt="" class="aaa" />
+			<img src="./imgs/guang.png" alt="" class="bbb" />
+		</div>
+	</body>
+</html>

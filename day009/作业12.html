@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>第6题</title>
+		<style type="text/css">
+			.c1 .c2 div {
+				/* 0-2-1 */
+				color: blue;
+			}
+			div #box3 {
+				/* 1-0-1 */
+				color: green;
+			}
+			#box1 div {
+				/* 1-0-1 与上一个优先级同 覆盖*/
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1" class="c1">
+			<div id="box2" class="c2">
+				<!-- 黄色 -->
+				<div id="box3" class="c3">文字</div>
+			</div>
+		</div>
+	</body>
+</html>

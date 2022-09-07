@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.aaaa {
+				position: relative;
+				width: 800px;
+				height: 443px;
+				margin: 0 auto;
+			}
+			img {
+				width: 100%;
+			}
+			.bbbb {
+				opacity: 0;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+				padding: 0 40px;
+				font-weight: bold;
+				font-size: 22px;
+				background-color: #fff7;
+				transition: opacity 0.5s linear 0s;
+			}
+			.aaaa:hover .bbbb {
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="aaaa">
+			<img src="./imgs/1.jpg" alt="" />
+			<div class="bbbb">鸟巢</div>
+		</div>
+	</body>
+</html>

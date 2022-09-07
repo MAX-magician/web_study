@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>打字效果</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #333;
+			}
+			#text {
+				position: relative;
+				height: 100px;
+				width: 700px;
+				margin: 0 auto;
+				margin-top: 400px;
+				border-radius: 20px;
+                box-shadow: 10px 10px 15px #000;
+                overflow: hidden;
+                text-indent: 1em;
+				z-index: -2
+			}
+            #text::before{
+                display: block;
+                position: absolute;
+                content: "";
+                height: 90px;
+				width: 690px;
+                margin-top: 5px;
+                border-radius: 20px;
+                background-color: #000;
+                margin-left: 5px;
+                z-index: -1;
+            }
+			#text::after {
+				display: block;
+				position: absolute;
+				content: "";
+				top: -325px;
+				left: -25px;
+				height: 750px;
+				width: 750px;
+                border-radius: 50%;
+				z-index: -3;
+				background: linear-gradient(
+					0deg,
+					#ff00c1 0%,
+					#ff00c1 25%,
+					#000 50%,
+					#00fff9 80%,
+					#00fff9 100%
+				);
+                animation: xsss 5s linear infinite;
+			}
+			@keyframes xsss {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+			.word {
+				color: greenyellow;
+				font-size: 50px;
+				line-height: 100px;
+			}
+			.cursor {
+				color: greenyellow;
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="text"></div>
+		<script>
+			let divTyping = document.getElementById("text");
+			let i = 0,
+				timer = 0,
+				str = "> hello world 你好世界 ";
+			function typing() {
+				if (i <= str.length) {
+					let char = str.slice(0, i++);
+					divTyping.innerHTML =
+						'<span class="word">' +
+						str.slice(0, i++) +
+						"</span>" +
+						'<span class="cursor">|</span>';
+					timer = setTimeout("typing()", 200);
+				}
+			}
+			function disappear() {
+				let cursor = document.querySelector(".cursor");
+				cursor.innerHTML = "";
+				setTimeout(appear, 600);
+			}
+			function appear() {
+				let cursor = document.querySelector(".cursor");
+				cursor.innerHTML = "|";
+				setTimeout(disappear, 600);
+			}
+			typing();
+			disappear();
+		</script>
+	</body>
+</html>

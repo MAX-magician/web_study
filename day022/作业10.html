@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .aaa{
+            width: 520px;
+            height: 630px;
+            margin: 0 auto;
+            margin-top: 150px;
+            background-color: #eee;
+            text-align: center;
+        }
+        #title{
+            width: 500px;
+            height: 100px;
+            line-height: 100px;
+            margin: 0 auto;
+        }
+        .imgs{
+            width: 460px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        #imgs{
+            position: absolute;
+            height: 500px;
+            left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aaa">
+        <h1 id="title"></h1>
+        <div class="imgs">
+            <img src="./image-20201221232504027.png" alt="" id="imgs">
+        </div>
+    </div>
+    <script>
+        var a = Number(prompt("输入存款：(单位万元)"));
+        if(a > 500){
+            document.getElementById("title").innerHTML = "阿斯顿·马丁 DBS";
+            document.getElementById("imgs").style.left = "0px";
+        }else if (a >= 100 && a < 500){
+            document.getElementById("title").innerHTML = "奥迪 S6";
+            document.getElementById("imgs").style.left = "-400px";
+        }else if (a >= 50 && a < 100){
+            document.getElementById("title").innerHTML = "宝马 X3";
+            document.getElementById("imgs").style.left = "-800px";
+        }else if (a >= 10 && a < 50){
+            document.getElementById("title").innerHTML = "大众 Polo";
+            document.getElementById("imgs").style.left = "-1200px";
+        }else if (a < 10){
+            document.getElementById("title").innerHTML = "五菱宏光";
+            document.getElementById("imgs").style.left = "-1600px";
+        }
+    </script>
+</body>
+</html>

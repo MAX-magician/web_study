@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    background-color: #fff;
+    box-shadow: 15px 0 15px #999;
+}
+.header-body{
+    height: 44px;
+    width: 1082px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.header-m{
+    float: right;
+    line-height: 44px;
+}
+.header-menu{
+    margin-left: 48px;
+    color: #646464;
+    font-size: 14px;
+}
+.body-mainimg{
+    width: 100%;
+}
+.body{
+    height: auto;
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+.body-service{
+    height: auto;
+    width: 100%;
+    padding: 62px 0;
+}
+.body-service-title{
+    display: inline-block;
+    position: relative;
+    height: 56px;
+    width: 350px;
+}
+.body-service-title .aa{
+    font-size: 20px;
+    color: #363636;
+}
+.body-service-title .aa::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 350px;
+    top: 10px;
+    left: 3px;
+    background-image: url(../imgs/博文尚美/line.png);
+}
+.body-service-title .aa::after{
+    content: "OUR SERVICES";
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 350px;
+    bottom: 3px;
+    left: 0;
+    font-size: 14px;
+    line-height: 36px;
+    color: #9f9f9f;
+}
+.body-service-contents{
+    height: 240px;
+    width: 1060px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.bscsk{
+    display: inline-block;
+    height: 210px;
+    width: 200px;
+    margin: 0 32px;
+    margin-top: 30px;
+    font-size: 17px;
+}
+.bscsk img{
+    margin-bottom: 30px;
+}
+.bscsk div{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+.bscsk p{
+    font-size: 12px;
+    color: #6d6d6d;
+}
+.body-case{
+    height: auto;
+    width: 100%;
+    padding: 50px 0 66px 0;
+    background-color: #f8f8f8;
+}
+.body-case-title{
+    height: 56px;
+    width: 520px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.body-case-title .aa{
+    font-size: 20px;
+    height: 21px;
+    width: 110px;
+    display: inline-block;
+    color: #66c5b4;
+}
+.body-case-title .aa::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 350px;
+    left: 88px;
+    top: 9px;
+    background-image: url(../imgs/博文尚美/line.png);
+}
+.body-case-title .aa::after{
+    content: "With the best professional technology, to design the best innovative web site";
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 520px;
+    bottom: 3px;
+    left: 0;
+    font-size: 14px;
+    line-height: 36px;
+    color: #9f9f9f;
+}
+.body-case-contents{
+    height: auto;
+    width: 1060px;
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    font-size: 0;
+}
+.body-case-contents img{
+    margin-left: 15px;
+    border: 1px dashed #3699ff;
+}
+.body-case-contents img:first-child{
+    margin-left: 0;
+}
+.body-case-button{
+    display: block;
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #66c5b4;
+}
+.body-news{
+    height: auto;
+    width: 100%;
+    padding: 65px 0 85px 0;
+    text-align: center;
+    position: relative;
+}
+.body-news-title{
+    height: 56px;
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.body-news-title .aa{
+    font-size: 20px;
+    color: #363636;
+    line-height: 36px;
+}
+.body-news-title .aa::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 350px;
+    left: 5px;
+    top: 13px;
+    background-image: url(../imgs/博文尚美/line.png);
+}
+.body-news-title .aa::after{
+    content: "TEH LATEST NEWS";
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 350px;
+    bottom: 3px;
+    left: 0;
+    font-size: 14px;
+    line-height: 36px;
+    color: #9f9f9f;
+}
+.body-news-contents{
+    height: auto;
+    width: 1060px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 52px;
+    font-size: 0;
+}
+.body-news-contents img{
+    display: inline-block;
+    height: 196px;
+    width: 234px;
+}
+.bnc-div{
+    float: right;
+    height: 195px;
+    width: 820px;
+    font-size: 14px;
+}
+.bncs{
+    height: 75px;
+    width: 407px;
+    display: inline-block;
+    position: relative;
+}
+.bncs:nth-of-type(1),
+.bncs:nth-of-type(2){
+    margin-bottom: 35px;
+}
+.bncs .times{
+    display: inline-block;
+    height: 100%;
+    width: 74px;
+    padding: 5px 15px 0 5px;
+    vertical-align: top;
+    text-align: center;
+    border-right: 1px solid #bbb;
+}
+.times-r{
+    font-size: 33px;
+    font-weight: bold;
+    color: #66c5b4;
+}
+.times-y{
+    font-size: 20px;
+    color: #999;
+}
+.bncs .contents{
+    display: inline-block;
+    width: 320px;
+}
+.bncs .content-title{
+    font-size: 14px;
+    font-weight: bold;
+    color: #3f3f3f;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.bncs .content-p{
+    font-size: 12px;
+    margin-left: 15px;
+    color: #a4a4a4;
+}
+.footer{
+    height: 55px;
+    height: 100%;
+    background-color: #66c5b4;
+}
+.footer-body{
+    height: 55px;
+    width: 1060px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-body div:first-child{
+    line-height: 55px;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+}
+.footer-body div:last-child{
+    line-height: 55px;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+}
+.footer-body div:last-child a{
+    color: #fff;
+}
+.footer-body div:last-child span{
+    margin: 0 15px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS优先级</title>
+		<style>
+			ul .li1 {
+				color: orange !important;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li style="color: green" class="li1">JS基础</li>
+			<li>JS函数</li>
+			<li>JS对象</li>
+		</ul>
+		<ol>
+			<li class="li1">CSS基础</li>
+			<li>CSS语法</li>
+			<li>CSS优先级</li>
+		</ol>
+	</body>
+</html>

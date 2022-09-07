@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /********用户登录********/
+        // 新建变量 储存正确的用户名及密码
+        var aa = "admin", bb = "admin123";
+        // 新建变量用来储存用户输入
+        var a = "",b = "";
+        // 循环判断
+        while (a != aa && b != bb) {
+            // 获取用户输入的用户名及密码
+            a = prompt("请输入您的用户名");
+            b = prompt("请输入您的密码");
+            if (a == aa && b == bb){
+                // 如果用户名和密码正确则跳出循环
+                break;
+            }
+            alert("对不起, 用户名或密码不正确！");
+        }
+        // 显示成功弹窗
+        alert("恭喜，登录成功");
+    </script>
+</body>
+</html>

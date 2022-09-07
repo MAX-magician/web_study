@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>作业-相亲注册</title>
+	</head>
+	<body>
+		<h1>青春不常在，抓紧谈恋爱</h1>
+		<hr />
+		<form action="#">
+			<table>
+				<tr>
+					<td>昵称:</td>
+					<td>
+						<input type="text" list="nickname" />
+						<datalist id="nickname">
+							<option>magic</option>
+							<option>hello</option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>性别:</td>
+					<td>
+						<label
+							><input type="radio" name="aaa" checked /><img
+								src="./imgs/man.jpg"
+								alt=""
+							/>男</label
+						>
+						<label
+							><input type="radio" name="aaa" /><img
+								src="./imgs/women.jpg"
+								alt=""
+							/>女</label
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>生日:</td>
+					<td><input type="date" /></td>
+				</tr>
+				<tr>
+					<td>城市:</td>
+					<td>
+						<select name="" id="">
+							<option value="">上海</option>
+							<option value="">北京</option>
+							<option value="">广州</option>
+							<option value="">深圳</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>婚姻状况:</td>
+					<td>
+						<label><input type="radio" name="bbb" id="" checked />未婚</label>
+						<label><input type="radio" name="bbb" id="" />已婚</label>
+						<label><input type="radio" name="bbb" id="" />保密</label>
+					</td>
+				</tr>
+				<tr>
+					<td>喜欢的类型:</td>
+					<td>
+						<label><input type="checkbox" checked />可爱</label>
+						<label><input type="checkbox" checked />性感</label>
+						<label><input type="checkbox" />御姐</label>
+						<label><input type="checkbox" />萝莉</label>
+						<label><input type="checkbox" />小鲜肉</label>
+						<label><input type="checkbox" />大叔</label>
+					</td>
+				</tr>
+				<tr>
+					<td>自我介绍:</td>
+					<td><textarea name="" id="" cols="50" rows="10"></textarea></td>
+				</tr>
+				<tr>
+					<th>我承诺:</th>
+					<td>
+						<ul>
+							<li>年满18岁、单身</li>
+							<li>抱着严肃的态度</li>
+							<li>真诚寻找另一半</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<label><input type="checkbox" checked />我同意所有条款</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><img src="./imgs/btn.png" alt="" /></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

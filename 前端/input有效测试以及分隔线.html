@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.aaa {
+				height: 200px;
+				width: 400px;
+				margin: 0 auto;
+				margin-top: 200px;
+				overflow: hidden;
+                text-align: center;
+				background-color: #bbb;
+			}
+			.bbb {
+				display: block;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+            .www{
+                color: transparent;
+                display: inline-block;
+                margin-top: 20px;
+            }
+			.bbb:invalid {
+				border: 1px solid red;
+			}
+			.ccc {
+				display: block;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+            .taaa{
+                height: 400px;
+                width: 400px;
+                background-color: aqua;
+                margin: 0 auto;
+                margin-top: 100px;
+                position: relative;
+            }
+            .tbbb{
+                position: absolute;
+                right: 0;
+                top: 50px;
+                height: 300px;
+                width: 1px;
+                border-right: 1px solid #000;
+            }
+            .tccc{
+                height: 100px;
+                width: 100%;
+                position: relative;
+                font-size: 0;
+                margin-top: 50px;
+            }
+            .tddd{
+                height: 100%;
+                width: 25%;
+                display: inline-block;
+                position: relative;
+            }
+            .teee{
+                height: 80%;
+                width: 80%;
+                margin: 0 auto;
+                background-color: aliceblue;
+            }
+            .tfff{
+                position: absolute;
+                height: 70px;
+                width: 1px;
+                border-right: 1px solid #999;
+                top: 5px;
+                right: 0;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="aaa">
+			<form action="#" method="post">
+				<input type="email" placeholder="Email address" class="bbb" />
+                <span class="www">!输入错误</span>
+				<input type="submit" value="Register" class="ccc" />
+			</form>
+		</div>
+        <div class="taaa">
+            <div>让div的宽度有一个像素 给边框 靠右 就可以做出分隔线效果</div>
+            <div class="tbbb"></div>
+            <div class="tccc">
+                <div class="tddd">
+                    <div class="teee"></div>
+                    <div class="tfff"></div>
+                </div>
+                <div class="tddd">
+                    <div class="teee"></div>
+                    <div class="tfff"></div>
+                </div>
+                <div class="tddd">
+                    <div class="teee"></div>
+                    <div class="tfff"></div>
+                </div>
+                <div class="tddd">
+                    <div class="teee"></div>
+                </div>
+            </div>
+            <div>但是这么做代码不雅 要用伪元素</div>
+        </div>
+	</body>
+</html>

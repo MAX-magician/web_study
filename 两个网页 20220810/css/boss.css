@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #f3f3f3;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 375px;
+    position: fixed;
+    top: 0;
+    box-shadow: 10px 0 15px #222;
+    z-index: 500;
+}
+.menu{
+    position: relative;
+    height: 100px;
+    width: 1153px;
+}
+.logo{
+    display: inline-block;
+    margin: 23px 0;
+    cursor: pointer;
+}
+.menu-ffff{
+    display: inline-block;
+    position: absolute;
+    line-height: 100px;
+    margin-left: 40px;
+}
+.menu-ffff li{
+    float: left;
+    margin-left: 36px;
+    height: 100%;
+    width: auto;
+    list-style-type: none;
+}
+.menu-ffff li a{
+    font-size: 17px;
+    height: 100%;
+    width: auto;
+    color: #000;
+    cursor: pointer;
+}
+.menu-ffff a:first-child{
+    margin-left: 0;
+}
+.menu-ffff a:hover{
+    color: #53cac3;
+}
+.menuright{
+    height: 21px;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    margin-top: 39.5px;
+    right: 0;
+    cursor: default;
+}
+#android{
+    height: 21px;
+    width: 17px;
+    display: inline-block;
+    background-image: url(../imgs/boss/android+iphone.png);
+    background-position: -3px 0;
+}
+#iphone{
+    height: 21px;
+    width: 17px;
+    display: inline-block;
+    background-image: url(../imgs/boss/android+iphone.png);
+    background-position: -23px -1px;
+}
+.menuright .mm{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+.menuright :nth-of-type(3){
+    color: #bbb;
+    cursor: default;
+    height: auto;
+}
+.menuright div:nth-child(2):hover,
+.menuright div:last-child:hover{
+    color: #53cac3;
+}
+.body-background{
+    height: 498px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url(../imgs/boss/background.png);
+    background-position: 0 -700px;
+    z-index: -1;
+}
+.body{
+    margin: 0 auto;
+    margin-top: 100px;
+    height: auto;
+    width: 1170px;
+}
+.body-header{
+    height: 230px;
+    width: 100%;
+    text-align: center;
+}
+.body-headertext{
+    font-size: 38px;
+    margin-top: 206px;
+    color: #fff;
+}
+.body-headerbutton{
+    margin: 0 auto;
+    margin-top: 51px;
+    height: 44px;
+    width: 187px;
+    border-radius: 22px;
+    background-color: #53cac3;
+    color: #fff;
+    line-height: 44px;
+    cursor: pointer;
+}
+.body-outline{
+    height: 436px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 0;
+}
+.body-ssss{
+    height: 356px;
+    width: 100%;
+    margin-top: 40px;
+}
+.body-outline-info{
+    height: auto;
+    width: 33.3%;
+    display: inline-block;
+    padding: 0 50px;
+    overflow: hidden;
+    border-right: 1px solid #ddd;
+    font-size: 17px;
+}
+.body-ssss :nth-of-type(3){
+    border: none;
+}
+.body-outline-info-header{
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.body-outline-info-header::before{
+    content: "";
+    float: left;
+    margin: 2.5px 8px 0 0;
+    height: 15px;
+    width: 3px;
+    background-color: #53cac3;
+}
+.body-outline-info-more{
+    float: right;
+    height: 20px;
+    width: 49px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    font-size: 13px;
+    margin-right: 3px;
+    letter-spacing: 0px;
+    padding: 0px 7px;
+    color: #666;
+}
+.body-outline-info-more:hover{
+    background-color: #53cac3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.body-outline-info-img{
+    margin-bottom: 36px;
+}
+.body-outline-info-info{
+    font-size: 19px;
+    line-height: 32px;
+}
+.body-outline-info-details{
+    margin-top: 19px;
+    display: inline-block;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+.body-outline-info-details:hover{
+    color: #53cac3;
+}
+.body-details{
+    height: auto;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #fff;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+.body-details-iiii{
+    height: 160px;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+}
+.body-details-info-hr{
+    border: none;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+.body-details-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.body-details-info-ttt{
+    position: absolute;
+    left: -4px;
+    top: 10px;
+}
+.body-details-info-ttta{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 12px;
+    color: #fff;
+}
+.body-details-info{
+    position: absolute;
+    top: 0;
+    left: 310px;
+    height: 156px;
+}
+.body-details-info-header{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.body-details-info-body{
+    font-size: 13px;
+    line-height: 25px;
+    color: #666;
+}
+.body-details-info-footer{
+    position: absolute;
+    font-size: 14px;
+    height: 14px;
+    width: auto;
+    bottom: 0;
+    left: 0;
+}
+.body-details-info-details{
+    cursor: pointer;
+}
+.body-details-info-details:hover{
+    color: #53cac3;
+}
+.body-details-info-footer .user{
+    color: #53cac3;
+    cursor: pointer;
+}
+.body-details-info-footer .user-ttt{
+    display: inline-block;
+    color: #666;
+    margin: 0 5px;
+}
+.body-details-info-footer .user-times{
+    display: inline-block;
+    color: #666;
+}
+.body-details-info-footer .user-img{
+    height: 14px;
+    width: 12px;
+    display: inline-block;
+    margin-left: 50px;
+    background-image: url(../imgs/boss/android+iphone.png);
+    background-size: 50px;
+    background-position: -35px -2px;
+    line-height: 14px;
+}
+.body-details-info-footer .user-ssss{
+    display: inline-block;
+    color: #666;
+}
+.body-dynamic{
+    height: auto;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #fff;
+    padding: 25px 40px 40px 40px;
+}
+.body-dynamic-header{
+    font-size: 18px;
+    color: #53cac3;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.body-dynamic-header::before{
+    content: "";
+    float: left;
+    margin: 2.5px 8px 0 0;
+    height: 15px;
+    width: 3px;
+    background-color: #53cac3;
+}
+.body-dynamic-info{
+    height: auto;
+    width: 650px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.body-dynamic-info hr{
+    border: none;
+    border-top: 1px dotted #e5e5e5;
+    height: 1px;
+}
+.body-dynamic-info .info{
+    position: relative;
+    margin: 10px 0;
+}
+.body-dynamic-info .info:first-child{
+    margin-top: 0;
+}
+.body-dynamic-info .info:last-of-type{
+    margin-bottom: 10px;
+}
+.body-dynamic-info .info .info-info{
+    position: absolute;
+    top: 0;
+    left: 155px;
+}
+.body-dynamic-info .info .info-info .info-header{
+    font-size: 14px;
+    margin: 5px 0;
+    color: #53cac3;
+}
+.body-dynamic-info .info .info-info .info-ttt{
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.body-dynamic-imgs{
+    float: right;
+    width: 371px;
+	height: 316px;
+    background-color: #53cac3;
+}
+.body-dynamic-imgs .info{
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.footer{
+    height: 233px;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.footer-header{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.footer-header-aaa{
+    display: inline-block;
+    margin-left: 50px;
+}
+.footer-header-aaa:first-child{
+    margin-left: 0;
+}
+.footer-body{
+    line-height: 30px;
+}

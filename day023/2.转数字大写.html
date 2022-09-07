@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /********数字转大写********/
+        //获取数字
+        var a = Number(prompt("请输入您想转换成中文大写的0~10的数字"));
+        //定义大写数组
+        var b = ["零","壹","贰","叁","肆","伍","陆","柒","捌","镹","拾"];
+        //判断输入是否在0-10之间
+        if (a >= 0 && a <= 10) {
+            //输出转换结果
+            alert(b[a]);
+        }else{
+            //如果不在0~10之间就执行
+            alert("输入的数字不对");
+        }
+    </script>
+</body>
+</html>

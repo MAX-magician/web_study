@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginregister</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .regiloginwindows{
+            height: 500px;
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .loginregister{
+            height: 500px;
+            width: 1600px;
+            position: relative;
+            font-size: 0;
+            transition: margin-left 0.5s;
+        }
+        .loginregi{
+            font-size: 17px;
+            height: 500px;
+            width: 800px;
+            display: inline-block;
+            padding: 50px;
+            position: relative;
+            background-color: #ccc;
+            text-align: center;
+        }
+        .loginregi table{
+            margin-left: 115px;
+            margin-top: 40px;
+        }
+        .loginregi table tr{
+            height: 90px;
+        }
+        .loginregi table tr:first-child{
+            height: 30px;
+        }
+        .loginregi table tr:last-child{
+            text-align: center;
+        }
+        .loginregi table tr td{
+            min-width: 90px;
+        }
+        .loginregi table tr td span{
+            color: #777;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .loginregi table tr td .loginregititle{
+            font-size: 25px;
+        }
+        .register table{
+            margin-top: 10px;
+        }
+        .inp{
+            height: 40px;
+            width: 300px;
+            border: none;
+            border-radius: 10px;
+            padding-left: 1em;
+            background-color: #bbb;
+        }
+        .inp:focus{
+            outline: none;
+            background-color: #fff;
+        }
+        .btn{
+            height: 35px;
+            width: 100px;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            color: rebeccapurple;
+            background-color: #ddd;
+            box-shadow: #999 5px 5px 5px;
+        }
+        .btn:hover{
+            background-color: #fff;
+        }
+        .btn-loginsub,
+        .btn-regilogin{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .btn-loginregi,
+        .btn-regi{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="regiloginwindows">
+        <div class="loginregister" id="loginregister">
+            <div class="loginregi">
+                <form action="#" method="post">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><span class="loginregititle">登录</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>账号：</span></td>
+                            <td><input class="inp" type="text" name="login" placeholder="Enter your email address"></td>
+                        </tr>
+                        <tr>
+                            <td><span>密码：</span></td>
+                            <td><input class="inp" type="password" name="passwd" placeholder="Enter your password"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" class="btn btn-loginsub" value="登录">
+                                <button type="button" class="btn btn-loginregi" onclick="loginregister(1)">立即注册</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="loginregi register">
+                <form action="#" method="post">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><span class="loginregititle">注册</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>账号：</span></td>
+                            <td><input class="inp" type="text" name="login" placeholder="Enter your email address"></td>
+                        </tr>
+                        <tr>
+                            <td><span>密码：</span></td>
+                            <td><input class="inp" type="password" name="passwd" placeholder="Enter your password"></td>
+                        </tr>
+                        <tr>
+                            <td><span>确认密码：</span></td>
+                            <td><input class="inp" type="password" name="passwd" placeholder="Enter your password"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button type="button" class="btn btn-regilogin" onclick="loginregister(2)">返回登录</button>
+                                <input type="submit" class="btn btn-regi" value="注册">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function loginregister(aa){
+            var loginregi = document.getElementById("loginregister");
+            if(aa == 1){
+                loginregi.style.marginLeft = "-800px";
+            }else{
+                loginregi.style.marginLeft = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

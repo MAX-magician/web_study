@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /********判断质数********/
+        //创建方法 判断是否为质数
+        function aaa(num){
+            //判断输入的值是否符合要求
+            if (num <= 1){
+                return false;
+            }else if (num === 2){
+                //当num = 2 时返回
+                return true;
+            }
+            //循环 判断除自身之外 是否还存在可以将其整除的数
+            for (var i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    //如果存在可以将其整除的其他数 则返回false
+                    return false;
+                }
+                //是质数就返回true
+                return true;
+            }
+        }
+        //获取用户输入的值
+        var zzz = Number(prompt("请输入要判断的数："));
+        //调用 并输出结果
+        alert(aaa(zzz));
+    </script>
+</body>
+</html>

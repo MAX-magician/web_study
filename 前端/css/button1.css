@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    color: #efe;
+    background: #182848;
+    display: flex;
+    align-items: center;
+}
+button{
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #182848;
+    padding: 2em 4em;
+    font-family: sans-serif;
+    margin-left: 500px;
+}
+a{
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    background: linear-gradient(-45deg, #ff00c1, #00fff9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button::after,
+button::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+        var(--rotate),
+        #ff00c1 0%,
+        #9600ff 25%,
+        #4900ff 50%,
+        #00b8ff 80%,
+        #00fff9 100%
+    );
+    width: 105%;
+    height: 110%;
+    left: -2.5%;
+    top: -5%;
+    border-radius: 10px;
+    z-index: -1;
+    transition: --rotate 9999s linear;
+}
+button:hover::after,
+button:hover::before{
+    --rotate: 36000deg;
+    transition: --rotate 200s linear;
+}
+button:hover::before{
+    animation: fade 1.2s;
+    animation-iteration-count: infinite;
+}
+@property --rotate{
+    syntax: "<angle>";
+    initial-value: 130deg;
+    inherits: false;
+}
+@keyframes fade {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.4);
+        filter: blur(10px);
+    }
+}

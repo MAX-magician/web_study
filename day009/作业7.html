@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="keywords" content="关键词1,关键词2,关键词3" />
+		<meta name="description" content="对网站的描述" />
+		<title>第1题</title>
+		<style type="text/css">
+			#father #son {
+				/*2-0-0 优先级高且不是继承*/
+				color: blue;
+			}
+			#father p.c2 {
+				/*1-1-1*/
+				color: black;
+			}
+			div.c1 p.c2 {
+				/*0-2-2*/
+				color: red;
+			}
+			#father {
+				/*1-0-0 对于.c2是继承*/
+				color: green !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father" class="c1">
+			<p id="son" class="c2">试问这行字体是什么颜色的？</p>
+			<!--蓝色-->
+		</div>
+	</body>
+</html>

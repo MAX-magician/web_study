@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>动态伪类</title>
+		<style>
+			input:hover {
+				border: 1px solid red;
+			}
+			.aaa:focus {
+				background-color: orange;
+			}
+			.bbb:focus {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<span>用户名：</span><input type="text" class="aaa" />
+            <br>
+            <span>密码：</span><input type="text" class="bbb" />
+		</form>
+	</body>
+</html>

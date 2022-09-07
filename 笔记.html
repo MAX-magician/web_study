@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			p {
+				/* 外轮廓线 */
+				outline: none;
+				/* 图片过小时重复方式 */
+				background-repeat: no-repeat;
+				/* 设置背景大小，contain 不管背景留白多少 默认图片完整显示 且不失真(高100%)； cover图片覆盖整个区域 不管图片完整性(宽100%) */
+				background-size: contain;
+				/* 设置背景覆盖范围 */
+				background-clip: border-box;
+				/* 背景附着 */
+				background-attachment: fixed;
+				/* 确定背景位置 */
+				background-position: 0 0;
+				/* 背景连写 顺序不是很重要 因为乱序浏览器也可以理解 但是可能会影响加载速度 */
+				background: red url(./aaa.jpg) no-repeat center center;
+				/* 精灵图可以减少请求和响应次数 加快网页加载速度 */
+				/* 或者 字体图标 */
+			}
+		</style>
+	</head>
+	<body>
+		子绝父相：子元素要用绝对定位的话，父元素要给相对定位，
+		<br />
+		原因是：父元素不给相对定位的话，绝对定位的元素会脱离大的标准流！
+	</body>
+</html>

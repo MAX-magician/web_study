@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,c,d;
+        a = prompt("请输入您的性别：");
+        b = Number(prompt("请输入您的身高："));
+        c = Number(prompt("请输入您的体重：(单位KG)"));
+        if (a.indexOf("男") != -1) {
+            d = (b - 80) * 0.7;
+        }else if(a.indexOf("女") != -1) {
+            d = (b - 70) * 0.6;
+        }else{
+            d = "error";
+        }
+        if (d*0.95 <= c && d*1.05 >= c){
+            alert("体重正常");
+        }else if(d*0.95 >= c){
+            alert("太瘦了，多补充营养");
+        }else if(d*1.05 <= c){
+            alert("该锻炼身体减肥了哦！");
+        }else if(d.indexOf("error") != -1){
+            alert("Error!");
+        }
+    </script>
+</body>
+</html>

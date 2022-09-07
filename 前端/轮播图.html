@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>轮播图</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			img {
+				width: 308px;
+				height: 192px;
+			}
+			.box {
+                margin-top: 200px;
+                margin-left: 500px;
+				width: 308px;
+				height: 220px;
+				overflow: hidden;
+				white-space: nowrap; /*可以让超出的图片横着排*/
+			}
+			.img-warp {
+				height: 192px;
+				transform: translateX(0px);
+				transition: 0.5s;
+			}
+			.btn-warp {
+				height: 28px;
+				width: 308px;
+			}
+			.btn {
+				height: 100%;
+				width: 25%;
+				font-size: 12px;
+				float: left;
+				text-align: center;
+				line-height: 28px;
+				background: #000;
+				color: aliceblue;
+				cursor: pointer;
+			}
+			.btn:hover {
+				background: #b1b1be;
+				color: rgb(229, 233, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="img-warp">
+				<img src="./imgs/lunbotu(1).jpg" alt="" /><img
+					src="./imgs/lunbotu(2).jpg"
+					alt=""
+				/><img src="./imgs/lunbotu(3).jpg" alt="" /><img
+					src="./imgs/lunbotu(1).jpg"
+					alt=""
+				/>
+			</div>
+			<div class="btn-warp">
+				<div class="btn">图片1</div>
+				<div class="btn">图片2</div>
+				<div class="btn">图片3</div>
+				<div class="btn">图片4</div>
+			</div>
+		</div>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(".btn").mouseover(function () {
+				var aaa = $(this).index();
+				$(".img-warp").css("transform","translateX(" + -aaa * 308 + "px" + ")");
+			});
+		</script>
+	</body>
+</html>

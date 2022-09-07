@@ -1,0 +1,87 @@
+.regiloginwindows{
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.loginregister{
+    height: 500px;
+    width: 1600px;
+    position: relative;
+    font-size: 0;
+    transition: margin-left 0.5s;
+}
+.loginregi{
+    font-size: 17px;
+    height: 500px;
+    width: 800px;
+    display: inline-block;
+    padding: 50px;
+    position: relative;
+    background-color: #ccc;
+    text-align: center;
+}
+.loginregi table{
+    margin-left: 115px;
+    margin-top: 40px;
+}
+.loginregi table tr{
+    height: 90px;
+}
+.loginregi table tr:first-child{
+    height: 30px;
+}
+.loginregi table tr:last-child{
+    text-align: center;
+}
+.loginregi table tr td{
+    min-width: 90px;
+}
+.loginregi table tr td span{
+    color: #777;
+    font-size: 18px;
+    font-weight: bold;
+}
+.loginregi table tr td .loginregititle{
+    font-size: 25px;
+}
+.register table{
+    margin-top: 10px;
+}
+.inp{
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 1em;
+    background-color: #bbb;
+}
+.inp:focus{
+    outline: none;
+    background-color: #fff;
+}
+.btn{
+    height: 35px;
+    width: 100px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rebeccapurple;
+    background-color: #ddd;
+    box-shadow: #999 5px 5px 5px;
+}
+.btn:hover{
+    background-color: #fff;
+}
+.btn-loginsub,
+.btn-regilogin{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.btn-loginregi,
+.btn-regi{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

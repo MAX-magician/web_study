@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head lang="zh-cn">
+    <meta charset="UTF-8" />
+    <title>innerHTML</title>
+  </head>
+  <body>
+    <div>前端技术</div>
+    <div>IOS技术</div>
+    <div>安卓技术</div>
+    <div>JAVA技术</div>
+    <script>
+      //获取所有的div
+      var aa = document.getElementsByTagName("div");
+      //遍历
+      for (var i = 0; i < aa.length; i++) {
+        //在前面添加
+        aa[i].innerHTML = "我要学习最牛叉的" + aa[i].innerHTML;
+      }
+    </script>
+  </body>
+</html>

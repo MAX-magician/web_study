@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /********判断天数********/
+        //获取年、月
+        var a = Number(prompt("请输入年份："));
+        var b = Number(prompt("请输入月份："));
+        var c,d;
+        //判断是不是闰年
+        if ((a % 4 == 0 && a % 100 != 0) || (a % 100 == 0 && a % 400 == 0)) {
+            c = "是闰年";
+        }else{
+            c = "不是闰年";
+        }
+        //判断用户输入的月份是不是在1~12之间
+        if (b >=1 && b <= 12){
+            //根据月份显示天数
+            switch (b){
+                case 1 :case 3 :case 5 :case 7 :case 8 :case 10 :case 12 :
+                    //如果月份是1、3、5、7、8、10、12则执行
+                    d = 31;
+                    break;
+                case 4 :case 6 :case 9 :case 11 :
+                    //如果月份是4、6、9、11则执行
+                    d = 30;
+                    break;
+                case 2 :
+                    //如果月份是2月则根据之前判断的是否为闰年进行进一步判断
+                    switch (c){
+                        case "是闰年" :
+                            d = 29;
+                            break;
+                        case "不是闰年" :
+                            d = 28;
+                            break;
+                    }
+            }
+        }else{
+            //如果输入错误则执行
+            alert("哪有" + b + "月份？");
+        }
+        //打印结果
+        alert(a + "年" + c + "，今年" + b + "月份有" + d + "天。");
+    </script>
+</body>
+</html>

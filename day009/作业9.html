@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="keywords" content="关键词1,关键词2,关键词3" />
+		<meta name="description" content="对网站的描述" />
+		<title>第3题</title>
+		<style type="text/css">
+			div p {
+				/* 0-0-2 */
+				color: red;
+			}
+			#father {
+				/* 1-0-0 对于.c2是继承*/
+				color: red;
+			}
+			p.c2 {
+				/* 0-1-1 */
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father" class="c1">
+			<!-- 蓝色 -->
+			<p class="c2">试问这行字体是什么颜色的？</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /********猜数字小游戏********/
+        // 创建变量 用于while
+        var a = 3;
+        // 生成随机整数 0~40
+        var b = Math.floor(Math.random()*41);
+        //循环 判断
+        while (a > 0){
+            // 获取用户输入的数字
+            var c = Number(prompt("你来猜?请输入0-40之间的一个数字:"));
+            // a自减
+            a--;
+            console.log(a,b);
+            // 判断用户输入的数字是否在0-40之间
+            if (c >=0 && c <= 40){
+                // 判断次数是否耗尽 耗尽则公布答案
+                if(a === 0){
+                    alert("次数已用完，正确答案是" + b);
+                }else{
+                    // 判断用户输入与系统生成的随机数之间的关系
+                    if (c > b){
+                        // 如果用户输入大于正确值 则执行
+                        alert("你猜大了还有" + a + "次机会");
+                    }else if(c < b){
+                        // 如果用户输入小于正确值 则执行
+                        alert("你猜小了还有" + a + "次机会");
+                    }else if(c === b){
+                        // 如果用户输入等于正确值 则执行
+                        alert("牛逼牛逼");
+                        // 跳出循环
+                        break;
+                    }
+                }
+            }else{
+                // 如果用户输入不在0-40之间 则执行
+                alert("输入错误，你还有" + a + "次机会");
+            }
+        }
+    </script>
+</body>
+</html>

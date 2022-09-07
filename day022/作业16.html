@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("请输入第一个数："));
+        var b = Number(prompt("请输入第二个数："));
+        if (isNaN(a) || isNaN(b)) {  //这种方式不能排除有人输入“e”
+            alert("有非数字存在");
+        }else{
+            console.log(a + '+' + b + '=' + (a+b));
+            console.log(a + '-' + b + '=' + (a-b));
+            console.log(a + 'x' + b + '=' + (a*b));
+            console.log(a + '÷' + b + '=' + (a/b));
+            console.log(a + '%' + b + '=' + (a%b));
+        }
+    </script>
+</body>
+</html>
