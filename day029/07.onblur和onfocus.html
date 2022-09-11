@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .red {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    姓名：<input type="text" id="aa" onfocus="a()" onblur="b()" /> <span id="bb"></span>
+    <script>
+        function a() {
+            if (aa.value.length === 0) {
+                bb.innerHTML = "请输入您的姓名";
+            }
+        }
+        function b() {
+            if (aa.value.length === 0) {
+                bb.innerHTML = "用户名不能为空";
+                aa.setAttribute("class", "red");
+            }else{
+                bb.innerHTML = "";
+                aa.setAttribute("class", "");
+            }
+        }
+    </script>
+</body>
+</html>

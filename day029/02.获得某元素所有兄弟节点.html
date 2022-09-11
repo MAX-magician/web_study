@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="qqq">
+      <div>子节点1</div>
+      <span>子节点2</span>
+      <h1>子节点3</h1>
+      <h2>子节点4</h2>
+    </div>
+    <script>
+      /********获得某元素所有兄弟节点********/
+      //找对象
+      var www = document.getElementById("qqq");
+      var eee = www.childNodes;
+      //创建变量
+      var rrr = [],
+        ttt = 0;
+      //储存要排除的值
+      var yyy = 2;
+      //遍历所有获取到的节点 并排除多余的项
+      for (var i = 0; i < eee.length; i++) {
+        //过滤#Text
+        if (eee[i].innerHTML == undefined) {
+          //跳出本次循环
+          continue;
+        }
+        //ttt自增
+        ttt++;
+        if (ttt === yyy) {
+          continue;
+        }
+        rrr.push(eee[i]);
+      }
+      //打印结果
+      console.log(rrr);
+    </script>
+  </body>
+</html>

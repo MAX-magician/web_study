@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="mytable"></table>
+    <script>
+        /********动态创建表格********/
+        //创建变量储存 行数 列数
+        var row = 20, col = 12;
+        //根据id找到table
+        var tab = document.getElementById("mytable");
+        //创建指定量的tr 将单行的td写入 上树
+        for (var i = 0; i < row; i++) {
+            var aa = document.createElement("tr");
+            tab.appendChild(aa);
+            for (var j = 0; j < col; j++) {
+                var bb = document.createElement("td");
+                aa.appendChild(bb);
+            }
+        }
+    </script>
+    </script>
+  </body>
+</html>

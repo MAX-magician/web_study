@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 200px;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+      }
+      button {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="aa"></div>
+    <br />
+    <br />
+    <button onclick="aa.style.height = '400px'">变长</button>
+    <button onclick="aa.style.width = '400px'">变宽</button>
+    <button onclick="aa.style.backgroundColor = 'green'">变绿</button>
+  </body>
+</html>

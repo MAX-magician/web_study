@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            width: 120px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <table id="mytable"></table>
+    <script>
+        /********九九乘法表********/
+        aa = document.getElementById("mytable");
+        for (var i = 1; i < 10; i++) {
+            var tr = document.createElement("tr");
+            aa.appendChild(tr);
+            for (var j = 1; j <= i; j++){
+                var td = document.createElement("td");
+                td.innerHTML = j + "乘" + i + "等于" + (i * j);
+                tr.appendChild(td);
+            }
+        }
+    </script>
+</body>
+</html>
