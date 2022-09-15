@@ -23,8 +23,7 @@
   <body>
     <div id="aaa"></div>
     <script>
-      //window鼠标移速快时也可以保持跟随
-      window.onmousedown = function (e) {
+      aaa.onmousedown = function (e) {
         //获取元素位置
         var aaaLeft = aaa.offsetLeft;
         var aaaTop = aaa.offsetTop;
@@ -32,6 +31,7 @@
         var mouseX = e.clientX;
         var mouseY = e.clientY;
         //当鼠标移动时
+        //window鼠标移速快时也可以保持跟随
         window.onmousemove = function (e) {
           //获取鼠标实时位置
           mouseXX = e.clientX;
@@ -44,7 +44,7 @@
           aaa.style.top = changeYY + "px";
         };
         //鼠标抬起时 清除鼠标移动时的设置
-        window.onmouseup = function (e) {
+        aaa.onmouseup = function (e) {
           window.onmousemove = function (e) {};
         };
       };
