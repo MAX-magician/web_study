@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        li{
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="textInput" id="inp" />
+    <button id="btn">添加</button>
+    <ul class="list">
+      <li class="li">吃饭</li>
+      <li class="li">睡觉</li>
+      <li class="li">打豆豆</li>
+    </ul>
+    <script>
+        //找对象
+        var xx = document.querySelector("ul");
+        //当button被点击时执行 添加内容
+        btn.onclick = function (e) {
+            //创建孤儿节点
+            var aaa = document.createElement("li");
+            //获取input中内容并将其写入aaa
+            aaa.innerHTML = document.getElementById("inp").value;
+            //上树
+            xx.appendChild(aaa);
+        }
+        //点击删除
+        xx.onclick = function (e) {
+            xx.removeChild(e.target);
+        }
+    </script>
+  </body>
+</html>

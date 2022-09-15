@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+				margin: 0;
+				padding: 0;
+			}
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+				position: absolute;
+				left: 200px;
+				top: 200px;
+			}
+    </style>
+</head>
+<body>
+    <div id="aaa"></div>
+    <script>
+        //上 38； 下 40； 左 37； 右 39；
+        window.onkeydown = function (e) {
+            if (e.keyCode == 38){
+                aaa.style.top = aaa.offsetTop - 3 + "px";
+            }else if(e.keyCode == 40){
+                aaa.style.top = aaa.offsetTop + 3 + "px";
+            }else if(e.keyCode == 37){
+                aaa.style.left = aaa.offsetLeft - 3 + "px";
+            }else if(e.keyCode == 39){
+                aaa.style.left = aaa.offsetLeft + 3 + "px";
+            }
+        }
+    </script>
+</body>
+</html>

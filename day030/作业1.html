@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        position: absolute;
+        left: 200px;
+        top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="aaa"></div>
+    <script>
+      //window鼠标移速快时也可以保持跟随
+      window.onmousedown = function (e) {
+        //获取元素位置
+        var aaaLeft = aaa.offsetLeft;
+        var aaaTop = aaa.offsetTop;
+        //获取鼠标位置
+        var mouseX = e.clientX;
+        var mouseY = e.clientY;
+        //当鼠标移动时
+        window.onmousemove = function (e) {
+          //获取鼠标实时位置
+          mouseXX = e.clientX;
+          mouseYY = e.clientY;
+          //计算元素位置
+          changeXX = aaaLeft + mouseXX - mouseX;
+          changeYY = aaaTop + mouseYY - mouseY;
+          //设置元素位置
+          aaa.style.left = changeXX + "px";
+          aaa.style.top = changeYY + "px";
+        };
+        //鼠标抬起时 清除鼠标移动时的设置
+        window.onmouseup = function (e) {
+          window.onmousemove = function (e) {};
+        };
+      };
+    </script>
+  </body>
+</html>
