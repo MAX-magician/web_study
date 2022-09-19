@@ -1,70 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-			.carousel {
-				width: 650px;
-				height: 360px;
-				border: 1px solid #000;
-				margin: 50px auto;
-				position: relative;
-			}
-			.carousel ul {
-				list-style: none;
-			}
-			.carousel ul li {
-				position: absolute;
-				top: 0;
-				left: 0;
-				/* 透明度都是0 */
-				opacity: 0;
-				transition: opacity 1s ease 0s;
-			}
-			/* 只有第一张透明度是1 */
-			.carousel ul li:first-child {
-				opacity: 1;
-			}
-			.carousel .leftbtn {
-				position: absolute;
-				left: 20px;
-				top: 50%;
-				margin-top: -25px;
-				width: 50px;
-				height: 50px;
-				background-color: rgb(28, 180, 226);
-				border-radius: 50%;
-			}
-			.carousel .rightbtn {
-				position: absolute;
-				right: 20px;
-				top: 50%;
-				margin-top: -25px;
-				width: 50px;
-				height: 50px;
-				background-color: rgb(28, 180, 226);
-				border-radius: 50%;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="carousel">
-			<ul id="list">
-				<li><img src="images/beijing/0.jpg" alt="" /></li>
-				<li><img src="images/beijing/1.jpg" alt="" /></li>
-				<li><img src="images/beijing/2.jpg" alt="" /></li>
-				<li><img src="images/beijing/3.jpg" alt="" /></li>
-				<li><img src="images/beijing/4.jpg" alt="" /></li>
-			</ul>
-			<a href="javascript:;" class="leftbtn" id="leftbtn"></a>
-			<a href="javascript:;" class="rightbtn" id="rightbtn"></a>
-		</div>
-		<script></script>
-	</body>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .carousel {
+        width: 650px;
+        height: 360px;
+        border: 1px solid #000;
+        margin: 50px auto;
+        position: relative;
+      }
+      .carousel ul {
+        list-style: none;
+      }
+      .carousel ul li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* 透明度都是0 */
+        opacity: 0;
+        transition: opacity 1s ease 0s;
+      }
+      /* 只有第一张透明度是1 */
+      .carousel ul li:first-child {
+        opacity: 1;
+      }
+      .carousel .leftbtn {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(28, 180, 226);
+        border-radius: 50%;
+      }
+      .carousel .rightbtn {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(28, 180, 226);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <ul id="list">
+        <li><img src="imgs/0.jpg" alt="" /></li>
+        <li><img src="imgs/1.jpg" alt="" /></li>
+        <li><img src="imgs/2.jpg" alt="" /></li>
+        <li><img src="imgs/3.jpg" alt="" /></li>
+        <li><img src="imgs/4.jpg" alt="" /></li>
+      </ul>
+      <a href="javascript:;" class="leftbtn" id="leftbtn"></a>
+      <a href="javascript:;" class="rightbtn" id="rightbtn"></a>
+    </div>
+    <script>
+      //获取所有的li
+      var lis = document.querySelectorAll("li");
+      //锁
+      var lock = false;
+      //创建变量 用来储存第几张的下标
+      var aaa = 0;
+      //创建计时器
+      var timer;
+      //当左边按键被点击时
+      leftbtn.onclick = function () {
+        //如果没锁就就加锁
+        if (lock === false) {
+          lock = true;
+        } else {
+          return;
+        }
+        setTimeout(function () {
+          lock = false;
+        }, 1000);
+        //清除自动播放的计时器
+        clearInterval(timer);
+        //显示上一张
+        leftmove();
+        //启动自动播放
+        autorun();
+      };
+      rightbtn.onclick = function () {
+        if (lock === false) {
+          lock = true;
+        } else {
+          return;
+        }
+        setTimeout(function () {
+          lock = false;
+        }, 1000);
+        clearInterval(timer);
+        rightmove();
+        autorun();
+      };
+      //自动播放
+      autorun();
+      function autorun() {
+        timer = setInterval(function () {
+          rightmove();
+        }, 2000);
+      }
+      function leftmove() {
+        aaa--;
+        //如果是第一张 还要左移就设置为最后一张
+        if (aaa < 0) {
+          aaa = lis.length - 1;
+        }
+        //所有的图片都透明
+        for (var i = 0; i < lis.length; i++) {
+          lis[i].style.opacity = 0;
+        }
+        //需要的那一张显示
+        lis[aaa].style.opacity = 1;
+      }
+      function rightmove() {
+        aaa++;
+        if (aaa === lis.length) {
+          aaa = 0;
+        }
+        for (var i = 0; i < lis.length; i++) {
+          lis[i].style.opacity = 0;
+        }
+        lis[aaa].style.opacity = 1;
+      }
+    </script>
+  </body>
 </html>
