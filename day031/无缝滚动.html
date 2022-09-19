@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 1000px;
+        height: 130px;
+        border: 1px solid #000;
+        margin: 50px auto;
+        overflow: hidden;
+      }
+      .box ul {
+        list-style: none;
+        /* 设置大一点，这样li才能浮动 */
+        width: 5000px;
+        position: relative;
+      }
+      .box ul li {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box" class="box">
+      <ul id="list">
+        <li><img src="imgs/0.png" alt="" /></li>
+        <li><img src="imgs/1.png" alt="" /></li>
+        <li><img src="imgs/2.png" alt="" /></li>
+        <li><img src="imgs/3.png" alt="" /></li>
+        <li><img src="imgs/4.png" alt="" /></li>
+        <li><img src="imgs/5.png" alt="" /></li>
+      </ul>
+    </div>
+    <script>
+      //复制ul里的内容 拼接
+      list.innerHTML += list.innerHTML;
+      //获取的ul宽度
+      var ulWidth = list.offsetWidth;
+      var left = 0;
+      var timer;
+      //计时器
+      function xxx() {
+        timer = setInterval(function () {
+          left -= 10;
+          list.style.left = left + "px";
+          if (left < -(ulWidth / 4)) {
+            left = 0;
+          }
+        }, 30);
+      }
+      box.onmouseenter = function () {
+        clearInterval(timer);
+      };
+      box.onmouseleave = function () {
+        xxx();
+      };
+      xxx();
+    </script>
+  </body>
+</html>

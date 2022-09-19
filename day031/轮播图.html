@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .carousel {
+        width: 650px;
+        height: 360px;
+        border: 1px solid #000;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+      }
+      .carousel ul {
+        list-style: none;
+        width: 6000px;
+        position: relative;
+        left: 0px;
+        transition: left 0.5s ease 0s;
+      }
+      .carousel ul li {
+        float: left;
+      }
+      .carousel .leftbtn {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(28, 180, 226);
+        border-radius: 50%;
+      }
+      .carousel .rightbtn {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(28, 180, 226);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <ul id="list">
+        <li><img src="imgs/0.jpg" alt="" /></li>
+        <li><img src="imgs/1.jpg" alt="" /></li>
+        <li><img src="imgs/2.jpg" alt="" /></li>
+        <li><img src="imgs/3.jpg" alt="" /></li>
+        <li><img src="imgs/4.jpg" alt="" /></li>
+      </ul>
+      <a href="javascript:;" class="leftbtn" id="leftbtn"></a>
+      <a href="javascript:;" class="rightbtn" id="rightbtn"></a>
+    </div>
+    <script>
+      list.innerHTML = list.innerHTML + list.querySelector("li").innerHTML;
+      var lis = list.querySelectorAll("li").length;
+      var left = 0;
+      var lock = false;
+      var timer;
+      leftbtn.onclick = function () {
+        if (lock === false){
+            lock = true;
+        }else{
+            return;
+        }
+        setTimeout(function () {
+            lock = false;
+        },1000);
+        moveLeft();
+      };
+      rightbtn.onclick = function () {
+        if (lock === false){
+            lock = true;
+        }else{
+            return;
+        }
+        setTimeout(function () {
+            lock = false;
+        },1000);
+        moveRight();
+      };
+      timerMove();
+
+      function timerMove() {
+        timer = setInterval(function () {
+            moveRight();
+        },2000);
+      }
+      function moveRight() {
+        if (left <= -lis * 650) {
+          list.style.transition = "none";
+          left = 0;
+          list.style.left = left + "px";
+        }
+        setTimeout(function () {
+          list.style.transition = "all 0.5s";
+          left -= 650;
+          list.style.left = left + "px";
+        }, 0);
+        clearInterval(timer);
+        timerMove();
+      }
+      function moveLeft() {
+        if (left >= 0) {
+          list.style.transition = "none";
+          left = -lis * 650;
+          list.style.left = left + "px";
+        }
+        setTimeout(function () {
+          list.style.transition = "all 0.5s";
+          left += 650;
+          list.style.left = left + "px";
+        }, 0);
+        clearInterval(timer);
+        timerMove();
+      }
+    </script>
+  </body>
+</html>
