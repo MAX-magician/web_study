@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 10px;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 0 auto;
+      }
+
+      td,
+      th {
+        padding: 0;
+      }
+
+      .pure-table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        empty-cells: show;
+        border: 1px solid #cbcbcb;
+      }
+
+      .pure-table caption {
+        color: #000;
+        font: italic 85%/1 arial, sans-serif;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      .pure-table td,
+      .pure-table th {
+        border-left: 1px solid #cbcbcb;
+        border-width: 0 0 0 1px;
+        font-size: inherit;
+        margin: 0;
+        overflow: visible;
+        padding: 0.5em 1em;
+      }
+
+      .pure-table thead {
+        background-color: #e0e0e0;
+        color: #000;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      .pure-table td {
+        background-color: transparent;
+      }
+      .pure-table-horizontal td,
+      .pure-table-horizontal th {
+        border-width: 0 0 1px 0;
+        border-bottom: 1px solid #cbcbcb;
+      }
+
+      .pure-table-horizontal tbody > tr:last-child > td {
+        border-bottom-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="pure-table pure-table-horizontal">
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>身高</th>
+        <th>体重</th>
+        <th>爱好</th>
+      </tr>
+    </table>
+    <script>
+      var a = [
+        {
+          name: "范剑",
+          age: 21,
+          height: 175,
+          weight: 66,
+          hobby: "习惯性加班",
+        },
+        {
+          name: "庞光",
+          age: 19,
+          height: 160,
+          weight: 80,
+          hobby: "凌晨夜跑",
+        },
+        {
+          name: "郑再镐",
+          age: 30,
+          height: 150,
+          weight: 90,
+          hobby: "看美女",
+        },
+        {
+          name: "朴仁猛",
+          age: 44,
+          height: 171,
+          weight: 74,
+          hobby: "大保健",
+        },
+        {
+          name: "杜子腾",
+          age: 35,
+          height: 179,
+          weight: 69,
+          hobby: "吃大肠刺身",
+        },
+      ];
+      //找对象
+      var tab = document.querySelector("table");
+      //遍历数组
+      for (var i in a) {
+        //创建节点
+        var b = document.createElement("tr");
+        //上树
+        tab.appendChild(b);
+        for(var j in a[i]){
+            var c = document.createElement("td");
+            if(j === "age"){
+                c.innerHTML = a[i][j] + "岁";
+            }else if(j === "height"){
+                c.innerHTML = a[i][j] + "CM";
+            }else if(j === "weight"){
+                c.innerHTML = a[i][j] + "KG";
+            }else{
+                c.innerHTML = a[i][j];
+            }
+            b.appendChild(c);
+        }
+      }
+    </script>
+  </body>
+</html>
