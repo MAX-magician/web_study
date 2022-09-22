@@ -1,0 +1,13 @@
+<script>
+  var obj1 = {
+    a: 11,
+    b: 22,
+    fn: function () {
+      console.log(this.a + this.b);
+    },
+  };
+  var a = 33;
+  var b = 44;
+  var fn = obj1.fn;
+  fn();
+</script>

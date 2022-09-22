@@ -1,0 +1,15 @@
+<script>
+    var a = 11;
+    var obj = {
+        a:22,
+        fun: (function() {
+            var a = this.a;
+            console.log(111,this);
+            return function() {
+                console.log(a + this.a);
+                console.log(222,this);
+            }
+        })(),
+    }
+    obj.fun();
+</script>

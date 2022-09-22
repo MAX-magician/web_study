@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "webfont";
+        font-display: swap;
+        src: url("https://at.alicdn.com/t/webfont_ta10f4h5x7.eot"); /* IE9*/
+        src: url("https://at.alicdn.com/t/webfont_ta10f4h5x7.eot?#iefix")
+            format("embedded-opentype"),
+          /* IE6-IE8 */ url("https://at.alicdn.com/t/webfont_ta10f4h5x7.woff2")
+            format("woff2"),
+          url("https://at.alicdn.com/t/webfont_ta10f4h5x7.woff") format("woff"),
+          /* chrome、firefox */
+            url("https://at.alicdn.com/t/webfont_ta10f4h5x7.ttf")
+            format("truetype"),
+          /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url("https://at.alicdn.com/t/webfont_ta10f4h5x7.svg#站酷高端黑")
+            format("svg"); /* iOS 4.1- */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div > img {
+        width: 100%;
+        float: left;
+        height: 1000px;
+      }
+      div.nav {
+        position: fixed;
+        right: 0;
+        top: 40px;
+        width: 200px;
+        height: 900px;
+        background-color: #fff;
+        border-radius: 14px;
+      }
+      ul {
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 10px 10px 50px #888888;
+      }
+      ul > li {
+        list-style: none;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        border-bottom: 1px dashed gray;
+        font-size: 24px;
+        font-family: "webfont" !important;
+      }
+      ul > li:last-child {
+        border: none;
+      }
+      ul > li:hover {
+        cursor: pointer;
+      }
+      .current {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./imgs/111.png" alt="" />
+      <img src="./imgs/222.png" alt="" />
+      <img src="./imgs/333.png" alt="" />
+      <img src="./imgs/444.png" alt="" />
+      <img src="./imgs/555.png" alt="" />
+      <img src="./imgs/666.png" alt="" />
+      <img src="./imgs/777.png" alt="" />
+      <img src="./imgs/888.png" alt="" />
+      <img src="./imgs/999.png" style="margin-bottom: 30px;" alt="" />
+    </div>
+    <div class="nav">
+      <ul id="aa">
+        <li index="0" class="current">王一博</li>
+        <li index="1">功能亮点</li>
+        <li index="2">一刻满血</li>
+        <li index="3">神仙高配</li>
+        <li index="4">金刚电量</li>
+        <li index="5">高刷新</li>
+        <li index="6">高触控</li>
+        <li index="7">超窄边</li>
+        <li index="8">JBL音质</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    var ul = document.querySelector("ul");
+    var li = document.querySelectorAll("li");
+    window.onscroll = function () {
+      var x = document.documentElement.scrollTop;
+      x = parseInt(x / 1000);
+      titles(x);
+    };
+    ul.onclick = function (e) {
+      var x = e.target.getAttribute("index");
+      var y = document.documentElement.scrollTop - x * 1000;
+      var z = setInterval(function () {
+        if (y < 0) {
+          if (document.documentElement.scrollTop - x * 1000 > parseInt(y / 1000) * 20) {
+            document.documentElement.scrollTop = x * 1000;
+            clearInterval(z);
+          }else{
+            document.documentElement.scrollTop -= parseInt(y / 1000) * 20;
+          }
+        } else {
+          if (document.documentElement.scrollTop - x * 1000 < parseInt(y / 1000) * 20) {
+            document.documentElement.scrollTop = x * 1000;
+            clearInterval(z);
+          }else{
+            document.documentElement.scrollTop -= parseInt(y / 1000) * 20;
+          }
+        }
+      }, 1);
+    };
+    function titles(x) {
+      for (var i = 0; i < li.length; i++) {
+        li[i].removeAttribute("class");
+      }
+      li[x].setAttribute("class", "current");
+    }
+  </script>
+</html>

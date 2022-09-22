@@ -1,0 +1,6 @@
+<script>
+    function fun(){
+        arguments[4]();
+    }
+    fun("A","B","C","D",function(){console.log(this[3])});
+</script>

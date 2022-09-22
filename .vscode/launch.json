@@ -1,0 +1,18 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "file": "${file}",
+            "runtimeExecutable": "C:\\Users\\19371\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+            "name": "Launch Chrome against localhost",
+            "sourceMaps": true,
+            "url": "http://localhost:10085",
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}

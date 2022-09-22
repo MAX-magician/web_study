@@ -1,0 +1,19 @@
+<script>
+  function fun() {
+    console.log(this.a + this.b);
+  }
+  var obj = {
+    a: 111,
+    b: 222,
+    c: [
+      "hello",
+      {
+        a: 333,
+        b: 444,
+        c: fun,
+      },
+    ],
+  };
+  var a = 555;
+  obj.c[1].c();
+</script>

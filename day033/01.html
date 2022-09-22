@@ -1,0 +1,11 @@
+<script>
+  function fn() {
+    console.log(this.a + this.b);
+  }
+  var obj = {
+    a: 111,
+    b: 222,
+    fn: fn,
+  };
+  obj.fn();
+</script>

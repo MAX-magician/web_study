@@ -1,0 +1,14 @@
+<script>
+    function fun(){
+        return this.a+this.b;
+    }
+    var a = 11;
+    var b = 22;
+    var obj = {
+        a: 33,
+        b: fun(),
+        fun: fun,
+    };
+    var result = obj.fun();
+    console.log(result);
+</script>

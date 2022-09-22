@@ -1,0 +1,15 @@
+<script>
+  var obj1 = {
+    a: 11,
+    b: 22,
+    fn: function () {
+      console.log(this.a + this.b);
+    },
+  };
+  var obj2 = {
+    a: 33,
+    b: 44,
+    fn: obj1.fn,
+  };
+  obj2.fn();
+</script>

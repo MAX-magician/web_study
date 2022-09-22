@@ -1,0 +1,14 @@
+<script>
+    var obj = {
+        a:11,
+        b:22,
+        fun: function(){
+            console.log(this.a + this.b);
+        },
+    }
+    var a = 33;
+    var b = 44;
+    setTimeout(function(){
+        obj.fun();
+    },10);
+</script>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.container {
+        width: 800px;
+        height: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid orange;
+        border-radius: 15px;
+        position: relative;
+      }
+      div > img {
+        width: 750px;
+      }
+      div#bottom {
+        text-align: center;
+      }
+      button.left {
+        position: absolute;
+        left: 100px;
+        bottom: 20px;
+      }
+      button.right {
+        position: absolute;
+        right: 100px;
+        bottom: 20px;
+      }
+      #img-container {
+        overflow: hidden;
+        border-radius: 15px;
+        width: 750px;
+        height: 900px;
+        margin: 0px 25px 0 25px;
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        outline: none;
+        cursor: pointer;
+      }
+      #info {
+        position: absolute;
+        left: 380px;
+        bottom: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="img-container">
+        <img id="image" src="图片地址" alt="" />
+      </div>
+      <div id="bottom">
+        <button id="left" class="left">←上一张</button>
+        <span id="info">0/0</span>
+        <button id="right" class="right">下一张 →</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    //文件名 数组
+    var names = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
+    var a = 0;
+    onload = function () {
+      x(a);
+    };
+    left.onclick = function () {
+      a--;
+      x(a);
+    };
+    right.onclick = function () {
+      a++;
+      x(a);
+    };
+    function x(x) {
+      if (x == names.length - 1) {
+        right.disabled = true;
+        left.disabled = false;
+      } else if (x == 0) {
+        left.disabled = true;
+        right.disabled = false;
+      } else {
+        left.disabled = false;
+        right.disabled = false;
+      }
+      info.innerHTML = names[x] + "/" + names.length;
+      image.src = "./imgs/girl/" + names[x] + ".jpeg";
+    }
+  </script>
+</html>
