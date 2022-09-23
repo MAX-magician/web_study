@@ -26,19 +26,19 @@
 
 > 一、
 >
-> ​	<label><input type="checkbox" id="11" class="check" /> 测试</label>
+> ```html
+> <label><input type="checkbox" id="11" class="check" /> 测试</label>
+> ```
 >
 > 二、
 >
-> ​	<input type="checkbox" id="check1" value="123" name="name" class="check">
->
-> ​	<label for="check1">姓名</label>
->
-> ​	<br>
->
-> ​	<input type="checkbox" id="check2" value="456" name="name" class="check">
->
-> ​	<label for="check2">密码</label>
+> ```html
+> <input type="checkbox" id="check1" value="123" name="name" class="check">
+> <label for="check1">姓名</label>
+> <br>
+> <input type="checkbox" id="check2" value="456" name="name" class="check">
+> <label for="check2">密码</label>
+> ```
 
 ## 过渡与动画
 
@@ -182,7 +182,15 @@ div {
 >
 >  两是两不是：
 >
->  ![image-20220808220231033](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220808220231033.png)
+>  ​	触发bfc的条件
+>
+>  ​	1.`dispaly` 是 `flex` / `inline-block` / `table-cell` / `flow-root` 等
+>
+>  ​	2.`position` 是 `absolute` 或者 `fixed`
+>
+>  ​	3.`overflow` 不是 `visible`
+>
+>  ​	4.`float` 不是 `none`
 ## 基线对齐问题
 
 > vertical-align
@@ -207,6 +215,23 @@ div {
 > ![image-20220808222425372](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220808222425372.png)
 
 但是如果只保留其中一个的话 要用transparent(透明)
+
+<!DOCTYPE html>
+<head>
+    <style>
+    	.sanjiaoxing {
+    		width: 0;
+    		height: 0;
+    		border-top: 200px solid transparent;
+        	border-left: 200px solid red;
+        	border-right: none;
+        	border-bottom: 200px solid transparent;
+        }
+	</style>
+</head>
+<body>
+    <div class="sanjiaoxing"></div>
+</body>
 
 > ![image-20220808222634984](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220808222634984.png)
 >
