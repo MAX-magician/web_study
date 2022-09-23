@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Fun(a, b) {
+        this.a = a;
+        this.b = b;
+      }
+
+      var aa = new Fun(1, 2);
+      var bb = [1,2,3,4,5];
+
+      // console.log(aa.__proto__.__proto__.constructor);
+      console.log(bb.__proto__);
+    </script>
+  </body>
+</html>
