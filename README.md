@@ -212,15 +212,33 @@ div {
 
 ## 画三角形
 
-> ![image-20220808222425372](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220808222425372.png)
-
-但是如果只保留其中一个的话 要用transparent(透明)
-
-<div style="width: 0;height: 0;border-top: 200px solid transparent;border-left: 200px solid red;border-right: none;border-bottom: 200px solid transparent;"></div>
-
-> ![image-20220808222634984](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220808222634984.png)
+> <div style="width: 0;height: 0;border-top: 200px solid #000;border-left: 200px solid red;border-right: 200px solid olivedrab;border-bottom: 200px solid aquamarine;"></div>
 >
-> ![image-20220808222734854](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220808222734854.png)
+> ```css
+> div{
+>     width: 0;
+>     height: 0;
+>     border-top: 200px solid #000;
+>     border-left: 200px solid red;
+>     border-right: 200px solid olivedrab;
+>     border-bottom: 200px solid aquamarine;
+> }
+> ```
+>
+> 但是如果只保留其中一个的话 要用transparent(透明)
+>
+> <div style="width: 0;height: 0;border-top: 200px solid transparent;border-left: 200px solid red;border-right: none;border-bottom: 200px solid transparent;"></div>
+>
+> ```css
+> div{
+>     width: 0;
+>     height: 0;
+>     border-top: 200px solid transparent;
+>     border-left: 200px solid red;
+>     border-right: none;
+>     border-bottom: 200px solid transparent;
+> }
+> ```
 
 # JS
 
@@ -344,7 +362,19 @@ console.log(hasOwnProperty("toString"));   //false
 >
 > ​				只要不是空字符串 就是true  关键点：var a = "0";
 
-![image-20220822213001155](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220822213001155.png)
+|  原始值   | 转换为数字 | 转换为字符串 | 转换为布尔值 |
+| :-------: | :--------: | :----------: | :----------: |
+|   false   |     0      |   "false"    |    false     |
+|   true    |     1      |    "true"    |     true     |
+|     0     |     0      |     "0"      |    false     |
+|    "o"    |     0      |     "0"      |     true     |
+|   "20"    |     20     |     "20"     |     true     |
+|   null    |     0      |    "null"    |    false     |
+| undefined |    NaN     | "undefined"  |    false     |
+|    NaN    |    NaN     |    "NaN"     |    false     |
+| Infinity  |  Infinity  |  "Infinity"  |     true     |
+
+
 
 ### 精度问题 IEEE754
 
