@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        text-align: center;
+      }
+      body > img:nth-child(1) {
+        border-radius: 15px;
+        padding: 5px;
+        border: 5px solid orange;
+      }
+      ul {
+        list-style: none;
+        display: inline-block;
+      }
+      ul li {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+      }
+      ul li.active {
+        border: 2px solid orange;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./imgs/wxr/1.jpg" id="bigImg" />
+		<br />
+		<br />
+		<ul>
+			<li class="active">
+				<a href="#">
+					<img src="./imgs/wxr/1.jpg" width="50" class="smallImg" />
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./imgs/wxr/2.jpg" width="50" class="smallImg" />
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./imgs/wxr/3.jpg" width="50" class="smallImg" />
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./imgs/wxr/4.jpg" width="50" class="smallImg" />
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./imgs/wxr/5.jpg" width="50" class="smallImg" />
+				</a>
+			</li>
+		</ul>
+  </body>
+  <script>
+    //找对象
+    var ul = document.querySelector("ul");
+    var li = document.querySelectorAll("li");
+    //给ul鼠标移入事件
+    ul.onmouseover = function(e){
+        //判断e.target是否是满足条件
+        if("src" in e.target){
+            //删除所有的li的class
+            for(var i = 0; i < li.length; i++){
+                li[i].removeAttribute("class");
+            }
+            //设置鼠标移入的图片对应的li
+            e.target.parentNode.parentNode.setAttribute("class", "active");
+            //传图片地址
+            bigImg.src = e.target.src;
+        }
+    }
+  </script>
+</html>

@@ -23,8 +23,11 @@
         </table>
     </form>
     <script>
+        //创建点击事件
         sub.onclick = function(e){
+            //阻止默认事件
             e.preventDefault();
+            //检查输入是否满足条件
             if(username.value === "张三" && passwd.value === "123456"){
                 alert("恭喜你，登陆成功!");
                 window.open("http://www.baidu.com")

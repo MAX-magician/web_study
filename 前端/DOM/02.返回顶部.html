@@ -36,20 +36,29 @@
     <div id="back">↑</div>
   </body>
   <script>
+    //当页面滚动时
     window.onscroll = function(){
+      //判断滚动条是否向下滚10
       if (document.documentElement.scrollTop <= 10){
+        //不足10不显示返回顶部按钮
         back.style.display = "none";
       }else{
+        //大于10显示
         back.style.display = "block";
       }
     }
+    //返回按钮点击事件
     back.onclick = function(){
+      //获取滚动条位置
       var x = document.documentElement.scrollTop;
+      //创建定时器
       var z = setInterval(function(){
+        //当页面马上就要置顶的时候 置顶并终止定时器
         if(document.documentElement.scrollTop < 15){
           document.documentElement.scrollTop = 0;
           clearInterval(z);
         }else{
+          //否则每次向上15
           document.documentElement.scrollTop -= 15;
         }
       },2);

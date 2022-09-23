@@ -66,7 +66,9 @@
   <script>
     //文件名 数组
     var names = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
+    //创建变量 储存数组下标
     var a = 0;
+    //当页面加载完成时执行
     onload = function () {
       x(a);
     };
@@ -78,7 +80,9 @@
       a++;
       x(a);
     };
+    //切换大图方法
     function x(x) {
+      //判断是否到数组的两端 禁用按钮
       if (x == names.length - 1) {
         right.disabled = true;
         left.disabled = false;
@@ -89,7 +93,9 @@
         left.disabled = false;
         right.disabled = false;
       }
+      //显示此时是哪一张 一共有几张
       info.innerHTML = names[x] + "/" + names.length;
+      //设定大图的图片的地址
       image.src = "./imgs/girl/" + names[x] + ".jpeg";
     }
   </script>

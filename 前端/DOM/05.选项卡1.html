@@ -203,4 +203,32 @@
       </div>
     </div>
   </body>
+  <script>
+    tab.onclick = function(e) {
+      //获取所有的tab项
+      var tabs = document.querySelectorAll("#tab li");
+      //获取所有的内容页
+      var contents = document.querySelectorAll("#content ul");
+      //获取tab项的内容
+      var x = e.target.innerHTML;
+      //遍历 删除所有tab项的高亮
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].removeAttribute("class");
+      }
+      //给点击的项设定高亮
+      e.target.setAttribute("class", "current");
+      //隐藏所有内容页
+      for(var j = 0; j < contents.length; j++) {
+        contents[j].style.display = "none";
+      }
+      //显示满足条件的内容页
+      if(x === "政治"){
+        document.querySelector("#content ul:nth-of-type(1)").style.display = "block"
+      }else if(x === "八卦"){
+        document.querySelector("#content ul:nth-of-type(2)").style.display = "block"
+      }else{
+        document.querySelector("#content ul:nth-of-type(3)").style.display = "block"
+      }
+    }
+  </script>
 </html>

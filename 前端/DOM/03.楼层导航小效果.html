@@ -93,22 +93,36 @@
     </div>
   </body>
   <script>
-    var ul = document.querySelector("ul");
-    var li = document.querySelectorAll("li");
+    //找对象
+    var li = document.querySelectorAll("#aa li");
+    //当页面滚动时
     window.onscroll = function () {
+      //获取滚动条位置
       var x = document.documentElement.scrollTop;
+      //取整 来确定高亮导航栏中哪个项
       x = parseInt(x / 1000);
+      //将数值传给titles方法
       titles(x);
     };
-    ul.onclick = function (e) {
+    //当导航栏被点击时
+    aa.onclick = function (e) {
+      //获取被点击的项的index的值
       var x = e.target.getAttribute("index");
+      //计算当前页面位置和计划位置的距离以及需要向哪个方向滚动
       var y = document.documentElement.scrollTop - x * 1000;
+      //创建定时器
       var z = setInterval(function () {
+        //判断是否需要向下滚动
         if (y < 0) {
+          //此时if中的两个条件都是负数 所以用">"
+          //parseInt(y / 1000) * 20可以根据页面与目标的距离调整每次变化的数值
           if (document.documentElement.scrollTop - x * 1000 > parseInt(y / 1000) * 20) {
+            //当页面的距离不足一次变化时 将页面位置设置为目标值
             document.documentElement.scrollTop = x * 1000;
+            //停止定时器
             clearInterval(z);
           }else{
+            //页面还需要继续调整时执行
             document.documentElement.scrollTop -= parseInt(y / 1000) * 20;
           }
         } else {
@@ -121,10 +135,13 @@
         }
       }, 1);
     };
+    //高亮导航栏方法
     function titles(x) {
+      //清楚导航栏所有的class
       for (var i = 0; i < li.length; i++) {
         li[i].removeAttribute("class");
       }
+      //给需要高亮的项设置class
       li[x].setAttribute("class", "current");
     }
   </script>
