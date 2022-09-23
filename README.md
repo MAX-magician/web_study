@@ -216,22 +216,7 @@ div {
 
 但是如果只保留其中一个的话 要用transparent(透明)
 
-<!DOCTYPE html>
-<head>
-    <style>
-    	.sanjiaoxing {
-    		width: 0;
-    		height: 0;
-    		border-top: 200px solid transparent;
-        	border-left: 200px solid red;
-        	border-right: none;
-        	border-bottom: 200px solid transparent;
-        }
-	</style>
-</head>
-<body>
-    <div class="sanjiaoxing"></div>
-</body>
+<div style="width: 0;height: 0;border-top: 200px solid transparent;border-left: 200px solid red;border-right: none;border-bottom: 200px solid transparent;"></div>
 
 > ![image-20220808222634984](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220808222634984.png)
 >
