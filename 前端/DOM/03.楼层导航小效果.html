@@ -116,6 +116,7 @@
         if (y < 0) {
           //此时if中的两个条件都是负数 所以用">"
           //parseInt(y / 1000) * 20可以根据页面与目标的距离调整每次变化的数值
+          //可以将document.documentElement.scrollTop储存在一个变量里面 用eval方法来调用
           if (document.documentElement.scrollTop - x * 1000 > parseInt(y / 1000) * 20) {
             //当页面的距离不足一次变化时 将页面位置设置为目标值
             document.documentElement.scrollTop = x * 1000;
