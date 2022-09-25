@@ -1,1543 +1,2369 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高仿小米商城</title>
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- 引入首页样式 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- 引入字体图标css -->
+    <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/font_2841782_2msxm6im2lm.css"
+    />
+    <!-- 设置标题的图标 -->
+    <link
+      rel="icon"
+      href="http://s01.mifile.cn/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>高仿小米商城</title>
-	<!-- 引入重置样式 -->
-	<link rel="stylesheet" href="./css/reset.css" />
-	<!-- 引入公共样式 -->
-	<link rel="stylesheet" href="./css/common.css" />
-	<!-- 引入首页样式 -->
-	<link rel="stylesheet" href="./css/index.css" />
-	<!-- 引入字体图标css -->
-	<link rel="stylesheet" href="https://at.alicdn.com/t/font_2841782_2msxm6im2lm.css">
-	<!-- 设置标题的图标 -->
-	<link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon" />
-</head>
-
-<body>
-	<!-- 顶部导航开始 -->
-	<div class="top-nav">
-		<div class="container">
-			<div class="left-nav">
-				<a href="javascript:;">小米商城</a><span>|</span> <a href="javascript:;">MIUI</a><span>|</span> <a href="javascript:;">IoT</a><span>|</span>
-				<a href="javascript:;">云服务</a><span>|</span> <a href="javascript:;">天星数科</a><span>|</span> <a href="javascript:;">有品</a><span>|</span> <a
-					href="javascript:;">小爱开放平台</a><span>|</span> <a href="javascript:;">企业团购</a><span>|</span>
-				<a href="javascript:;">资质证照</a><span>|</span> <a href="javascript:;">协议规则</a><span>|</span>
-				<a href="javascript:;" class="download-app">下载app
-					<div class="download">
-						<img src="./img/download.png" alt="" />
-						<p>小米商城APP</p>
-					</div>
-				</a><span>|</span> <a href="javascript:;">智能生活</a><span>|</span>
-				<a href="javascript:;">Select Location</a>
+  <body>
+    <!-- 顶部导航开始 -->
+    <div class="top-nav">
+      <div class="container">
+        <div class="left-nav">
+          <a href="javascript:;">小米商城</a><span>|</span>
+          <a href="javascript:;">MIUI</a><span>|</span>
+          <a href="javascript:;">IoT</a><span>|</span>
+          <a href="javascript:;">云服务</a><span>|</span>
+          <a href="javascript:;">天星数科</a><span>|</span>
+          <a href="javascript:;">有品</a><span>|</span>
+          <a href="javascript:;">小爱开放平台</a><span>|</span>
+          <a href="javascript:;">企业团购</a><span>|</span>
+          <a href="javascript:;">资质证照</a><span>|</span>
+          <a href="javascript:;">协议规则</a><span>|</span>
+          <a href="javascript:;" class="download-app"
+            >下载app
+            <div class="download">
+              <img src="./img/download.png" alt="" />
+              <p>小米商城APP</p>
+            </div> </a
+          ><span>|</span> <a href="javascript:;">智能生活</a><span>|</span>
+          <a href="javascript:;">Select Location</a>
+        </div>
+        <div class="cart">
+          <a href="javascript:;">
+            <span class="iconfont icon-gouwucheman"> </span>
+            购物车（<span>0</span>）
+            <div class="cart-list">购物车中还没有商品，赶紧选购吧！</div>
+          </a>
+        </div>
+        <div class="userinfo">
+          <a href="javascript:;">登录</a><span>|</span>
+          <a href="javascript:;">注册</a><span>|</span>
+          <a href="javascript:;">消息通知</a>
+        </div>
+      </div>
+    </div>
+    <!-- 顶部导航结束 -->
+    <!-- 白色导航开始 -->
+    <div class="white-nav">
+      <div class="container">
+        <div class="logo">
+          <a href="javascript:;" class="logo-a">
+            <img src="./img/logo-mi2.png" alt="" class="logo-img" />
+          </a>
+        </div>
+        <div class="nav-content">
+          <a href="javascript:;">全部商品分类</a>
+          <div class="site-category">
+            <ul>
+              <li>
+                <a href="javascript:;"
+                  >手机 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+                <div class="slider-container">
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >电视 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >笔记本 平板 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >家电 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >出行 穿戴 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >智能 路由器 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >电源 配件 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >健康 儿童 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >耳机 音箱 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  >生活 箱包 <span class="iconfont icon-youjiantou1"></span
+                ></a>
+                <div class="slider-container">
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><img src="./img/mix-s.png" alt="" /><span
+                          >xiaomi mix 4</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="javascript:;">小米手机</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/xiaomi11pro.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/xiaomi11pro.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/xiaomi11pro.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/xiaomi11pro.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/xiaomi11pro.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/xiaomi11pro.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">Redmi 红米</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/redmi.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/redmi.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/redmi.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/redmi.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/redmi.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/redmi.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">电视</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/tv.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/tv.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/tv.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/tv.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/tv.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/tv.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">笔记本</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/notbook.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/notbook.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/notbook.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/notbook.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/notbook.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/notbook.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">平板</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/pad.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/pad.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">家电</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/appliances.jpg" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/appliances.jpg" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/appliances.jpg" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/appliances.jpg" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/appliances.jpg" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/appliances.jpg" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">路由器</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/router.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/router.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/router.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/router.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/router.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/router.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">智能硬件</a>
+          <div class="nav-menu">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/dog.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/dog.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/dog.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/dog.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/dog.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <div><img src="./img/dog.png" alt="" /></div>
+                    <div>小米11 Pro</div>
+                    <p>1999元起</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:;">服务</a>
+          <a href="javascript:;">社区</a>
+        </div>
+        <div class="search">
+          <form action="">
+            <input type="text" class="search-content" placeholder="红米" />
+            <div class="keywords-list">
+              <ul>
+                <li><a href="javascript:;">全部商品</a></li>
+                <li><a href="javascript:;">小米11</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">小米10S</a></li>
+                <li><a href="javascript:;">红米</a></li>
+                <li><a href="javascript:;">耳机</a></li>
+                <li><a href="javascript:;">电视</a></li>
+              </ul>
+            </div>
+            <input
+              type="submit"
+              onclick="return false;"
+              class="search-button iconfont"
+              value="&#xe8b9;"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 白色导航结束 -->
+    <!-- 轮播图开始 -->
+    <div class="carousel">
+      <div class="container">
+        <img src="./img/mix.jpg" alt="" />
+        <img src="./img/photo1.webp" alt="" />
+        <img src="./img/photo2.webp" alt="" />
+        <img src="./img/photo3.webp" alt="" />
+        <img src="./img/photo4.jpg" alt="" />
+        <!-- 左箭头 -->
+        <div class="arrow-left iconfont icon-zuojiantou"></div>
+        <!-- 右箭头 -->
+        <div class="arrow-right iconfont icon-youjiantou"></div>
+        <!-- 导航圆点 -->
+        <div class="dots">
+          <a index="0" href="javascript:;"></a>
+          <a index="1" href="javascript:;" class="active"></a>
+          <a index="2" href="javascript:;"></a>
+          <a index="3" href="javascript:;"></a>
+          <a index="4" href="javascript:;"></a>
+        </div>
+      </div>
+    </div>
+    <!-- 轮播图结束 -->
+    <!-- 新品频道开始 -->
+    <div class="new-channel">
+      <div class="container">
+        <div class="channel-list">
+          <ul>
+            <li class="right bottom">
+              <a href="javascript:;">
+                <span class="iconfont quick-enter icon-shizhong"></span>
+                <span class="desc">保障服务</span>
+              </a>
+            </li>
+            <li class="right bottom">
+              <a href="javascript:;">
+                <span
+                  class="iconfont quick-enter icon-qiyeyuanquwuye-xianxing"
+                ></span>
+                <span class="desc">保障服务</span>
+              </a>
+            </li>
+            <li class="bottom">
+              <a href="javascript:;">
+                <span class="iconfont quick-enter icon-codelibrary-fill"></span>
+                <span class="desc">保障服务</span>
+              </a>
+            </li>
+            <li class="right">
+              <a href="javascript:;">
+                <span class="iconfont quick-enter icon-sim"></span>
+                <span class="desc">保障服务</span>
+              </a>
+            </li>
+            <li class="right">
+              <a href="javascript:;">
+                <span class="iconfont quick-enter icon-rmb"></span>
+                <span class="desc">保障服务</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <span class="iconfont quick-enter icon-shoujichongzhi"></span>
+                <span class="desc">保障服务</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="new-product">
+          <a href="javascript:;"><img src="./img/11-ultra.jpg" alt="" /></a>
+        </div>
+        <div class="new-product">
+          <a href="javascript:;"><img src="./img/11-ultra.jpg" alt="" /></a>
+        </div>
+        <div class="new-product">
+          <a href="javascript:;"><img src="./img/11-ultra.jpg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+    <!-- 新品频道结束 -->
+    <!-- 主页主体内容开始 -->
+    <div class="page-body">
+      <div class="container">
+        <div class="img-news">
+          <a href="javascript:;"><img src="./img/news.jpeg" alt="" /></a>
+        </div>
+        <div class="box-title">
+          <div class="title">
+            <h2>手机</h2>
+          </div>
+          <div class="remark">
+            <a href="javascript:;"
+              >查看更多
+              <span class="iconfont icon-youjiantou2"></span>
+            </a>
+          </div>
+        </div>
+        <div class="area">
+          <div class="sidebar move">
+            <a href="javascript:;"><img src="./img/mix-fold.jpg" alt="" /></a>
+          </div>
+          <div class="right-side">
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/mix2.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box-title">
+          <div class="title">
+            <h2>家电</h2>
+          </div>
+          <div class="remark">
+            <ul>
+              <li><a class="highlight" href="javascript:;">热门</a></li>
+              <li><a href="javascript:;">电视影音</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="area">
+          <div class="sidebar transparent">
+            <div class="sidebar-top move">
+              <a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+            </div>
+            <div class="sidebar-bottom move">
+              <a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid transparent">
+              <div class="mid-top move">
+                <a href="javascript:;">
+                  <div class="gas-cooker">
+                    <img src="./img/gas-cooker.jpg" alt="" />
+                  </div>
+                  <h3 class="title">米家互联网烟灶套装（天然气）</h3>
+                  <p class="price">1899元</p>
+                </a>
+              </div>
+              <div class="mid-bottom move">
+                <a href="javascript:;" class="h143">
+                  <div class="iconfont icon-youjiantou3"><span></span></div>
+                  <div class="more">
+                    浏览更多
+                    <small>热门</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="area" style="display: none;">
+			<div class="sidebar transparent">
+			  <div class="sidebar-top move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			  <div class="sidebar-bottom move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
 			</div>
-			<div class="cart">
+			<div class="right-side">
+			  <div class="mid move">
 				<a href="javascript:;">
-					<span class="iconfont icon-gouwucheman">
-					</span>
-					购物车（<span>0</span>）
-					<div class="cart-list">购物车中还没有商品，赶紧选购吧！</div>
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
 				</a>
-			</div>
-			<div class="userinfo">
-				<a href="javascript:;">登录</a><span>|</span> <a href="javascript:;">注册</a><span>|</span>
-				<a href="javascript:;">消息通知</a>
-			</div>
-		</div>
-	</div>
-	<!-- 顶部导航结束 -->
-	<!-- 白色导航开始 -->
-	<div class="white-nav">
-		<div class="container">
-			<div class="logo">
-				<a href="javascript:;" class="logo-a">
-					<img src="./img/logo-mi2.png" alt="" class="logo-img" />
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
 				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid transparent">
+				<div class="mid-top move">
+				  <a href="javascript:;">
+					<div class="gas-cooker">
+					  <img src="./img/gas-cooker.jpg" alt="" />
+					</div>
+					<h3 class="title">米家互联网烟灶套装（天然气）</h3>
+					<p class="price">1899元</p>
+				  </a>
+				</div>
+				<div class="mid-bottom move">
+				  <a href="javascript:;" class="h143">
+					<div class="iconfont icon-youjiantou3"><span></span></div>
+					<div class="more">
+					  浏览更多
+					  <small>热门</small>
+					</div>
+				  </a>
+				</div>
+			  </div>
 			</div>
-			<div class="nav-content">
-				<a href="javascript:;">全部商品分类</a>
-				<div class="site-category">
-					<ul>
-						<li>
-							<a href="javascript:;">手机 <span class="iconfont icon-youjiantou1"></span></a>
-							<div class="slider-container">
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<a href="javascript:;">电视 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">笔记本 平板 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">家电 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">出行 穿戴 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">智能 路由器 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">电源 配件 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">健康 儿童 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">耳机 音箱 <span class="iconfont icon-youjiantou1"></span></a>
-						</li>
-						<li>
-							<a href="javascript:;">生活 箱包 <span class="iconfont icon-youjiantou1"></span></a>
-							<div class="slider-container">
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-								<ul>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><img src="./img/mix-s.png" alt="" /><span>xiaomi mix 4</span></a>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<a href="javascript:;">小米手机</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/xiaomi11pro.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/xiaomi11pro.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/xiaomi11pro.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/xiaomi11pro.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/xiaomi11pro.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/xiaomi11pro.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">Redmi 红米</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/redmi.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/redmi.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/redmi.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/redmi.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/redmi.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/redmi.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">电视</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/tv.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/tv.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/tv.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/tv.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/tv.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/tv.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">笔记本</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/notbook.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/notbook.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/notbook.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/notbook.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/notbook.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/notbook.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">平板</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/pad.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/pad.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">家电</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/appliances.jpg" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/appliances.jpg" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/appliances.jpg" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/appliances.jpg" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/appliances.jpg" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/appliances.jpg" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">路由器</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/router.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/router.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/router.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/router.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/router.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/router.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">智能硬件</a>
-				<div class="nav-menu">
-					<div class="nav-container">
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/dog.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/dog.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/dog.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/dog.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/dog.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="./img/dog.png" alt="" /></div>
-									<div>小米11 Pro</div>
-									<p>1999元起</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;">服务</a>
-				<a href="javascript:;">社区</a>
+		  </div>
+        <div class="box-title">
+          <div class="title">
+            <h2>智能</h2>
+          </div>
+          <div class="remark">
+            <ul>
+              <li><a class="highlight" href="javascript:;">热门</a></li>
+              <li><a href="javascript:;">安防</a></li>
+              <li><a href="javascript:;">出行</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="area">
+          <div class="sidebar transparent">
+            <div class="sidebar-top move">
+              <a href="javascript:;"><img src="./img/router2.png" alt="" /></a>
+            </div>
+            <div class="sidebar-bottom move">
+              <a href="javascript:;"><img src="./img/router2.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid transparent">
+              <div class="mid-top move">
+                <a href="javascript:;">
+                  <div class="gas-cooker">
+                    <img src="./img/gas-cooker.jpg" alt="" />
+                  </div>
+                  <h3 class="title">米家互联网烟灶套装（天然气）</h3>
+                  <p class="price">1899元</p>
+                </a>
+              </div>
+              <div class="mid-bottom move">
+                <a href="javascript:;" class="h143">
+                  <div class="iconfont icon-youjiantou3"><span></span></div>
+                  <div class="more">
+                    浏览更多
+                    <small>热门</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="area" style="display: none;">
+			<div class="sidebar transparent">
+			  <div class="sidebar-top move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			  <div class="sidebar-bottom move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
 			</div>
-			<div class="search">
-				<form action="">
-					<input type="text" class="search-content" placeholder="红米" />
-					<div class="keywords-list">
-						<ul>
-							<li><a href="javascript:;">全部商品</a></li>
-							<li><a href="javascript:;">小米11</a></li>
-							<li><a href="javascript:;">空调</a></li>
-							<li><a href="javascript:;">手机</a></li>
-							<li><a href="javascript:;">小米10S</a></li>
-							<li><a href="javascript:;">红米</a></li>
-							<li><a href="javascript:;">耳机</a></li>
-							<li><a href="javascript:;">电视</a></li>
-						</ul>
+			<div class="right-side">
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid transparent">
+				<div class="mid-top move">
+				  <a href="javascript:;">
+					<div class="gas-cooker">
+					  <img src="./img/gas-cooker.jpg" alt="" />
 					</div>
-					<input type="submit" onclick="return false;" class="search-button iconfont" value="&#xe8b9;" />
-				</form>
+					<h3 class="title">米家互联网烟灶套装（天然气）</h3>
+					<p class="price">1899元</p>
+				  </a>
+				</div>
+				<div class="mid-bottom move">
+				  <a href="javascript:;" class="h143">
+					<div class="iconfont icon-youjiantou3"><span></span></div>
+					<div class="more">
+					  浏览更多
+					  <small>热门</small>
+					</div>
+				  </a>
+				</div>
+			  </div>
 			</div>
+		  </div>
+		  <div class="area" style="display: none;">
+			<div class="sidebar transparent">
+			  <div class="sidebar-top move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			  <div class="sidebar-bottom move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			</div>
+			<div class="right-side">
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvaa.webp" alt="" />
+				  <h3>小米电视4A 70英寸</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvaa.webp" alt="" />
+				  <h3>小米电视4A 70英寸</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvaa.webp" alt="" />
+				  <h3>小米电视4A 70英寸</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvaa.webp" alt="" />
+				  <h3>小米电视4A 70英寸</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvaa.webp" alt="" />
+				  <h3>小米电视4A 70英寸</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvaa.webp" alt="" />
+				  <h3>小米电视4A 70英寸</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvaa.webp" alt="" />
+				  <h3>小米电视4A 70英寸</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid transparent">
+				<div class="mid-top move">
+				  <a href="javascript:;">
+					<div class="gas-cooker">
+					  <img src="./img/gas-cooker.jpg" alt="" />
+					</div>
+					<h3 class="title">米家互联网烟灶套装（天然气）</h3>
+					<p class="price">1899元</p>
+				  </a>
+				</div>
+				<div class="mid-bottom move">
+				  <a href="javascript:;" class="h143">
+					<div class="iconfont icon-youjiantou3"><span></span></div>
+					<div class="more">
+					  浏览更多
+					  <small>热门</small>
+					</div>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+        <div class="img-news">
+          <a href="javascript:;"><img src="./img/news2.jpg" alt="" /></a>
+        </div>
+        <div class="box-title">
+          <div class="title">
+            <h2>搭配</h2>
+          </div>
+          <div class="remark">
+            <ul>
+              <li><a class="highlight" href="javascript:;">热门</a></li>
+              <li><a href="javascript:;">耳机音箱</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="area">
+          <div class="sidebar transparent">
+            <div class="sidebar-top move">
+              <a href="javascript:;"
+                ><img src="./img/balance-car.jpg" alt=""
+              /></a>
+            </div>
+            <div class="sidebar-bottom move">
+              <a href="javascript:;"
+                ><img src="./img/balance-car.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid transparent">
+              <div class="mid-top move">
+                <a href="javascript:;">
+                  <div class="gas-cooker">
+                    <img src="./img/gas-cooker.jpg" alt="" />
+                  </div>
+                  <h3 class="title">米家互联网烟灶套装（天然气）</h3>
+                  <p class="price">1899元</p>
+                </a>
+              </div>
+              <div class="mid-bottom move">
+                <a href="javascript:;" class="h143">
+                  <div class="iconfont icon-youjiantou3"><span></span></div>
+                  <div class="more">
+                    浏览更多
+                    <small>热门</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="area" style="display: none;">
+			<div class="sidebar transparent">
+			  <div class="sidebar-top move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			  <div class="sidebar-bottom move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			</div>
+			<div class="right-side">
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid transparent">
+				<div class="mid-top move">
+				  <a href="javascript:;">
+					<div class="gas-cooker">
+					  <img src="./img/gas-cooker.jpg" alt="" />
+					</div>
+					<h3 class="title">米家互联网烟灶套装（天然气）</h3>
+					<p class="price">1899元</p>
+				  </a>
+				</div>
+				<div class="mid-bottom move">
+				  <a href="javascript:;" class="h143">
+					<div class="iconfont icon-youjiantou3"><span></span></div>
+					<div class="more">
+					  浏览更多
+					  <small>热门</small>
+					</div>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+        <div class="box-title">
+          <div class="title">
+            <h2>配件</h2>
+          </div>
+          <div class="remark">
+            <ul>
+              <li><a class="highlight" href="javascript:;">热门</a></li>
+              <li><a href="javascript:;">充电器</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="area">
+          <div class="sidebar transparent">
+            <div class="sidebar-top move">
+              <a href="javascript:;"
+                ><img src="./img/clean-water.png" alt=""
+              /></a>
+            </div>
+            <div class="sidebar-bottom move">
+              <a href="javascript:;"
+                ><img src="./img/clean-water.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid transparent">
+              <div class="mid-top move">
+                <a href="javascript:;">
+                  <div class="gas-cooker">
+                    <img src="./img/gas-cooker.jpg" alt="" />
+                  </div>
+                  <h3 class="title">米家互联网烟灶套装（天然气）</h3>
+                  <p class="price">1899元</p>
+                </a>
+              </div>
+              <div class="mid-bottom move">
+                <a href="javascript:;" class="h143">
+                  <div class="iconfont icon-youjiantou3"><span></span></div>
+                  <div class="more">
+                    浏览更多
+                    <small>热门</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="area" style="display: none;">
+			<div class="sidebar transparent">
+			  <div class="sidebar-top move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			  <div class="sidebar-bottom move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			</div>
+			<div class="right-side">
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid transparent">
+				<div class="mid-top move">
+				  <a href="javascript:;">
+					<div class="gas-cooker">
+					  <img src="./img/gas-cooker.jpg" alt="" />
+					</div>
+					<h3 class="title">米家互联网烟灶套装（天然气）</h3>
+					<p class="price">1899元</p>
+				  </a>
+				</div>
+				<div class="mid-bottom move">
+				  <a href="javascript:;" class="h143">
+					<div class="iconfont icon-youjiantou3"><span></span></div>
+					<div class="more">
+					  浏览更多
+					  <small>热门</small>
+					</div>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+        <div class="box-title">
+          <div class="title">
+            <h2>周边</h2>
+          </div>
+          <div class="remark">
+            <ul>
+              <li><a class="highlight" href="javascript:;">热门</a></li>
+              <li><a href="javascript:;">出行</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="area">
+          <div class="sidebar transparent">
+            <div class="sidebar-top move">
+              <a href="javascript:;"><img src="./img/cup.jpg" alt="" /></a>
+            </div>
+            <div class="sidebar-bottom move">
+              <a href="javascript:;"><img src="./img/cup.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid move">
+              <a href="javascript:;">
+                <img src="./img/tv-master.jpg" alt="" />
+                <h3>Xiaomi MIX 4</h3>
+                <p>CUP全面屏</p>
+                <p>4999元起</p>
+              </a>
+            </div>
+            <div class="mid transparent">
+              <div class="mid-top move">
+                <a href="javascript:;">
+                  <div class="gas-cooker">
+                    <img src="./img/gas-cooker.jpg" alt="" />
+                  </div>
+                  <h3 class="title">米家互联网烟灶套装（天然气）</h3>
+                  <p class="price">1899元</p>
+                </a>
+              </div>
+              <div class="mid-bottom move">
+                <a href="javascript:;" class="h143">
+                  <div class="iconfont icon-youjiantou3"><span></span></div>
+                  <div class="more">
+                    浏览更多
+                    <small>热门</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="area" style="display: none;">
+			<div class="sidebar transparent">
+			  <div class="sidebar-top move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			  <div class="sidebar-bottom move">
+				<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
+			  </div>
+			</div>
+			<div class="right-side">
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid move">
+				<a href="javascript:;">
+				  <img src="./img/tvxx.webp" alt="" />
+				  <h3>Redmi MAX 86</h3>
+				  <p>CUP全面屏</p>
+				  <p>4999元起</p>
+				</a>
+			  </div>
+			  <div class="mid transparent">
+				<div class="mid-top move">
+				  <a href="javascript:;">
+					<div class="gas-cooker">
+					  <img src="./img/gas-cooker.jpg" alt="" />
+					</div>
+					<h3 class="title">米家互联网烟灶套装（天然气）</h3>
+					<p class="price">1899元</p>
+				  </a>
+				</div>
+				<div class="mid-bottom move">
+				  <a href="javascript:;" class="h143">
+					<div class="iconfont icon-youjiantou3"><span></span></div>
+					<div class="more">
+					  浏览更多
+					  <small>热门</small>
+					</div>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+        <div class="img-news">
+          <a href="javascript:;"><img src="./img/news3.jpg" alt="" /></a>
+        </div>
+        <div class="box-title">
+          <div class="title">
+            <h2>视频</h2>
+          </div>
+          <div class="remark">
+            <a href="javascript:;"
+              >查看全部
+              <span class="iconfont icon-youjiantou2"></span>
+            </a>
+          </div>
+        </div>
+        <div class="video-area">
+          <div class="video-box move">
+            <a href="javascript:;" data-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/812358b69886e576c66a01f1f00affe9.mp4">
+              <div class="play-btn">
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e74c4ff741bcdfc5b28a48a43e4edc6d.jpg" alt="" />
+                <div class="play">
+                  <span class="iconfont icon-play"></span>
+                </div>
+              </div>
+              <h3 class="title">2021年春季新品发布会第一场</h3>
+              <p class="desc">Redmi 10X 系列发布会</p>
+            </a>
+          </div>
+          <div class="video-box move">
+            <a href="javascript:;" data-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cdabcaa763392c86b944eaf4e68d6a3.mp4">
+              <div class="play-btn">
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96563e75833ba4563bd469dd28203b09.jpg" alt="" />
+                <div class="play">
+                  <span class="iconfont icon-play"></span>
+                </div>
+              </div>
+              <h3 class="title">小米10 青春版 发布会</h3>
+              <p class="desc">Redmi 10X 系列发布会</p>
+            </a>
+          </div>
+          <div class="video-box move">
+            <a href="javascript:;" data-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11c70c96529b6e6938567ec1aa0910e0.mp4">
+              <div class="play-btn">
+                <img src="./img/1599.jpg" alt="" />
+                <div class="play">
+                  <span class="iconfont icon-play"></span>
+                </div>
+              </div>
+              <h3 class="title">Redmi 10X 系列发布会</h3>
+              <p class="desc">Redmi 10X 系列发布会</p>
+            </a>
+          </div>
+          <div class="video-box move">
+            <a href="javascript:;" data-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e25d81c4922fca5ebe51877717ef9b76.mp4">
+              <div class="play-btn">
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fd26bb99b723337a2f8eaba84f7d5bb.jpg" alt="" />
+                <div class="play">
+                  <span class="iconfont icon-play"></span>
+                </div>
+              </div>
+              <h3 class="title">小米10 8K手机拍大片</h3>
+              <p class="desc">Redmi 10X 系列发布会</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主页主体内容结束 -->
+    <!-- 页面底部开始 -->
+    <div class="site-footer">
+      <div class="container">
+        <div class="footer-service">
+          <ul>
+            <li>
+              <a href="javascript:;"
+                ><span class="service iconfont icon-editor2"></span
+                >7天无理由退换货</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><span class="service iconfont icon-7tianwuliyoutuihuo"></span
+                >7天无理由退换货</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><span class="service iconfont icon-15tianwuliyoutuihuo"></span
+                >7天无理由退换货</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><span class="service iconfont icon-liwu"></span
+                >7天无理由退换货</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><span class="service iconfont icon-dingxiang"></span
+                >7天无理由退换货</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <dl class="col-links">
+            <dt>帮助中心</dt>
+            <dd><a href="javascript:;">账户管理</a></dd>
+            <dd><a href="javascript:;">购物指南</a></dd>
+            <dd><a href="javascript:;">订单操作</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>服务支持</dt>
+            <dd><a href="javascript:;">售后政策</a></dd>
+            <dd><a href="javascript:;">自助服务</a></dd>
+            <dd><a href="javascript:;">相关下载</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>线下门店</dt>
+            <dd><a href="javascript:;">小米之家</a></dd>
+            <dd><a href="javascript:;">服务网点</a></dd>
+            <dd><a href="javascript:;">授权体验店</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>关于小米</dt>
+            <dd><a href="javascript:;">了解小米</a></dd>
+            <dd><a href="javascript:;">加入小米</a></dd>
+            <dd><a href="javascript:;">投资者关系</a></dd>
+            <dd><a href="javascript:;">企业社会责任</a></dd>
+            <dd><a href="javascript:;">廉洁举报</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>关注我们</dt>
+            <dd><a href="javascript:;">新浪微博</a></dd>
+            <dd><a href="javascript:;">官方微信</a></dd>
+            <dd><a href="javascript:;">联系我们</a></dd>
+            <dd><a href="javascript:;">公益基金会</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>特色服务</dt>
+            <dd><a href="javascript:;">F 码通道</a></dd>
+            <dd><a href="javascript:;">礼物码</a></dd>
+            <dd><a href="javascript:;">防伪查询</a></dd>
+          </dl>
+          <div class="col-contact">
+            <p class="phone">400-100-5678</p>
+            <p class="comment">8:00-18:00（仅收市话费）</p>
+            <a href="javascript:;" class="service">
+              <span class="iconfont icon-xiaoxi"></span>
+              人工客服
+            </a>
+            <div class="follow">
+              关注小米：
+              <a href="javascript:;"
+                ><span class="iconfont icon-xinlangweibo"></span
+              ></a>
+              <a href="javascript:;" class="wx"
+                ><span class="iconfont icon-weixin"></span
+              ></a>
+              <img src="./img/wx-img.png" class="wx" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-info">
+      <div class="container">
+        <img src="./img/logo-mi2.png" alt="" class="logo" />
+        <div class="info-text">
+          <p>
+            <a href="javascript:;">小米商城</a>
+            <span>|</span>
+            <a href="javascript:;">MIUI</a>
+            <span>|</span>
+            <a href="javascript:;">米家</a>
+            <span>|</span>
+            <a href="javascript:;">米聊</a>
+            <span>|</span>
+            <a href="javascript:;">多看</a>
+            <span>|</span>
+            <a href="javascript:;">游戏</a>
+            <span>|</span>
+            <a href="javascript:;">政企服务</a>
+            <span>|</span>
+            <a href="javascript:;">小米天猫店</a>
+            <span>|</span>
+            <a href="javascript:;">小米集团隐私政策</a>
+            <span>|</span>
+            <a href="javascript:;">小米公司儿童信息保护规则</a>
+            <span>|</span>
+            <a href="javascript:;">小米商城隐私政策</a>
+            <span>|</span>
+            <a href="javascript:;">小米商城用户协议</a>
+            <span>|</span>
+            <a href="javascript:;">问题反馈</a>
+            <span>|</span>
+            <a href="javascript:;">Select Location</a>
+          </p>
+          <p>
+            <a href="javascript:;">北京互联网法院法律服务工作站</a>
+            <span>|</span>
+            <a href="javascript:;">中国消费者协会</a>
+            <span>|</span>
+            <a href="javascript:;">北京市消费者协会</a>
+          </p>
+          <p class="comment">
+            <a href="javascript:;">© mi.com</a>
+            <a href="javascript:;">京ICP证110507号</a>
+            <a href="javascript:;">京ICP备10046444号</a>
+            <a href="javascript:;">京公网安备11010802020134号</a>
+            <a href="javascript:;">京网文[2020]0276-042号</a><br />
+            <a href="javascript:;">（京）网械平台备字（2018）第00005号</a>
+            <a href="javascript:;">互联网药品信息服务资格证</a>
+            <a href="javascript:;">(京)-非经营性-2014-0090</a>
+            <a href="javascript:;">营业执照</a>
+            <a href="javascript:;">医疗器械质量公告</a><br />
+            <a href="javascript:;">增值电信业务许可证</a>
+            <a href="javascript:;">网络食品经营备案</a>
+            <a href="javascript:;">京食药网食备202010048</a>
+            <a href="javascript:;">食品经营许可证</a><br />
+            <a href="javascript:;">违法和不良信息举报电话：171-5104-4404</a>
+            <a href="javascript:;"
+              >知识产权侵权投诉
+              本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</a
+            >
+          </p>
+        </div>
+        <div class="info-links">
+          <a href="javascript:;"><img src="./img/truste.png" alt="" /></a>
+          <a href="javascript:;"><img src="./img/truste.png" alt="" /></a>
+          <a href="javascript:;"><img src="./img/truste.png" alt="" /></a>
+          <a href="javascript:;"><img src="./img/truste.png" alt="" /></a>
+          <a href="javascript:;"><img src="./img/truste.png" alt="" /></a>
+        </div>
+        <div class="slogan">
+          <img src="./img/slogan2020.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- 页面底部结束 -->
+    <!-- 右侧工具栏开始 -->
+    <div class="side-toolbar">
+      <a href="javascript:;">
+        <div class="iconfont icon-m icon-shouji"></div>
+        <span>手机APP</span>
+        <div class="wx-code">
+          <div class="arrow"></div>
+          <img src="./img/wx-code.png" alt="" />
+          <span> 扫码领取新人百元礼包 </span>
+        </div>
+      </a>
+      <a href="javascript:;">
+        <div class="iconfont icon-m icon-yonghu"></div>
+        <span>个人中心</span>
+      </a>
+      <a href="javascript:;">
+        <div class="iconfont icon-m icon-editor2"></div>
+        <span>售后服务</span>
+      </a>
+      <a href="javascript:;">
+        <div class="iconfont icon-m icon-kefu"></div>
+        <span>人工客服</span>
+      </a>
+      <a href="javascript:;">
+        <div class="iconfont icon-m icon-gouwucheman"></div>
+        <span>购物车</span>
+      </a>
+      <a href="javascript:;">
+        <div class="iconfont icon-m icon-huidingbu"></div>
+        <span>回顶部</span>
+      </a>
+    </div>
+    <!-- 右侧工具栏结束 -->
+	<div id="vvvv" style="display: none;">
+		<div id="vvvvd">
+			<div id="vvvvx">
+				<span id="vvvv1"></span>
+				<span id="vvvv2">X</span>
+			</div>
+			<video id="vvvvs" src="" controls></video>
 		</div>
 	</div>
-	<!-- 白色导航结束 -->
-	<!-- 轮播图开始 -->
-	<div class="carousel">
-		<div class="container">
-			<img src="./img/mix.jpg" alt="" />
-			<!-- 左箭头 -->
-			<div class="arrow-left iconfont icon-zuojiantou"></div>
-			<!-- 右箭头 -->
-			<div class="arrow-right iconfont icon-youjiantou"></div>
-			<!-- 导航圆点 -->
-			<div class="dots">
-				<a href="javascript:;"></a>
-				<a href="javascript:;" class="active"></a>
-				<a href="javascript:;"></a>
-				<a href="javascript:;"></a>
-				<a href="javascript:;"></a>
-			</div>
-		</div>
-	</div>
-	<!-- 轮播图结束 -->
-	<!-- 新品频道开始 -->
-	<div class="new-channel">
-		<div class="container">
-			<div class="channel-list">
-				<ul>
-					<li class="right bottom">
-						<a href="javascript:;">
-							<span class="iconfont quick-enter icon-shizhong"></span>
-							<span class="desc">保障服务</span>
-						</a>
-					</li>
-					<li class="right bottom">
-						<a href="javascript:;">
-							<span class="iconfont quick-enter icon-qiyeyuanquwuye-xianxing"></span>
-							<span class="desc">保障服务</span>
-						</a>
-					</li>
-					<li class="bottom">
-						<a href="javascript:;">
-							<span class="iconfont quick-enter icon-codelibrary-fill"></span>
-							<span class="desc">保障服务</span>
-						</a>
-					</li>
-					<li class="right">
-						<a href="javascript:;">
-							<span class="iconfont quick-enter icon-sim"></span>
-							<span class="desc">保障服务</span>
-						</a>
-					</li>
-					<li class="right">
-						<a href="javascript:;">
-							<span class="iconfont quick-enter icon-rmb"></span>
-							<span class="desc">保障服务</span>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<span class="iconfont quick-enter icon-shoujichongzhi"></span>
-							<span class="desc">保障服务</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="new-product">
-				<a href="javascript:;"><img src="./img/11-ultra.jpg" alt="" /></a>
-			</div>
-			<div class="new-product">
-				<a href="javascript:;"><img src="./img/11-ultra.jpg" alt="" /></a>
-			</div>
-			<div class="new-product">
-				<a href="javascript:;"><img src="./img/11-ultra.jpg" alt="" /></a>
-			</div>
-		</div>
-	</div>
-	<!-- 新品频道结束 -->
-	<!-- 主页主体内容开始 -->
-	<div class="page-body">
-		<div class="container">
-			<div class="img-news">
-				<a href="javascript:;"><img src="./img/news.jpeg" alt="" /></a>
-			</div>
-			<div class="box-title">
-				<div class="title">
-					<h2>手机</h2>
-				</div>
-				<div class="remark">
-					<a href="javascript:;">查看更多
-						<span class="iconfont icon-youjiantou2"></span>
-					</a>
-				</div>
-			</div>
-			<div class="area">
-				<div class="sidebar move">
-					<a href="javascript:;"><img src="./img/mix-fold.jpg" alt="" /></a>
-				</div>
-				<div class="right-side">
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/mix2.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="box-title">
-				<div class="title">
-					<h2>家电</h2>
-				</div>
-				<div class="remark">
-					<ul>
-						<li><a class="highlight" href="javascript:;">热门</a></li>
-						<li><a href="javascript:;">电视影音</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="area">
-				<div class="sidebar transparent">
-					<div class="sidebar-top move">
-						<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
-					</div>
-					<div class="sidebar-bottom move">
-						<a href="javascript:;"><img src="./img/tv.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div class="right-side">
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid transparent">
-						<div class="mid-top move">
-							<a href="javascript:;">
-								<div class="gas-cooker"><img src="./img/gas-cooker.jpg" alt="" /></div>
-								<h3 class="title">米家互联网烟灶套装（天然气）</h3>
-								<p class="price">1899元</p>
-							</a>
-						</div>
-						<div class="mid-bottom move">
-							<a href="javascript:;" class="h143">
-								<div class="iconfont icon-youjiantou3"><span></span></div>
-								<div class="more">
-									浏览更多
-									<small>热门</small>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="box-title">
-				<div class="title">
-					<h2>智能</h2>
-				</div>
-				<div class="remark">
-					<ul>
-						<li><a class="highlight" href="javascript:;">热门</a></li>
-						<li><a href="javascript:;">安防</a></li>
-						<li><a href="javascript:;">出行</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="area">
-				<div class="sidebar transparent">
-					<div class="sidebar-top move">
-						<a href="javascript:;"><img src="./img/router2.png" alt="" /></a>
-					</div>
-					<div class="sidebar-bottom move">
-						<a href="javascript:;"><img src="./img/router2.png" alt="" /></a>
-					</div>
-				</div>
-				<div class="right-side">
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid transparent">
-						<div class="mid-top move">
-							<a href="javascript:;">
-								<div class="gas-cooker"><img src="./img/gas-cooker.jpg" alt="" /></div>
-								<h3 class="title">米家互联网烟灶套装（天然气）</h3>
-								<p class="price">1899元</p>
-							</a>
-						</div>
-						<div class="mid-bottom move">
-							<a href="javascript:;" class="h143">
-								<div class="iconfont icon-youjiantou3"><span></span></div>
-								<div class="more">
-									浏览更多
-									<small>热门</small>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="img-news">
-				<a href="javascript:;"><img src="./img/news2.jpg" alt="" /></a>
-			</div>
-			<div class="box-title">
-				<div class="title">
-					<h2>搭配</h2>
-				</div>
-				<div class="remark">
-					<ul>
-						<li><a class="highlight" href="javascript:;">热门</a></li>
-						<li><a href="javascript:;">耳机音箱</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="area">
-				<div class="sidebar transparent">
-					<div class="sidebar-top move">
-						<a href="javascript:;"><img src="./img/balance-car.jpg" alt="" /></a>
-					</div>
-					<div class="sidebar-bottom move">
-						<a href="javascript:;"><img src="./img/balance-car.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div class="right-side">
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid transparent">
-						<div class="mid-top move">
-							<a href="javascript:;">
-								<div class="gas-cooker"><img src="./img/gas-cooker.jpg" alt="" /></div>
-								<h3 class="title">米家互联网烟灶套装（天然气）</h3>
-								<p class="price">1899元</p>
-							</a>
-						</div>
-						<div class="mid-bottom move">
-							<a href="javascript:;" class="h143">
-								<div class="iconfont icon-youjiantou3"><span></span></div>
-								<div class="more">
-									浏览更多
-									<small>热门</small>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="box-title">
-				<div class="title">
-					<h2>配件</h2>
-				</div>
-				<div class="remark">
-					<ul>
-						<li><a class="highlight" href="javascript:;">热门</a></li>
-						<li><a href="javascript:;">充电器</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="area">
-				<div class="sidebar transparent">
-					<div class="sidebar-top move">
-						<a href="javascript:;"><img src="./img/clean-water.png" alt="" /></a>
-					</div>
-					<div class="sidebar-bottom move">
-						<a href="javascript:;"><img src="./img/clean-water.png" alt="" /></a>
-					</div>
-				</div>
-				<div class="right-side">
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid transparent">
-						<div class="mid-top move">
-							<a href="javascript:;">
-								<div class="gas-cooker"><img src="./img/gas-cooker.jpg" alt="" /></div>
-								<h3 class="title">米家互联网烟灶套装（天然气）</h3>
-								<p class="price">1899元</p>
-							</a>
-						</div>
-						<div class="mid-bottom move">
-							<a href="javascript:;" class="h143">
-								<div class="iconfont icon-youjiantou3"><span></span></div>
-								<div class="more">
-									浏览更多
-									<small>热门</small>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="box-title">
-				<div class="title">
-					<h2>周边</h2>
-				</div>
-				<div class="remark">
-					<ul>
-						<li><a class="highlight" href="javascript:;">热门</a></li>
-						<li><a href="javascript:;">出行</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="area">
-				<div class="sidebar transparent">
-					<div class="sidebar-top move">
-						<a href="javascript:;"><img src="./img/cup.jpg" alt="" /></a>
-					</div>
-					<div class="sidebar-bottom move">
-						<a href="javascript:;"><img src="./img/cup.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div class="right-side">
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid move">
-						<a href="javascript:;">
-							<img src="./img/tv-master.jpg" alt="" />
-							<h3>Xiaomi MIX 4</h3>
-							<p>CUP全面屏</p>
-							<p>4999元起</p>
-						</a>
-					</div>
-					<div class="mid transparent">
-						<div class="mid-top move">
-							<a href="javascript:;">
-								<div class="gas-cooker"><img src="./img/gas-cooker.jpg" alt="" /></div>
-								<h3 class="title">米家互联网烟灶套装（天然气）</h3>
-								<p class="price">1899元</p>
-							</a>
-						</div>
-						<div class="mid-bottom move">
-							<a href="javascript:;" class="h143">
-								<div class="iconfont icon-youjiantou3"><span></span></div>
-								<div class="more">
-									浏览更多
-									<small>热门</small>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="img-news">
-				<a href="javascript:;"><img src="./img/news3.jpg" alt="" /></a>
-			</div>
-			<div class="box-title">
-				<div class="title">
-					<h2>视频</h2>
-				</div>
-				<div class="remark">
-					<a href="javascript:;">查看全部
-						<span class="iconfont icon-youjiantou2"></span>
-					</a>
-				</div>
-			</div>
-			<div class="video-area">
-				<div class="video-box move">
-					<a href="javascript:;">
-						<div class="play-btn">
-							<img src="./img/1599.jpg" alt="" />
-							<div class="play">
-								<span class="iconfont icon-play"></span>
-							</div>
-						</div>
-						<h3 class="title">Redmi 10X 系列发布会</h3>
-						<p class="desc">Redmi 10X 系列发布会</p>
-					</a>
-				</div>
-				<div class="video-box move">
-					<a href="javascript:;">
-						<div class="play-btn">
-							<img src="./img/1599.jpg" alt="" />
-							<div class="play">
-								<span class="iconfont icon-play"></span>
-							</div>
-						</div>
-						<h3 class="title">Redmi 10X 系列发布会</h3>
-						<p class="desc">Redmi 10X 系列发布会</p>
-					</a>
-				</div>
-				<div class="video-box move">
-					<a href="javascript:;">
-						<div class="play-btn">
-							<img src="./img/1599.jpg" alt="" />
-							<div class="play">
-								<span class="iconfont icon-play"></span>
-							</div>
-						</div>
-						<h3 class="title">Redmi 10X 系列发布会</h3>
-						<p class="desc">Redmi 10X 系列发布会</p>
-					</a>
-				</div>
-				<div class="video-box move">
-					<a href="javascript:;">
-						<div class="play-btn">
-							<img src="./img/1599.jpg" alt="" />
-							<div class="play">
-								<span class="iconfont icon-play"></span>
-							</div>
-						</div>
-						<h3 class="title">Redmi 10X 系列发布会</h3>
-						<p class="desc">Redmi 10X 系列发布会</p>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- 主页主体内容结束 -->
-	<!-- 页面底部开始 -->
-	<div class="site-footer">
-		<div class="container">
-			<div class="footer-service">
-				<ul>
-					<li><a href="javascript:;"><span class="service iconfont icon-editor2"></span>7天无理由退换货</a></li>
-					<li><a href="javascript:;"><span class="service iconfont icon-7tianwuliyoutuihuo"></span>7天无理由退换货</a></li>
-					<li><a href="javascript:;"><span class="service iconfont icon-15tianwuliyoutuihuo"></span>7天无理由退换货</a></li>
-					<li><a href="javascript:;"><span class="service iconfont icon-liwu"></span>7天无理由退换货</a></li>
-					<li><a href="javascript:;"><span class="service iconfont icon-dingxiang"></span>7天无理由退换货</a></li>
-				</ul>
-			</div>
-			<div class="footer-links">
-				<dl class="col-links">
-					<dt>帮助中心</dt>
-					<dd><a href="javascript:;">账户管理</a></dd>
-					<dd><a href="javascript:;">购物指南</a></dd>
-					<dd><a href="javascript:;">订单操作</a></dd>
-				</dl>
-				<dl class="col-links">
-					<dt>服务支持</dt>
-					<dd><a href="javascript:;">售后政策</a></dd>
-					<dd><a href="javascript:;">自助服务</a></dd>
-					<dd><a href="javascript:;">相关下载</a></dd>
-				</dl>
-				<dl class="col-links">
-					<dt>线下门店</dt>
-					<dd><a href="javascript:;">小米之家</a></dd>
-					<dd><a href="javascript:;">服务网点</a></dd>
-					<dd><a href="javascript:;">授权体验店</a></dd>
-				</dl>
-				<dl class="col-links">
-					<dt>关于小米</dt>
-					<dd><a href="javascript:;">了解小米</a></dd>
-					<dd><a href="javascript:;">加入小米</a></dd>
-					<dd><a href="javascript:;">投资者关系</a></dd>
-					<dd><a href="javascript:;">企业社会责任</a></dd>
-					<dd><a href="javascript:;">廉洁举报</a></dd>
-				</dl>
-				<dl class="col-links">
-					<dt>关注我们</dt>
-					<dd><a href="javascript:;">新浪微博</a></dd>
-					<dd><a href="javascript:;">官方微信</a></dd>
-					<dd><a href="javascript:;">联系我们</a></dd>
-					<dd><a href="javascript:;">公益基金会</a></dd>
-				</dl>
-				<dl class="col-links">
-					<dt>特色服务</dt>
-					<dd><a href="javascript:;">F 码通道</a></dd>
-					<dd><a href="javascript:;">礼物码</a></dd>
-					<dd><a href="javascript:;">防伪查询</a></dd>
-				</dl>
-				<div class="col-contact">
-					<p class="phone">400-100-5678</p>
-					<p class="comment">8:00-18:00（仅收市话费）</p>
-					<a href="javascript:;" class="service">
-						<span class="iconfont icon-xiaoxi"></span>
-						人工客服
-					</a>
-					<div class="follow">
-						关注小米：
-						<a href="javascript:;"><span class="iconfont icon-xinlangweibo"></span></a>
-						<a href="javascript:;" class="wx"><span class="iconfont icon-weixin"></span></a>
-						<img src="./img/wx-img.png" class="wx" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="site-info">
-		<div class="container">
-			<img src="./img/logo-mi2.png" alt="" class="logo">
-			<div class="info-text">
-				<p>
-					<a href="javascript:;">小米商城</a>
-					<span>|</span>
-					<a href="javascript:;">MIUI</a>
-					<span>|</span>
-					<a href="javascript:;">米家</a>
-					<span>|</span>
-					<a href="javascript:;">米聊</a>
-					<span>|</span>
-					<a href="javascript:;">多看</a>
-					<span>|</span>
-					<a href="javascript:;">游戏</a>
-					<span>|</span>
-					<a href="javascript:;">政企服务</a>
-					<span>|</span>
-					<a href="javascript:;">小米天猫店</a>
-					<span>|</span>
-					<a href="javascript:;">小米集团隐私政策</a>
-					<span>|</span>
-					<a href="javascript:;">小米公司儿童信息保护规则</a>
-					<span>|</span>
-					<a href="javascript:;">小米商城隐私政策</a>
-					<span>|</span>
-					<a href="javascript:;">小米商城用户协议</a>
-					<span>|</span>
-					<a href="javascript:;">问题反馈</a>
-					<span>|</span>
-					<a href="javascript:;">Select Location</a>
-				</p>
-				<p>
-					<a href="javascript:;">北京互联网法院法律服务工作站</a>
-					<span>|</span>
-					<a href="javascript:;">中国消费者协会</a>
-					<span>|</span>
-					<a href="javascript:;">北京市消费者协会</a>
-				</p>
-				<p class="comment">
-					<a href="javascript:;">© mi.com</a>
-					<a href="javascript:;">京ICP证110507号</a>
-					<a href="javascript:;">京ICP备10046444号</a>
-					<a href="javascript:;">京公网安备11010802020134号</a>
-					<a href="javascript:;">京网文[2020]0276-042号</a><br>
-					<a href="javascript:;">（京）网械平台备字（2018）第00005号</a>
-					<a href="javascript:;">互联网药品信息服务资格证</a>
-					<a href="javascript:;">(京)-非经营性-2014-0090</a>
-					<a href="javascript:;">营业执照</a>
-					<a href="javascript:;">医疗器械质量公告</a><br>
-					<a href="javascript:;">增值电信业务许可证</a>
-					<a href="javascript:;">网络食品经营备案</a>
-					<a href="javascript:;">京食药网食备202010048</a>
-					<a href="javascript:;">食品经营许可证</a><br>
-					<a href="javascript:;">违法和不良信息举报电话：171-5104-4404</a>
-					<a href="javascript:;">知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</a>
-				</p>
-			</div>
-			<div class="info-links">
-				<a href="javascript:;"><img src="./img/truste.png" alt=""></a>
-				<a href="javascript:;"><img src="./img/truste.png" alt=""></a>
-				<a href="javascript:;"><img src="./img/truste.png" alt=""></a>
-				<a href="javascript:;"><img src="./img/truste.png" alt=""></a>
-				<a href="javascript:;"><img src="./img/truste.png" alt=""></a>
-			</div>
-			<div class="slogan">
-				<img src="./img/slogan2020.png" alt="">
-			</div>
-		</div>
-	</div>
-	<!-- 页面底部结束 -->
-	<!-- 右侧工具栏开始 -->
-	<div class="side-toolbar">
-		<a href="javascript:;">
-			<div class="iconfont icon-m icon-shouji"></div>
-			<span>手机APP</span>
-			<div class="wx-code">
-				<div class="arrow"></div>
-				<img src="./img/wx-code.png" alt="">
-				<span>
-					扫码领取新人百元礼包
-				</span>
-			</div>
-		</a>
-		<a href="javascript:;">
-			<div class="iconfont icon-m icon-yonghu"></div>
-			<span>个人中心</span>
-		</a>
-		<a href="javascript:;">
-			<div class="iconfont icon-m icon-editor2"></div>
-			<span>售后服务</span>
-		</a>
-		<a href="javascript:;">
-			<div class="iconfont icon-m icon-kefu"></div>
-			<span>人工客服</span>
-		</a>
-		<a href="javascript:;">
-			<div class="iconfont icon-m icon-gouwucheman"></div>
-			<span>购物车</span>
-		</a>
-		<a href="javascript:;">
-			<div class="iconfont icon-m icon-huidingbu"></div>
-			<span>回顶部</span>
-		</a>
-	</div>
-	<!-- 右侧工具栏结束 -->
-</body>
-<script src="./js/CarouselChart.js"></script>
+  </body>
+  <script src="./js/CarouselChart.js"></script>
+  <script src="./js/BackTop.js"></script>
+  <script src="./js/MoveMore.js"></script>
+  <script src="./js/video.js"></script>
 </html>

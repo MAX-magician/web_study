@@ -866,6 +866,8 @@ console.log(aaa);    //3
 ### 事件代理
 
 > e.target 谁冒泡出来 就是谁
+>
+> # addEventListener() 方法
 
 ## This
 
