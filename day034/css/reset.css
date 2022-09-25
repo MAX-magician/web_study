@@ -1,0 +1,21 @@
+*{
+    /* 内外边距为0 */
+    margin: 0;
+    padding: 0;
+    /* 盒子定宽高 */
+    box-sizing: border-box;
+}
+ul,ol{
+    /* 去掉列表项前面的修饰符号 */
+    list-style: none;
+}
+input{
+    /* 去除自带的边框, 太丑了... */
+    border:none;
+    /* 去除默认的轮廓 */
+    outline:none;
+}
+a{
+    /* 去除a标签自带的下划线 */
+    text-decoration: none;
+}

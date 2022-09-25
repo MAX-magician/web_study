@@ -1,0 +1,409 @@
+/* 主页的css */
+div.carousel {
+	width: 100%;
+	height: 460px;
+}
+div.carousel img {
+	width: 100%;
+}
+div.carousel div.arrow-left,
+div.carousel div.arrow-right {
+	width: 42px;
+	height: 70px;
+	/* 文字水平居中 */
+	text-align: center;
+	/* 文字垂直居中 */
+	line-height: 70px;
+	position: absolute;
+	/* 原来是灰色 */
+	color: #808080;
+}
+div.carousel div.arrow-left:hover,
+div.carousel div.arrow-right:hover {
+	/* 鼠标移入, 小手 */
+	cursor: pointer;
+	/* 背景色 */
+	background-color: rgba(0, 0, 0, 0.3);
+	/* 移入变白 */
+	color: #fff;
+}
+div.carousel div.arrow-left {
+	left: 234px;
+	top: 50%;
+	margin-top: -35px;
+}
+div.carousel div.arrow-right {
+	top: 50%;
+	margin-top: -35px;
+	right: 0;
+}
+div.carousel div.container {
+	position: relative;
+}
+div.carousel div.dots {
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+}
+div.carousel div.dots a {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+	/* 边框 */
+	border: 2px solid hsla(0, 0%, 100%, 0.3);
+	background-color: rgba(0, 0, 0, 0.4);
+	/* 变成圆 */
+	border-radius: 10px;
+}
+div.carousel div.dots a.active,
+div.carousel div.dots a:hover {
+	background-color: hsla(0, 0%, 100%, 0.4);
+	border-color: rgba(0, 0, 0, 0.4);
+}
+/* 新品频道 */
+div.new-channel {
+	width: 100%;
+	height: 170px;
+	margin-top: 14px;
+}
+div.new-channel div.channel-list {
+	width: 234px;
+	height: 170px;
+	float: left;
+	background-color: #5f5750;
+}
+div.new-channel div.new-product {
+	width: 316px;
+	height: 170px;
+	float: left;
+	margin-left: 14px;
+}
+div.new-channel div.new-product img {
+	width: 316px;
+	height: 170px;
+}
+/* 频道列表 */
+div.channel-list ul li {
+	position: relative;
+	text-align: center;
+	width: 76px;
+	height: 82px;
+	float: left;
+	font-size: 12px;
+}
+div.channel-list ul li.right::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 70px;
+	background-color: #665e57;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -35px;
+}
+div.channel-list ul li.bottom::after {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 1px;
+	background-color: #665e57;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -35px;
+}
+div.channel-list ul li a {
+	display: block;
+	padding-top: 18px;
+	color: rgba(255, 255, 255, 0.7);
+}
+div.channel-list ul li a:hover {
+	color: #fff;
+}
+div.channel-list ul li span.iconfont {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+div.channel-list ul li span.desc {
+	display: block;
+}
+/* 网页主内容区 */
+div.page-body {
+	background-color: #f5f5f5;
+	width: 100%;
+	margin-top: 28px;
+	border-top: 1px solid transparent;
+	/* 把最后一个视频板块撑起来 */
+	padding-bottom: 26px;
+}
+div.page-body div.img-news {
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+div.page-body div.img-news a {
+	display: block;
+}
+div.page-body div.img-news a img {
+	width: 1226px;
+	height: 120px;
+}
+div.page-body div.box-title {
+	width: 1226px;
+	height: 58px;
+}
+div.page-body div.box-title div.title {
+	float: left;
+}
+div.page-body div.box-title div.title h2 {
+	line-height: 58px;
+	font-size: 22px;
+	font-weight: 200;
+	color: #333;
+}
+div.page-body div.box-title div.remark {
+	float: right;
+	height: 58px;
+	line-height: 58px;
+	color: #333;
+}
+div.page-body div.box-title div.remark a {
+	color: #424242;
+}
+div.page-body div.box-title div.remark a.highlight,
+div.page-body div.box-title div.remark a:hover span,
+div.page-body div.box-title div.remark a:hover {
+	color: #ff6700;
+	padding-bottom: 3px;
+}
+div.page-body div.box-title div.remark li a:hover,
+div.page-body div.box-title div.remark a.highlight {
+	border-bottom: 2px solid #ff6700;
+}
+div.page-body div.box-title div.remark ul li {
+	float: left;
+	margin-left: 30px;
+}
+/* 商品板块的样式 */
+div.area {
+	width: 1226px;
+	height: 614px;
+	margin-bottom: 14px;
+}
+div.area div.sidebar {
+	float: left;
+	width: 234px;
+	height: 614px;
+}
+div.area div.sidebar img {
+	width: 234px;
+	height: 614px;
+}
+div.area div.right-side {
+	float: left;
+	width: 992px;
+	height: 614px;
+}
+div.area div.right-side div.mid {
+	width: 234px;
+	height: 300px;
+	background-color: #fff;
+	float: left;
+	margin-left: 14px;
+	margin-bottom: 14px;
+	/* 所有元素居中 */
+	text-align: center;
+}
+div.area div.right-side div.mid a {
+	/* 转成块级元素, 可以加宽高 */
+	display: block;
+	width: 234px;
+	height: 300px;
+	/* 使用内边距, 把图片挤下去 */
+	padding-top: 20px;
+}
+div.area div.right-side div.mid a.h143 {
+	height: 143px;
+}
+div.area div.right-side div.mid img {
+	width: 160px;
+	height: 160px;
+	/* 把字挤下去 */
+	margin-bottom: 18px;
+}
+div.area div.right-side div.mid h3 {
+	font-size: 14px;
+	/* 不加粗 */
+	font-weight: 400;
+	color: #333;
+	margin-bottom: 2px;
+}
+div.area div.right-side div.mid p:nth-of-type(1) {
+	/* 把下面的文字挤下去 */
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #b0b0b0;
+	height: 18px;
+}
+div.area div.right-side div.mid p:nth-of-type(2) {
+	font-size: 14px;
+	color: #ff6700;
+}
+/* 加了这个类, 就会有阴影, 并且会向上移动 */
+div.move:hover {
+	/* 加阴影 */
+	box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+	/* 向上移动 */
+	transform: translate3d(0, -2px, 0);
+}
+div.sidebar div.sidebar-top a,
+div.sidebar div.sidebar-bottom a {
+	display: block;
+	width: 234px;
+	height: 300px;
+}
+div.sidebar div.sidebar-top img,
+div.sidebar div.sidebar-bottom img {
+	width: 234px;
+	height: 300px;
+}
+div.sidebar div.sidebar-top {
+	margin-bottom: 14px;
+}
+.transparent {
+	background-color: transparent;
+}
+div.area div.right-side div.mid.transparent {
+	background-color: transparent;
+}
+div.area div.right-side div.mid div.mid-top,
+div.area div.right-side div.mid div.mid-bottom {
+	position: relative;
+	width: 234px;
+	height: 143px;
+	background-color: #fff;
+}
+div.area div.right-side div.mid div.mid-top {
+	margin-bottom: 14px;
+}
+div.area div.right-side div.mid div.mid-top a {
+	padding-top: 40px;
+	display: block;
+	width: 234px;
+	height: 143px;
+}
+div.area div.right-side div.mid div.mid-top a h3.title {
+	margin-left: 30px;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 14px;
+	/* 去除默认加粗 */
+	font-weight: 400;
+	width: 94px;
+	height: 63px;
+	text-align: left;
+}
+div.area div.right-side div.mid div.mid-top a p.price {
+	margin-left: 30px;
+	color: #ff6700;
+	font-size: 12px;
+	text-align: left;
+}
+div.area div.right-side div.mid div.mid-top .gas-cooker img {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 32px;
+}
+div.area div.right-side div.mid div.mid-bottom div.iconfont {
+	position: absolute;
+	right: 35px;
+	top: 48px;
+	width: 48px;
+	height: 48px;
+	color: #ff6700;
+	line-height: 48px;
+}
+div.area div.right-side div.mid div.mid-bottom a {
+	padding-top: 50px;
+}
+div.area div.right-side div.mid div.mid-bottom div.more {
+	margin-left: 30px;
+	font-size: 18px;
+	color: #333;
+	text-align: left;
+	width: 94px;
+	height: 45px;
+}
+div.area div.right-side div.mid div.mid-bottom div.more small {
+	padding-top: 4px;
+	display: block;
+	font-size: 12px;
+	color: #757575;
+}
+/* 视频区域 */
+div.video-area {
+	width: 1226px;
+	height: 285px;
+}
+div.video-box {
+	text-align: center;
+	float: left;
+	width: 296px;
+	height: 285px;
+	margin-right: 14px;
+	background-color: #fff;
+}
+div.video-box:last-of-type {
+	margin-right: 0;
+}
+div.video-box img {
+	width: 296px;
+	height: 180px;
+	margin-bottom: 26px;
+}
+div.video-box a {
+	display: block;
+	width: 296px;
+	height: 285px;
+}
+div.video-box a h3.title {
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 8px;
+	font-weight: 400;
+}
+div.video-box a p.desc {
+	font-size: 12px;
+	color: #b0b0b0;
+}
+div.play-btn {
+	position: relative;
+}
+div.play {
+	position: absolute;
+	width: 36px;
+	height: 24px;
+	bottom: 42px;
+	left: 20px;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	text-align: center;
+	/* 内容区高度, 因为上下2px边框, 被压缩成了20px */
+	line-height: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+}
+div.play:hover,
+div.play-btn img:hover + div.play {
+	background-color: #ff6700;
+	border: 2px solid #ff6700;
+}
+.iconfont.icon-youjiantou3::before {
+	font-size: 60px;
+	position: relative;
+	left: -6px;
+}
