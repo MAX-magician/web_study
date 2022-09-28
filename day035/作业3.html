@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span id="yeart"></span>年高考倒计时:</h1>
+    <h1><span id="dayt"></span> 天 <span id="hourt"></span> 时 <span id="minutet"></span> 分 <span id="secondt"></span> 秒</h1>
+    <script>
+      var timess = new Date();
+      yeart.innerHTML = timess.getFullYear() + 1;
+      yyyxx = new Date("6/7/" + (timess.getFullYear() + 1));
+      setInterval(function () {
+        var x = yyyxx - Date.parse(new Date());
+        var days = parseInt(x / 86400000);
+        var hours = parseInt((x - days * 86400000) / 3600000);
+        var minutes = parseInt((x - days * 86400000 - hours * 3600000) / 60000);
+        var seconds = parseInt((x - days * 86400000 - hours * 3600000 - minutes * 60000) / 1000);
+        dayt.innerHTML = days;
+        hourt.innerHTML = (hours > 9) ? hours : ("0" + hours);
+        minutet.innerHTML = (minutes > 9) ? minutes : ("0" + minutes);
+        secondt.innerHTML = (seconds > 9) ? seconds : ("0" + seconds);
+      }, 1000);
+    </script>
+  </body>
+</html>

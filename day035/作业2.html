@@ -1,0 +1,56 @@
+<!-- https://blog.csdn.net/xuehaocyuyan/article/details/119777921
+参考这个 -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #main {
+        width: 100%;
+        height: auto;
+      }
+      #main div{
+        width: 45px;
+        height: 100px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script>
+        var TrafficLight = function() {
+            this.color = 1;
+            this.dom = null;
+            this.init();
+
+            var that = this;
+            this.dom.onclick = function() {
+                that.color++;
+                if(that.color === 4){
+                    that.color = 1;
+                }
+                this.style.background = "url(./imgs/" + that.color + ".jpg)";
+                this.style.backgroundSize = "auto 100px";
+            }
+        }
+        TrafficLight.prototype.init = function() {
+            this.dom = document.createElement("div");
+            this.dom.style.background = "url(./imgs/1.jpg)";
+            this.dom.style.backgroundSize = "auto 100px";
+            main.appendChild(this.dom);
+        }
+        for(var i = 0; i < 100; i++) {
+            new TrafficLight();
+        }
+    </script>
+  </body>
+</html>

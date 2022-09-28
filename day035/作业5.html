@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: inline-block;
+            width: 100px;
+            margin-left: 20px;
+        }
+        #btn{
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hx"></h1>
+    <button id="btn">看不清</button>
+    <script>
+        // var x = Math.random().toString(36).substr(2, 4);
+        var x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+        var y = [];
+        change();
+        btn.onclick = function() {
+            change();
+        }
+        function change(){
+            for(var i = 0; i < 4; i++) {
+                var a = Math.floor(Math.random()*62);
+                y[i] = x[a];
+            }
+            hx.innerHTML = y.join("");
+        }
+    </script>
+</body>
+</html>

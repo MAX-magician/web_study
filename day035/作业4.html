@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #ttt {
+        width: 200px;
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        border: 2px solid rgb(255, 174, 54);
+      }
+      table {
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ttt">
+      <table id="tab">
+        <tr style="height: 1.2em">
+          <th colspan="4"><span id="years"></span>年</th>
+          <th colspan="3"><span id="months"></span>月</th>
+        </tr>
+        <tr style="height: 1em">
+          <td>日</td>
+          <td>一</td>
+          <td>二</td>
+          <td>三</td>
+          <td>四</td>
+          <td>五</td>
+          <td>六</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      var x = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+      var y = prompt("请输入年月，以空格隔开");
+      var z = y.split(/\s+/);
+      var aa = Number(z[0]);
+      var bb = Number(z[1]);
+      years.innerHTML = aa;
+      months.innerHTML = bb;
+      if (aa % 4 == 0) {
+        x[1] = 29;
+      }
+      var cc = new Date(bb + "/1/" + aa);
+      var dd = -cc.getDay();
+      for (var i = 0; i < 7; i++) {
+        var ee = document.createElement("tr");
+        tab.appendChild(ee);
+        for (var j = 0; j < 7; j++) {
+          var ff = document.createElement("td");
+          dd++;
+          if (dd > 0 && dd <= x[bb - 1]) {
+            ff.innerHTML = dd;
+          }
+          ee.appendChild(ff);
+        }
+      }
+    </script>
+  </body>
+</html>
