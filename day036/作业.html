@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>作业</title>
+    <style type="text/css">
+      .pAll {
+        font-family: "黑体";
+        margin: 50px auto;
+      }
+      #titles {
+        font-weight: bold;
+        font-size: 18px;
+        height: 50px;
+        line-height: 50px;
+        background: #fff9f3;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      #contents {
+        margin-top: 20px;
+        background: #fff9f3;
+        border: 1px solid #ccc;
+      }
+      #form-itemGroup {
+        padding: 10px;
+      }
+      #form-itemGroup label {
+        display: inline-block;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        color: #666;
+        text-align: right;
+      }
+      #form-itemGroup .userName {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #ccc;
+      }
+      #form-itemGroup .default {
+        width: 200px;
+        height: 32px;
+        line-height: 32px;
+        color: #999;
+      }
+      #form-itemGroup .error {
+        width: 200px;
+        height: 32px;
+        line-height: 32px;
+        color: #f00;
+      }
+      #form-itemGroup input.error {
+        outline-color: #f00;
+        border-color: #f00;
+      }
+      #form-itemGroup .success {
+        width: 200px;
+        height: 32px;
+        line-height: 32px;
+        color: #096;
+      }
+      #form-itemGroup input.success {
+        outline-color: #096;
+        border-color: #096;
+      }
+      .pBtn {
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        background-color: #f93;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-weight: bold;
+        border: none;
+      }
+      form {
+        margin-left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pAll">
+      <div id="titles">新用户注册</div>
+      <div id="contents">
+        <form action="#" onSubmit="">
+          <p id="form-itemGroup">
+            <label for="userName">用户名：</label>
+            <input type="text" id="userName" class="userName" />
+            <span class="default" id="nameErr">请输入真实姓名</span>
+          </p>
+          <p id="form-itemGroup">
+            <label for="userPasword">密码：</label>
+            <input type="password" id="userPasword" class="userName" />
+            <span class="default" id="passwordErr"
+              >6到20个字符，至少包含一位数字，一个大写字母，一个小写字母和一个特殊符号（@＃$％）</span
+            >
+          </p>
+          <p id="form-itemGroup">
+            <label for="userConfirmPasword">确认密码：</label>
+            <input type="password" id="userConfirmPasword" class="userName" />
+            <span class="default" id="conPasswordErr"
+              >请再输入一遍密码, 必须和原密码保持一致</span
+            >
+          </p>
+          <p id="form-itemGroup">
+            <label for="userPhone">手机号码：</label>
+            <input type="text" id="userPhone" class="userName" />
+            <span class="default" id="phoneErr">请输入11位手机号码</span>
+          </p>
+          <p>
+            <button type="submit" class="pBtn" id="subbtn">注册</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    // 中文匹配
+    var reg = /^[\u4e00-\u9fa5]*$/;
+    // 密码复杂度
+    var passwdReg = /(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[^a-zA-Z0-9]).{6,20}$/;
+    // 手机号匹配
+    var phoneReg = /^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-9])|(18[0-9])|166|198|199|191|(147))\d{8}$/;
+    // 用户名
+    userName.onblur = function () {
+      if (!userName.value) {
+        nameErr.innerHTML = "此项必填！";
+        nameErr.setAttribute("class", "error");
+        userName.setAttribute("class", "error");
+      } else if (reg.test(userName.value)) {
+        nameErr.innerHTML = "姓名格式正确";
+        nameErr.setAttribute("class", "success");
+        userName.setAttribute("class", "success");
+      } else {
+        nameErr.innerHTML = "姓名格式不正确";
+        nameErr.setAttribute("class", "error");
+        userName.setAttribute("class", "error");
+      }
+    };
+    // 密码
+    userPasword.onblur = function () {
+      if (!userPasword.value || !passwdReg.test(userPasword.value)) {
+        passwordErr.setAttribute("class", "error");
+        userPasword.setAttribute("class", "error");
+      } else {
+        passwordErr.innerHTML = "✔";
+        passwordErr.setAttribute("class", "success");
+        userPasword.setAttribute("class", "success");
+      }
+    };
+    // 确认密码
+    userConfirmPasword.onblur = function () {
+      if (userConfirmPasword.value != userPasword.value) {
+        conPasswordErr.innerHTML = "密码不一致";
+        conPasswordErr.setAttribute("class", "error");
+        userConfirmPasword.setAttribute("class", "error");
+      } else if (!userConfirmPasword.value) {
+        conPasswordErr.innerHTML = "密码不能为空";
+        conPasswordErr.setAttribute("class", "error");
+        userConfirmPasword.setAttribute("class", "error");
+      } else {
+        conPasswordErr.innerHTML = "✔";
+        conPasswordErr.setAttribute("class", "success");
+        userConfirmPasword.setAttribute("class", "success");
+      }
+    };
+    // 手机号
+    userPhone.onblur = function () {
+      if (!userPhone.value) {
+        phoneErr.innerHTML = "手机号不能为空";
+        phoneErr.setAttribute("class", "error");
+        userPhone.setAttribute("class", "error");
+      } else if (phoneReg.test(userPhone.value)) {
+        phoneErr.innerHTML = "✔";
+        phoneErr.setAttribute("class", "success");
+        userPhone.setAttribute("class", "success");
+      } else {
+        phoneErr.innerHTML = "手机号格式不正确";
+        phoneErr.setAttribute("class", "error");
+        userPhone.setAttribute("class", "error");
+      }
+    };
+    // 注册按钮点击事件
+    subbtn.onclick = function () {
+      if (
+        userName.getAttribute("class") != "success" ||
+        userPasword.getAttribute("class") != "success" ||
+        userConfirmPasword.getAttribute("class") != "success" ||
+        userPhone.getAttribute("class") != "success"
+      ) {
+        return false;
+      }
+    };
+  </script>
+</html>

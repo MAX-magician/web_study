@@ -1061,6 +1061,10 @@ var reg = /^((13[0-2])|(15[56])|(18[56])|145|176)\d{8}$/;
 console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到就返回true
 ```
 
+### 密码复杂度 正则
+
+> ![image-20220929223405873](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220929223405873.png)
+
 # 移动端基础
 
 ![image-20220928221027181](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220928221027181.png)
