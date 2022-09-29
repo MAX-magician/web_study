@@ -1031,3 +1031,40 @@ button.onclick = function () {
 ### 数组的原型链
 
 > ![image-20220923222743037](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923222743037.png)
+
+## 正则表达式
+
+### 分组
+
+> 用小括号来分组
+
+### 转义
+
+> 用 \ 来进行转义
+>
+> 例如 要匹配（ab）
+>
+> ​		`^(\(ab\))$`
+
+### 条件 或
+
+> 或 用一个 | 
+
+### js的正则写法
+
+> js中的正则表达式写在两个 / 中间
+>
+> 例如 var reg = /^(155)\d{8}$/;       意思是匹配155开头的后面还有8位的数字
+
+```js
+var reg = /^((13[0-2])|(15[56])|(18[56])|145|176)\d{8}$/;
+console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到就返回true
+```
+
+# 移动端基础
+
+![image-20220928221027181](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220928221027181.png)
+
+### 获取viewWidth的宽度
+
+> 百度去

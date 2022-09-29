@@ -1,2 +1,9 @@
-var aa = [1, 2, 3, 4, 5];
-console.log(aa[-1])
+var x = {
+    name: "unknown",
+    sex: "female",
+    age: "unknown",
+    rece: "Dragon",
+    vocation: "maid",
+    hobboy: ["programming", "draw", "animation"],
+    cooking: cooking(),
+}
