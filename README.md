@@ -212,7 +212,7 @@ div {
 
 ## 画三角形
 
-> <div style="width: 0;height: 0;border-top: 200px solid #000;border-left: 200px solid red;border-right: 200px solid olivedrab;border-bottom: 200px solid aquamarine;"></div>
+> ![image-20221001015459935](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015459935.png)
 >
 > ```css
 > div{
@@ -227,7 +227,7 @@ div {
 >
 > 但是如果只保留其中一个的话 要用transparent(透明)
 >
-> <div style="width: 0;height: 0;border-top: 200px solid transparent;border-left: 200px solid red;border-right: none;border-bottom: 200px solid transparent;"></div>
+> ![image-20221001015517762](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015517762.png)
 >
 > ```css
 > div{
@@ -603,7 +603,7 @@ console.log(arr);   //输出结果为 [9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 ### 二维数组
 
-> ![image-20220829222834901](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220829222834901.png)
+> ![image-20221001015548966](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015548966.png)
 
 ### 引用数据类型
 
@@ -670,13 +670,13 @@ console.log(aaa);    //3
 
 ### sort方法
 
-![image-20220831222503527](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220831222503527.png)
+![image-20221001015602770](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015602770.png)
 
 > 要换位置就返回负数 不换就返回正数
 
 ### 注释
 
-![image-20220902210902733](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220902210902733.png)
+![image-20221001015608041](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015608041.png)
 
 ### 递归
 
@@ -700,7 +700,7 @@ console.log(aaa);    //3
 
 > 函数外定义一个变量 函数里面也定义一个变量 但是他们两个重名了 
 >
-> ![image-20220902222044844](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220902222044844.png)
+> ![image-20221001015613501](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015613501.png)
 >
 > 作用域问题 函数里面的a是局部变量 不会影响到外面的全局变量
 
@@ -708,7 +708,7 @@ console.log(aaa);    //3
 
 > 只会提升到当前作用域的最前面
 
-![image-20220902222420523](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220902222420523.png)![image-20220902222509895](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220902222509895.png)
+![image-20221001015647779](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015647779.png)
 
 > 上例用到了变量声明提升和遮蔽效应
 
@@ -732,7 +732,7 @@ console.log(aaa);    //3
 
 ### 闭包
 
-![image-20220905212648760](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905212648760.png)
+![image-20221001015656448](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015656448.png)
 
 > 内部函数被移动到外部执行了
 >
@@ -740,13 +740,13 @@ console.log(aaa);    //3
 >
 > 每次创建函数时都会创建闭包
 
-![image-20220905214506470](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905214506470.png)
+![image-20221001015701649](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015701649.png)
 
-![image-20220905214722662](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905214722662.png)
+![image-20221001015707492](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015707492.png)
 
 ### 闭包面试题
 
-![image-20220905220030156](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905220030156.png)
+![image-20221001015717102](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015717102.png)
 
 ### 立即执行函数
 
@@ -754,19 +754,19 @@ console.log(aaa);    //3
 >
 > > 
 >
-> ![image-20220905221102377](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905221102377.png)
+> ![image-20221001015722199](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015722199.png)
 >
-> ![image-20220905221124678](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905221124678.png)
+> ![image-20221001015727716](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015727716.png)
 >
 > 此时 名字已经不重要了 
 >
 > 要用小括号括起来 或者写个加号或者减号
 >
-> ![image-20220905221207738](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905221207738.png)
+> ![image-20221001015733720](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015733720.png)
 
 > 用到立即执行函数就不会出现割裂的情况
 >
-> ![image-20220905221444387](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905221444387.png)
+> ![image-20221001015738615](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015738615.png)
 >
 > 将全局变量转换为局部变量
 >
@@ -776,7 +776,7 @@ console.log(aaa);    //3
 >
 > ​		此时的i是全局变量
 >
-> ![image-20220905222045220](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905222045220.png)
+> ![image-20221001015744889](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015744889.png)
 >
 > ​		这样可以转换
 >
@@ -784,7 +784,7 @@ console.log(aaa);    //3
 >
 > ​		此时j是局部变量
 >
-> ![image-20220905222446387](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220905222446387.png)
+> ![image-20221001015749231](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015749231.png)
 
 ## DOM
 
@@ -851,17 +851,17 @@ console.log(aaa);    //3
 
 ### 节点寻找
 
-> ![image-20220907215955776](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220907215955776.png)
+> ![image-20221001015756733](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015756733.png)
 >
-> ![image-20220907220325303](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220907220325303.png)
+> ![image-20221001015802359](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015802359.png)
 
 ### 非标准属性获取
 
-> ![image-20220907222741338](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220907222741338.png)
+> ![image-20221001015809068](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015809068.png)
 
 ### 节点的创建移除和克隆
 
-> ![image-20220907223047926](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220907223047926.png)
+> ![image-20221001015814974](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015814974.png)
 
 ### 事件代理
 
@@ -873,7 +873,7 @@ console.log(aaa);    //3
 
 ### 总览
 
-![image-20220921222616695](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220921222616695.png)
+![image-20221001015821010](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015821010.png)
 
 ### 立即执行函数里面的this是window
 
@@ -940,9 +940,9 @@ button.onclick = function () {
 >
 > 两者的区别在于传参的方式不同
 
-![image-20220921221904778](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220921221904778.png)
+![image-20221001015828518](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015828518.png)
 
-![image-20220921222214043](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220921222214043.png)
+![image-20221001015834831](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015834831.png)
 
 ### new操作符来调用函数 this会指向这个对象
 
@@ -960,8 +960,6 @@ button.onclick = function () {
 
 ### 构造函数解释和约定
 
-> ![image-20220923210708268](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923210708268.png)
->
 > 用new调用的就属于构造函数 是不是构造函数 和名字没关系
 >
 > 构造函数必须用new调用
@@ -976,7 +974,21 @@ button.onclick = function () {
 
 ### 给对象添加方法
 
-> ![image-20220923212105664](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923212105664.png)
+> ```js
+> function People(name, age, sex) {
+>     this.name = name;
+>     this.age = age;
+>     this.sex = sex;
+>     this.sayHello = function () {
+>         console.log("我是" + this.name + ",我今年" + this.age + "岁了，我是一个" + this.sex + "生");
+>     };
+> }
+> var xiaoming = new People("小明", 12, "男");
+> var xiaohong = new People("小红", 10, "女");
+> 
+> xiaoming.sayHello();
+> xhaohong.sayHello();
+> ```
 >
 > 传参不足的话 少的参数会显示undefined
 
@@ -988,17 +1000,17 @@ button.onclick = function () {
 >
 > 类和实例 一个抽象 一个具体
 >
-> ![image-20220923212857534](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923212857534.png)
+> ![image-20221001015853677](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015853677.png)
 >
-> ![image-20220923213037690](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923213037690.png)
+> ![image-20221001015858413](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015858413.png)
 
 ## protopype 原型
 
-> ![image-20220923213259246](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923213259246.png)
+> ![image-20221001015904403](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015904403.png)
 >
-> ![image-20220923213420935](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923213420935.png)
+> ![image-20221001015909566](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015909566.png)
 >
-> ![image-20220923213802766](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923213802766.png)
+> ![image-20221001015914531](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015914531.png)
 >
 > 构造函数中的prototype属性是构造函数实例的原型
 >
@@ -1115,7 +1127,7 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 > 换行
 >
-> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930221811158.png" alt="image-20220930221811158" style="zoom: 67%;" />
+> <img src="http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015943130.png" alt="image-20221001015943130" style="zoom:67%;" />
 >
 > 不换行又放不下的情况下 会被压缩
 
@@ -1129,10 +1141,10 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 > 定义了在主轴上的对其方式
 >
-> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222520303.png" alt="image-20220930222520303" style="zoom: 67%;" />
+> <img src="http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015955330.png" alt="image-20221001015955330" style="zoom:67%;" />
 >
-> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222725364.png" alt="image-20220930222725364" style="zoom:67%;" />
+> <img src="http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001020027527.png" alt="image-20221001020027527" style="zoom:67%;" />
 >
-> ![image-20220930222622273](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222622273.png)
+> ![image-20221001020013984](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001020013984.png)
 >
-> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222655348.png" alt="image-20220930222655348" style="zoom:67%;" />
+> <img src="http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001020019426.png" alt="image-20221001020019426" style="zoom:67%;" />
