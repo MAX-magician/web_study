@@ -206,7 +206,7 @@ div {
 
 > 图片和文字有上下关系时出问题也是基线问题
 >
-> ![Snipaste_2022-08-15_21-44-10](E:\SYSTEM\图片\Snipaste_2022-08-15_21-44-10.png)
+> ![image-20220930233559131](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233559131.png)
 >
 > 这张图片中VIEW MORE无法居中对其就是因为文字和图片中基线的问题 在同一个div里面
 
@@ -1004,7 +1004,7 @@ button.onclick = function () {
 >
 > prototype对普通函数来说没啥用
 >
-> ![image-20220923214000694](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923214000694.png)
+> ![image-20220930233548955](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233548955.png)
 
 ## 原型链
 
@@ -1020,17 +1020,17 @@ button.onclick = function () {
 
 ### 在prototype上添加方法和属性
 
-> ![image-20220923220128408](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923220128408.png)
+> ![image-20220930233540407](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233540407.png)
 >
 > 公共属性也可以这样写
 
 ### 原型链的终点
 
-> ![image-20220923222540950](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923222540950.png)
+> ![image-20220930233535343](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233535343.png)
 
 ### 数组的原型链
 
-> ![image-20220923222743037](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220923222743037.png)
+> ![image-20220930233531147](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233531147.png)
 
 ## 正则表达式
 
@@ -1063,21 +1063,21 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 ### 密码复杂度 正则
 
-> ![image-20220929223405873](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220929223405873.png)
+> ![image-20220930233524710](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233524710.png)
 
 # 字体图标
 
-> ![Snipaste_2022-09-30_21-40-04](E:\SYSTEM\图片\Snipaste_2022-09-30_21-40-04.png)
+> ![image-20220930233517353](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233517353.png)
 >
 > 三个字体图标文件里面全都有需要的文件 为了兼容性所以才有三份
 >
 > 路径
 >
-> ![image-20220930214754747](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930214754747.png)
+> ![image-20220930233509516](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233509516.png)
 
 # 移动端基础
 
-![image-20220928221027181](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220928221027181.png)
+> ![image-20220930233438252](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233438252.png)
 
 ### 获取viewWidth的宽度
 
@@ -1093,7 +1093,7 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 ### 帮助插件
 
-> ![image-20220930221625255](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930221625255.png)
+> ![image-20220930233459386](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20220930233459386.png)
 >
 > ctrl + shift + P   输入 cheat 打开
 
