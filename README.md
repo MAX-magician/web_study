@@ -1065,6 +1065,16 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 > ![image-20220929223405873](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220929223405873.png)
 
+# 字体图标
+
+> ![Snipaste_2022-09-30_21-40-04](E:\SYSTEM\图片\Snipaste_2022-09-30_21-40-04.png)
+>
+> 三个字体图标文件里面全都有需要的文件 为了兼容性所以才有三份
+>
+> 路径
+>
+> ![image-20220930214754747](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930214754747.png)
+
 # 移动端基础
 
 ![image-20220928221027181](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220928221027181.png)
@@ -1072,3 +1082,57 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 ### 获取viewWidth的宽度
 
 > 百度去
+
+## flex布局
+
+> 主轴和交叉轴始终是垂直的
+>
+> 设置flex布局的标签会变成一个容器 里面的内容要根据主轴进行排列
+>
+> 默认情况下 div也会从左往右排列
+
+### 帮助插件
+
+> ![image-20220930221625255](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930221625255.png)
+>
+> ctrl + shift + P   输入 cheat 打开
+
+### flex-direction
+
+> 功能 ： 设置主轴方向
+>
+> 参数 ：
+>
+> ​		row 默认 左到右
+>
+> ​		row-reverse 右到左
+>
+> ​		column 上到下
+>
+> ​		column-reverse 下到上
+
+### flex-wrap
+
+> 换行
+>
+> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930221811158.png" alt="image-20220930221811158" style="zoom: 67%;" />
+>
+> 不换行又放不下的情况下 会被压缩
+
+### flex-flow
+
+> 方向与换行的连写
+>
+> 可以都写 也可以写一个 会根据单词来进行判断
+
+### justify-content
+
+> 定义了在主轴上的对其方式
+>
+> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222520303.png" alt="image-20220930222520303" style="zoom: 67%;" />
+>
+> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222725364.png" alt="image-20220930222725364" style="zoom:67%;" />
+>
+> ![image-20220930222622273](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222622273.png)
+>
+> <img src="C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20220930222655348.png" alt="image-20220930222655348" style="zoom:67%;" />
