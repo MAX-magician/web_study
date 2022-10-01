@@ -8,7 +8,30 @@
 >
 > infinite ： 无穷；
 
-# 部分说明
+## 方法
+
+### 返回随机字符串
+
+```js
+/**
+* 返回指定位数的随机字符串
+* @param {Number} number 要生成随机字符的位数
+* @returns {String} result 指定位数的随机字符串
+*/
+function randomCharacter(number){
+    var result = "";
+    var chars  = ["0","1","2","3","4","5","6","7","8","9",
+                  "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+                  "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+    for (var i = 0; i < number; i++){
+        var x = Math.floor(Math.random()*62);
+        result += chars[x];
+    }
+    return result;
+}
+```
+
+# CSS
 
 ### 返回顶部小按钮
 
@@ -101,7 +124,7 @@ div {
 
 ## 切图
 
-> PS 				切图
+> PS 			切图
 >
 > 像素大师		测量
 
@@ -212,7 +235,7 @@ div {
 
 ## 画三角形
 
-> ![image-20221001015459935](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015459935.png)
+> <img src="http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015459935.png" alt="image-20221001015459935" style="zoom:50%;" />
 >
 > ```css
 > div{
@@ -227,7 +250,7 @@ div {
 >
 > 但是如果只保留其中一个的话 要用transparent(透明)
 >
-> ![image-20221001015517762](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015517762.png)
+> <img src="http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015517762.png" alt="image-20221001015517762" style="zoom:50%;" />
 >
 > ```css
 > div{
@@ -398,7 +421,7 @@ console.log(hasOwnProperty("toString"));   //false
 >
 > 四舍五入 Math.round(2.4);  //2
 >
-> ​								   2.5   //3
+> ​				   2.5   //3
 
 ### 短路运算
 
@@ -603,7 +626,21 @@ console.log(arr);   //输出结果为 [9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 ### 二维数组
 
-> ![image-20221001015548966](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015548966.png)
+```js
+var students = [
+    ["小明", 99],
+    ["小红", 100],
+    ["小美", 98],
+    ["小刚", 96],
+    ["小智", 9],
+];
+
+for(var i = 0; i < students.length; i++){
+    for (var j = 0; j < students[i].length; j++){
+        students[i][j];
+    }
+}
+```
 
 ### 引用数据类型
 
@@ -670,13 +707,25 @@ console.log(aaa);    //3
 
 ### sort方法
 
-![image-20221001015602770](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015602770.png)
+```js
+var arr = [33, 22, 55, 11];
+arr.sort(function(a, b){
+    return b - a;
+});
+console.log(arr);
+```
 
 > 要换位置就返回负数 不换就返回正数
 
 ### 注释
 
-![image-20221001015608041](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015608041.png)
+```js
+/**
+* 计算阶乘
+* @param {Number} number 数字
+* @returns {Number} result 数字的阶乘
+*/
+```
 
 ### 递归
 
@@ -692,25 +741,45 @@ console.log(aaa);    //3
 >
 > 无限递归会让内存溢出
 
-### 局部变量：函数里的变量 函数外不能用
+### 变量
 
-### 全局变量 ：函数外的变量 函数里可以用 哪都可以
-
-### 遮蔽效应
-
-> 函数外定义一个变量 函数里面也定义一个变量 但是他们两个重名了 
+> 局部变量 ：函数里的变量 函数外不能用
 >
-> ![image-20221001015613501](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015613501.png)
->
-> 作用域问题 函数里面的a是局部变量 不会影响到外面的全局变量
+> 全局变量 ：函数外的变量 函数里可以用 哪都可以
 
 ### 变量声明提升
 
 > 只会提升到当前作用域的最前面
 
-![image-20221001015647779](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015647779.png)
+### 遮蔽效应
 
-> 上例用到了变量声明提升和遮蔽效应
+> 函数外定义一个变量 函数里面也定义一个变量 但是他们两个重名了 
+>
+> ```js
+> var a = 10;
+> function fun() {
+>     var a = 5;
+>     a++;
+>     console.log(a);  // 6
+> }
+> fun();
+> console.log(a);  // 10
+> ```
+>
+> 作用域问题 函数里面的a是局部变量 不会影响到外面的全局变量
+
+```js
+// 例中用到了变量声明提升和遮蔽效应
+
+var a = 10;
+function fun() {
+    a++;
+    var a = 5;
+    console.log(a);  // 5
+}
+fun();
+console.log(a);  // 10
+```
 
 ### 嵌套函数
 
@@ -732,7 +801,17 @@ console.log(aaa);    //3
 
 ### 闭包
 
-![image-20221001015656448](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015656448.png)
+```js
+function fun(){
+    var name = "JavaScript";
+    function innerFun(){
+        console.log(name);
+    }
+    return innerFun;
+}
+var inn = fun();
+inn();
+```
 
 > 内部函数被移动到外部执行了
 >
@@ -740,9 +819,25 @@ console.log(aaa);    //3
 >
 > 每次创建函数时都会创建闭包
 
-![image-20221001015701649](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015701649.png)
-
-![image-20221001015707492](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015707492.png)
+```js
+var temp = 37.2;
+// makeFun 针对不同小区，生成不同的检测方法
+function makeFun(checkLine){
+    return function(temp){
+        if (temp > checkLine){
+            console.log("体温过高，新冠警告");
+        } else {
+            console.log("体温正常");
+        }
+    };
+}
+// 针对不同小区生成独有的检测方法
+var checkA = makeFun(37.1);
+var checkB = makeFun(37.3);
+// 测体温
+checkA(temp);
+checkB(temp);
+```
 
 ### 闭包面试题
 
@@ -751,8 +846,6 @@ console.log(aaa);    //3
 ### 立即执行函数
 
 > 函数和调用是写在一起的
->
-> > 
 >
 > ![image-20221001015722199](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015722199.png)
 >
@@ -764,7 +857,7 @@ console.log(aaa);    //3
 >
 > ![image-20221001015733720](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015733720.png)
 
-> 用到立即执行函数就不会出现割裂的情况
+> 用到立即执行函数就不会出现割裂的情况 在var的区域全是var
 >
 > ![image-20221001015738615](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015738615.png)
 >
