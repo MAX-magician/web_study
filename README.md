@@ -156,7 +156,7 @@ div {
 
 ## 防止父元素塌陷 float时
 
-> 清楚浮动
+> 清除浮动
 >
 > ​		高度直接写死  --  代码量少 但是有兼容性问题
 >
@@ -164,9 +164,8 @@ div {
 >
 > ​		伪元素  -- 仅用css 只支持ie8+
 >
-> ​		触发bfc -- css 但是使用overflow时要注意
+> ​		触发bfc -- css 但是使用overflow时要注意   hidden auto 
 >
-> ​			hidden auto 
 
 ```html
 <!-- 第二种 添加新元素 -->
@@ -841,35 +840,88 @@ checkB(temp);
 
 ### 闭包面试题
 
-![image-20221001015717102](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015717102.png)
+```js
+function addCount(){
+    var count = 0;
+    return function(){
+        count++;
+        console.log(count);
+    };
+}
+var fun1 = addCount();
+var fun2 = addCount();
+fun1();  // 1
+fun2();  // 1
+fun2();  // 2
+fun1();  // 2
+// 例子中fun1和fun2的count用的不是同一个
+```
 
 ### 立即执行函数
 
 > 函数和调用是写在一起的
 >
-> ![image-20221001015722199](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015722199.png)
->
-> ![image-20221001015727716](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015727716.png)
+> ```js
+> (function hello(){
+>  console.log("hello world");
+> })()
+> /*
+> (function(){
+>  console.log("hello world");
+> })()
+> */
+> ```
 >
 > 此时 名字已经不重要了 
 >
 > 要用小括号括起来 或者写个加号或者减号
 >
-> ![image-20221001015733720](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015733720.png)
-
+> ```js
+> -function(){
+>  console.log("hello world");
+> }()
+> ```
+>
 > 用到立即执行函数就不会出现割裂的情况 在var的区域全是var
 >
-> ![image-20221001015738615](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015738615.png)
+> ```js
+> var age = 12;
+> var sex = "男"；
+> var title = (function(){
+>     if(age < 18){
+>         return "小朋友";
+>     }else{
+>         if(sex == "男"){
+>             return "先生";
+>         }else{
+>             return "女士";
+>         }
+>     }
+> })();
+> var height = 175;
+> ```
 >
 > 将全局变量转换为局部变量
 >
 > ​		这种情况是不对的
 >
-> ​		他推进去的是console.log(i); arr[]()是在for循环结束后执行的 所以 此时i=5 所以输出的全是5
+> ​		他推进去的是console.log(i); `arr[]()`是在for循环结束后执行的 所以 此时i=5 所以输出的全是5
 >
 > ​		此时的i是全局变量
 >
-> ![image-20221001015744889](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015744889.png)
+> ```js
+> var arr = [];
+> for(var i = 0; i < 5; i++){
+>     arr.push(function(){
+>         console.log(i);
+>     });
+> }
+> arr[0]();  // 5
+> arr[1]();  // 5
+> arr[2]();  // 5
+> arr[3]();  // 5
+> arr[4]();  // 5
+> ```
 >
 > ​		这样可以转换
 >
@@ -877,7 +929,21 @@ checkB(temp);
 >
 > ​		此时j是局部变量
 >
-> ![image-20221001015749231](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015749231.png)
+> ```js
+> var arr = [];
+> for(var i = 0; i < 5; i++){
+>     (function(j){
+>         arr.push(function(){
+>         	console.log(j);
+>     	});
+>     })(i);
+> }
+> arr[0]();  // 0
+> arr[1]();  // 1
+> arr[2]();  // 2
+> arr[3]();  // 3
+> arr[4]();  // 4
+> ```
 
 ## DOM
 
@@ -950,7 +1016,16 @@ checkB(temp);
 
 ### 非标准属性获取
 
-> ![image-20221001015809068](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015809068.png)
+```html
+<body>
+    <div hello="maBox"></div>
+</body>
+<script>
+    var box = documnet.querySelector("div");
+    console.log(box.getAttribute("hello"));  // 获取非标属性的值
+    box.setAttribute("hello", "yourBox");  // 设置非标属性的值
+</script>
+```
 
 ### 节点的创建移除和克隆
 
@@ -960,13 +1035,24 @@ checkB(temp);
 
 > e.target 谁冒泡出来 就是谁
 >
-> # addEventListener() 方法
+> addEventListener() 方法
 
 ## This
 
 ### 总览
 
-![image-20221001015821010](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001015821010.png)
+|          规则          |         上下文         |
+| :--------------------: | :--------------------: |
+|     `对象。函数()`     |          对象          |
+|        `函数()`        |         window         |
+|     `数组[下标]()`     |          数组          |
+| IIFE`(function(){})()` |         window         |
+|     定时器，延时器     |         window         |
+|    DOM事件处理函数     |     绑定的DOM元素      |
+|      call，apply       |         自定义         |
+|    用`new`调用函数     | 秘密创建出来的空白对象 |
+
+
 
 ### 立即执行函数里面的this是window
 
