@@ -38,35 +38,8 @@ body {
 	color: #424242;
 	margin: 0 4px;
 }
-.userinfo,
-.cart {
+.userinfo{
 	float: right;
-}
-.cart {
-	width: 120px;
-	background-color: #424242;
-	height: 40px;
-	/* 垂直居中 */
-	line-height: 40px;
-	/* 水平居中 */
-	text-align: center;
-	font-size: 12px;
-	color: #b0b0b0;
-	margin-left: 24px;
-}
-.cart a {
-	color: #b0b0b0;
-	display: block;
-}
-.cart a:hover {
-	color: #ff6700;
-	background-color: #fff;
-}
-.cart a:hover div.cart-list {
-	display: block;
-	background-color: #fff;
-	color: #424242;
-	z-index: 100;
 }
 .left-nav a.download-app {
 	position: relative;
@@ -85,11 +58,14 @@ body {
 	left: 50%;
 	margin-left: -8px;
 	/* 默认隐藏 */
-	display: none;
+	opacity: 0;
+	z-index: -10000;
 }
 .left-nav div.download {
 	width: 124px;
-	height: 148px;
+	/* height: 148px; */
+	height: 0;
+	overflow: hidden;
 	position: absolute;
 	/* 水平居中 */
 	left: 50%;
@@ -105,15 +81,20 @@ body {
 	/* 阴影 */
 	box-shadow: 0 1px 5px #aaa;
 	/* 默认隐藏 */
-	display: none;
+	opacity: 0;
 	/* 设置背景色为白色, 防止下面的文字显示出来 */
 	background-color: #fff;
-	z-index: 20;
+	z-index: -10000;
+	transition: all 0.3s ease;
 }
 .left-nav a.download-app:hover::before,
 .left-nav a.download-app:hover div.download {
 	/* 鼠标移入显示 */
-	display: block;
+	opacity: 1;
+	z-index: 10000;
+}
+.left-nav a.download-app:hover div.download {
+	height: 148px;
 }
 .left-nav div.download img {
 	width: 90px;
@@ -121,18 +102,49 @@ body {
 	/* 把文字挤下来 */
 	margin-bottom: 12px;
 }
-div.cart {
+.cart {
 	position: relative;
+	float: right;
+	width: 120px;
+	background-color: #424242;
+	height: 40px;
+	/* 垂直居中 */
+	line-height: 40px;
+	/* 水平居中 */
+	text-align: center;
+	font-size: 12px;
+	color: #b0b0b0;
+	margin-left: 24px;
+}
+.cart a {
+	color: #b0b0b0;
+	display: block;
+	transition: all 0.2s linear 0.1s;
 }
 div.cart div.cart-list {
 	z-index: -10;
 	width: 316px;
-	height: 100px;
+	/* height: 100px; */
+	height: 0;
+	overflow: hidden;
 	position: absolute;
 	right: 0px;
 	line-height: 100px;
 	box-shadow: 0 10px 10px rgb(0 0 0 / 15%);
-	display: none;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+.cart a:hover {
+	color: #ff6700;
+	background-color: #fff;
+	transition: none;
+}
+.cart a:hover div.cart-list {
+	height: 100px;
+	opacity: 1;
+	z-index: 100;
+	background-color: #fff;
+	color: #424242;
 }
 /* 白色导航 */
 .white-nav {
@@ -195,6 +207,7 @@ div.cart div.cart-list {
 	border: 1px solid #e0e0e0;
 	padding: 0 10px;
 	float: left;
+	transition: all 0.3s ease;
 }
 .white-nav div.search form {
 	height: 50px;
@@ -215,6 +228,7 @@ div.cart div.cart-list {
 	border: 1px solid #e0e0e0;
 	float: left;
 	margin-left: -1px;
+	transition: all 0.3s ease;
 }
 .white-nav div.search form input.search-button:hover {
 	/* 背景色变成橙色 */
@@ -225,7 +239,7 @@ div.cart div.cart-list {
 	border: 1px solid #ff6700;
 }
 /* 如果input框聚焦, 让旁边的keywords-list显示 */
-.white-nav div.search form:hover input.search-content:focus + div.keywords-list {
+.white-nav div.search form input.search-content:focus + div.keywords-list {
 	display: block;
 }
 /* 如果input框聚焦, 让自身, 以及旁边的搜索按钮边框变色 */
@@ -601,6 +615,7 @@ div.side-toolbar a div.iconfont {
 div.wx-code {
 	width: 130px;
 	height: 192px;
+	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.2);
 	position: absolute;
 	top: 0;
