@@ -1288,6 +1288,10 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 >
 > ctrl + shift + P   输入 cheat 打开
 
+### 目录
+
+> ![image-20221010215543009](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221010215543009.png)
+
 ### flex-direction
 
 > 功能 ： 设置主轴方向
@@ -1327,3 +1331,79 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 > ![image-20221001020013984](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001020013984.png)
 >
 > <img src="http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221001020019426.png" alt="image-20221001020019426" style="zoom:67%;" />
+
+### order属性
+
+> 在子元素上使用 order的数值越小 他就越靠前 越大越靠后
+>
+> 默认都是0 如果其他的没设置 有一个设置1也是最大的
+
+### flex-grow属性
+
+> 默认是0  放大
+>
+> ![image-20221010212338420](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221010212338420.png)
+
+### flex-shrink属性
+
+> 默认是1  缩小
+>
+> ![image-20221010212813889](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221010212813889.png)
+
+### flex-basis属性
+
+> 分配主轴空间
+>
+> 有冲突 在某些情况下与 min-width max-width
+>
+> ![image-20221010213429791](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221010213429791.png)
+
+### flex属性
+
+> 缩写
+>
+> ![image-20221010213647476](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221010213647476.png)
+
+### align-self属性
+
+> 单独设置其中的子项 可覆盖align-items 默认是auto表示继承
+>
+> ![image-20221010213950056](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221010213950056.png)
+
+## rem vw 布局
+
+### rem方案
+
+> 根据html字体大小来进行计算
+>
+> ```js
+> // 此时html的字体大小是10px div宽度要设置的是750px -> 75rem
+> // 页面加载完执行
+> window.onload = xx;
+> // 监控窗口大小是否发生改变
+> window.onresize = xx;
+> // 设置html字体大小的方法
+> function xx(){
+>     // 获取屏幕宽度
+>     var clientWidth = document.documentElement.clientWidth; // window.innerWidth;
+>     // 根据屏幕宽度计算html字体大小
+>     var htmlFontSize = clientWidth / 75 + "px";
+>     // 设置html字体大小
+>     // HTML标签 document.documentElement
+>     document.documentElement.style.fontSize = htmlFontSize;
+> }
+> ```
+
+### rem+vw方案
+
+```html
+<style>
+    html{
+        font-size: 1.3333vw;
+    }
+    div{
+        width:75rem;
+    }
+</style>
+```
+

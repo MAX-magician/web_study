@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      header,
+      .main,
+      .left,
+      .right,
+      footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      header{
+        height: 50px;
+        background-color: red;
+      }
+      .con{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+      }
+      .main{
+        flex-grow: 1;
+        background-color: #999;
+      }
+      .left{
+        order: -1;
+        width: 150px;
+        background-color: lightgreen;
+      }
+      .right{
+        width: 150px;
+        background-color: lightblue;
+      }
+      footer{
+        height: 50px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header><span>头部</span></header>
+    <div class="con">
+      <div class="main"><span>主体部分</span></div>
+      <div class="left"><span>导航</span></div>
+      <div class="right"><span>侧栏</span></div>
+    </div>
+    <footer><span>底部</span></footer>
+  </body>
+</html>
