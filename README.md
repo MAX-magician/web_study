@@ -1407,3 +1407,58 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 </style>
 ```
 
+## 响应式布局
+
+### media
+
+> ![image-20221012213805578](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012213805578.png)
+>
+> 不写就是all 不写的话 就不用写and
+
+### 媒体查询中的逻辑
+
+> 与 `and`
+>
+> 或 `,`
+>
+> 非 `not`
+>
+> ![image-20221012214059735](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012214059735.png)
+
+### 媒体特性
+
+> ![image-20221012215727552](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012215727552.png)
+>
+> width 这样写的时候是完全等于这个值的时候才生效
+>
+> DPR 屏幕像素比 超过2是高清屏
+>
+> ![image-20221012215951803](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012215951803.png)
+>
+> 屏幕方向 用法 orientation：`landscape` || `portrait`
+>
+> ![image-20221012220335486](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012220335486.png)
+
+### 断点的设置
+
+> ![image-20221012220516551](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012220516551.png)
+>
+> ![image-20221012220616827](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012220616827.png)
+
+### 媒体查询的书写位置
+
+> ![image-20221012220840245](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012220840245.png)
+>
+> ![image-20221012220822184](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012220822184.png)
+>
+> 第二种浏览器会全部引入 和之前直接全写了一样
+
+### 媒体查询策略
+
+> 无策略
+>
+> pc端优先
+>
+> 移动端优先
+>
+> ​		有优先的就可以只考虑触发的最小或最大条件 其他的靠覆盖
