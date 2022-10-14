@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        width: 75rem;
+        height: 12.6rem;
+        background-color: red;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .s {
+        order: -1;
+        width: 6.4rem;
+        height: 6.4rem;
+      }
+      .i {
+        display: flex;
+        width: 53rem;
+        height: 8rem;
+        border-radius: 3.5rem;
+        background-color: #fff;
+        align-items: center;
+      }
+      .f {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 2rem;
+      }
+      .inp {
+        flex-grow: 1;
+        height: 100%;
+        margin-left: 2rem;
+        border-top-right-radius: 3.5rem;
+        border-bottom-right-radius: 3.5rem;
+        font-size: 2.6rem;
+        border: none;
+        outline: none;
+      }
+      .x {
+        width: 6.4rem;
+        height: 6.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="i">
+        <img
+          src="https://markdown-1253389072.cos.ap-nanjing.myqcloud.com/202112101716142.png"
+          alt=""
+          class="f"
+        />
+        <input type="text" class="inp" placeholder="开学季有礼，好货5折起" />
+      </div>
+      <img
+        src="https://markdown-1253389072.cos.ap-nanjing.myqcloud.com/202112101716240.png"
+        alt=""
+        class="s"
+      />
+      <img
+        src="https://markdown-1253389072.cos.ap-nanjing.myqcloud.com/202112101716927.png"
+        alt=""
+        class="x"
+      />
+    </header>
+    <script>
+      // 此时html的字体大小是10px div宽度要设置的是750px -> 75rem
+      // 页面加载完执行
+      window.onload = xx;
+      // 监控窗口大小是否发生改变
+      window.onresize = xx;
+      // 设置html字体大小的方法
+      function xx() {
+        // 获取屏幕宽度
+        var clientWidth = document.documentElement.clientWidth; // window.innerWidth;
+        // 根据屏幕宽度计算html字体大小
+        var htmlFontSize = clientWidth / 75 + "px";
+        // 设置html字体大小
+        // HTML标签 document.documentElement
+        document.documentElement.style.fontSize = htmlFontSize;
+      }
+    </script>
+  </body>
+</html>

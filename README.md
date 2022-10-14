@@ -1368,7 +1368,19 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 > 单独设置其中的子项 可覆盖align-items 默认是auto表示继承
 >
-> ![image-20221010213950056](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221010213950056.png)
+> 该属性可以会取一下6个中一个值
+>
+> ​	`stretch`：默认值 占满整个容器的高度
+>
+> ​	`auto`：占满整个容器的高度
+>
+> ​	`flex-start`：交叉轴的起点对齐
+>
+> ​	`flex-end`：交叉轴的终点对齐
+>
+> ​	`center`：交叉轴的中点对齐
+>
+> ​	`baseline`：项目的第一行文字基线对齐
 
 ## rem vw 布局
 
@@ -1411,9 +1423,15 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 ### media
 
-> ![image-20221012213805578](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221012213805578.png)
+> 一、all	-> 所有设备 默认值
 >
-> 不写就是all 不写的话 就不用写and
+> 二、screen -> 屏幕设备
+>
+> 三、print  -> 打印设备
+>
+> 四、speech -> 屏幕阅读器
+>
+> `不写就是all 不写的话 就不用写and`
 
 ### 媒体查询中的逻辑
 
