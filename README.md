@@ -1480,3 +1480,152 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 > 移动端优先
 >
 > ​		有优先的就可以只考虑触发的最小或最大条件 其他的靠覆盖
+
+## grid布局
+
+### 提醒
+
+> 项目和单元格并不一直是一致的 只有拉伸的时候才一样
+
+### grid-template-rows/grid-template-columns
+
+>fr px % auto
+>
+>auto 和fr同时出现时 会先计算auto分配最小的空间 剩下的给fr
+
+### 定义线的名字
+
+> grid-template-rows: [r1] 1fr [r2] 150px [r3] 20% [r4];
+
+### repeat
+
+> 重复设置多少次
+>
+> ​	repeat(3, 1fr);
+>
+> ​	repeat(4, 25%);
+>
+> auto-fill
+>
+> ​	设定好数值 多少个自动填充
+>
+> ​	repeat(auto-fill, 150px);
+
+### minmax(min,max)
+
+> 设置最大值和最小值
+>
+> grid-template-rows: 1fr minmax(150px, 400px) 1fr;
+
+### grid-auto-flow
+
+> 排列方式
+>
+> row 默认值 先放满第一行再第二行
+>
+> column 先排第一列再排第二列
+>
+> row dense/column dense 慎用
+
+### grid-auto-rows/grid-auto-columns
+
+> 自动创建多出来的项目怎么办 要和上一个配合
+
+### gap
+
+> 设置间隔
+>
+> row-gap  横着间隔
+>
+> column-gap  竖着间隔
+>
+> gap  连写
+
+### grid-template-areas
+
+#### 画地
+
+> 不需要的区域用`.`占位置
+>
+> ![image-20221014214125212](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221014214125212.png)
+>
+> 上例类似于圣杯布局
+>
+> 画完地之后 网格线会自动命名 xxxx-start xxxx-end 可以通过名字找到线
+>
+> ![image-20221014214415097](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221014214415097.png)
+
+#### 分地
+
+> ![image-20221014214534217](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221014214534217.png)
+
+### 位置
+
+> 项目的位置
+>
+> 水平  justify-items
+>
+> 垂直  align-items
+>
+> 连写  place-items  写两个值 只写一个认为第二个和第一个同
+>
+> 值    start end center stretch(默认值)
+
+> 内容区在容器中的位置
+>
+> 水平  justify-content
+>
+> 垂直  align-content
+>
+> 连写  place-content: [align-content] [justify-content]   只写一个和两个相同
+>
+> 值    和flex差不多 查查
+
+### grid-template
+
+> 是属性的简写
+>
+> ![image-20221014215713287](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221014215713287.png)
+
+------
+
+#### grid-column-start,grid-column-end,grid-row-start,grid-row-end
+
+> ![image-20221014220543190](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221014220543190.png)
+>
+> 代码里面 这五种抽一种写就行
+>
+> ​	线号 | 线名 | 跨线数 | 跨线名 | 自动
+>
+> ​		线名 name 可以是之前给线起的名字 也可以用区域的名字
+>
+> ​		跨线数 直接写个start就行 跨几个
+>
+> ​		span跨越 要跨越 不是刚到
+>
+> `设置不好可能会重叠 到时用z-index来确定谁的优先级高`
+
+### grid-column,grid-row
+
+> 上例的简写
+>
+> ​	grid-column: 1 / span 2;  //从1开始 跨2个结束
+>
+> ​	不写第二个的话 默认是grid-column: 1 / span 1;
+
+### grid-area
+
+> 查查怎么用
+
+### justify-self,align-self,place-self
+
+> 作用于单个
+>
+> ​	作用和flex类似
+>
+> ​	值和justify-items之类同
+
+## 总结
+
+> ![image-20221014222531313](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221014222531313.png)
+

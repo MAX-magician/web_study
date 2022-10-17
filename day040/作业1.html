@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+			div {
+				width: 600px;
+				height: 600px;
+				/* 在此填写代码 */
+                display: grid;
+                grid-template-columns: 3fr 2fr 1fr;
+                grid-template-rows: 1fr 2fr 3fr;
+			}
+			p {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			p:nth-child(1) {
+				background-color: red;
+			}
+
+			p:nth-child(2) {
+				background-color: orange;
+			}
+
+			p:nth-child(3) {
+				background-color: yellow;
+			}
+
+			p:nth-child(4) {
+				background-color: green;
+			}
+
+			p:nth-child(5) {
+				background-color: cyan;
+			}
+
+			p:nth-child(6) {
+				background-color: blue;
+			}
+
+			p:nth-child(7) {
+				background-color: blueviolet;
+			}
+
+			p:nth-child(8) {
+				background-color: pink;
+			}
+
+			p:nth-child(9) {
+				background-color: tan;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p>1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+			<p>6</p>
+			<p>7</p>
+			<p>8</p>
+			<p>9</p>
+		</div>
+	</body>
+</html>

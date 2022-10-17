@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+
+			div {
+				display: grid;
+				grid-template-rows: 150px 150px 150px;
+				grid-template-columns: 150px 150px 150px;
+			}
+
+			p {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			p:nth-child(1) {
+				background-color: red;
+				/* 在此补充代码 */
+                grid-column: 1 / span 2;
+			}
+
+			p:nth-child(2) {
+				background-color: orange;
+				/* 在此补充代码 */
+                grid-column: 3;
+                grid-row: 1 / span 2;
+			}
+
+			p:nth-child(3) {
+				background-color: yellow;
+				/* 在此补充代码 */
+                grid-row: 3;
+                grid-column: 2 / span 2;
+			}
+
+			p:nth-child(4) {
+				background-color: green;
+				/* 在此补充代码 */
+                grid-row: 2 / span 2;
+			}
+
+			p:nth-child(5) {
+				background-color: cyan;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p>1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+		</div>
+	</body>
+</html>

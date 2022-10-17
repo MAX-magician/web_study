@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-columns: 150px 1fr 150px;
+            font-weight: bold;
+        }
+        .aa1{
+            display: grid;
+            background-color: red;
+            grid-column: 1 / span 3;
+            place-items: center;
+        }
+        .aa2{
+            display: grid;
+            background-color: green;
+            place-items: center;
+        }
+        .aa3{
+            display: grid;
+            background-color: darkgrey;
+            place-items: center;
+        }
+        .aa4{
+            display: grid;
+            background-color: lightblue;
+            place-items: center;
+        }
+        .aa5{
+            display: grid;
+            background-color: yellow;
+            grid-column: 1 / span 3;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="aa1"><span>头部</span></div>
+        <div class="aa2"><span>导航</span></div>
+        <div class="aa3"><span>主体部分</span></div>
+        <div class="aa4"><span>侧边栏</span></div>
+        <div class="aa5"><span>底部</span></div>
+    </div>
+</body>
+</html>
