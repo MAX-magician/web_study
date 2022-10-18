@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 0.2666vw;
+}
+body{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+/* 头部开始 */
+header{
+    height: 65rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr auto;
+    place-items: center;
+}
+.header_title{
+    margin-left: 27rem;
+    font-size: 28rem;
+}
+header .header_menu{
+    grid-column: 3;
+    color: rgb(174, 174, 178);
+    font-size: 24rem;
+    margin-right: 27rem;
+}
+/* 头部结束 */
+/* 尾部开始 */
+footer{
+    position: relative;
+    height: 95rem;
+}
+.lines{
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 55rem;
+    background-color: #fff;
+    box-shadow: 0 -5rem 15rem #ddd;
+}
+.footer_menu{
+    display: flex;
+    height: 95rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.footers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80rem;
+    height: 45rem;
+    color: rgb(174, 174, 178);
+    transition: all 0.5s ease;
+}
+.footer_menu .logo{
+    font-size: 20rem;
+}
+.footer_menu .text{
+    font-size: 14rem;
+}
+footer .footer_menu .selected {
+    height: 95rem;
+    border-top-left-radius: 40rem;
+    border-top-right-radius: 40rem;
+    background-color: #fff;
+    border-top: 3rem solid #ddd9;
+}
+.selected .footer_selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    margin-top: 14rem;
+    background-color: rgb(85, 77, 132);
+}
+.selected .logo{
+    font-size: 35rem;
+    color: #fff;
+}
+.selected .text{
+    color: rgb(85, 77, 132);
+    font-weight: bold;
+}
+.footers .text{
+    margin-bottom: 5rem;
+}
+/* 尾部结束 */
+/* 主体开始 */
+.main{
+    display: grid;
+    gap: 12rem 12rem;
+    font-size: 20rem;
+    grid-template-rows: repeat(8, 1fr) 5rem;
+    grid-template-columns: 15rem repeat(5, 1fr) 15rem;
+}
+.main > div{
+    display: grid;
+    border-radius: 12rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 14rem;
+}
+.main > div:nth-of-type(1){
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 2;
+    background-color: #fa878a;
+    font-size: 18rem;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+}
+.main > div:nth-of-type(1) .logo{
+    font-size: 75rem;
+    color: #fff5;
+}
+.main > div:nth-of-type(2){
+    grid-row: 1;
+    grid-column: 4 / span 3;
+    font-size: 15rem;
+    background-color: #fbbcb3;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    place-items: center end;
+}
+.main > div:nth-of-type(2) .names{
+    grid-row: 1;
+    grid-column: 1;
+}
+.main > div:nth-of-type(2) .logo{
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 20rem;
+    color: #fff5;
+}
+.main > div:nth-of-type(3){
+    grid-row: 2 / span 2;
+    grid-column: 4 / span 3;
+    background-color: #ffd506;
+    font-size: 20rem;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    place-items: end;
+}
+.main > div:nth-of-type(3) .names{
+    grid-row: 1;
+    grid-column: 1;
+}
+.main > div:nth-of-type(3) .logo{
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 55rem;
+    color: #fff5;
+}
+.main > div:nth-of-type(4){
+    grid-row: 4 / span 2;
+    grid-column: 2 / span 5;
+    background-color: #49b2f0;
+    font-size: 24rem;
+    place-items: end start;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 20rem auto;
+}
+.main > div:nth-of-type(4) .names{
+    grid-row: 1;
+    grid-column: 3;
+}
+.main > div:nth-of-type(4) .logo{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    font-size: 80rem;
+    color: #fff5;
+}
+.main > div:nth-of-type(5){
+    grid-row: 6 / span 3;
+    grid-column: 2 / span 3;
+    background-color: #8ce1dc;
+    font-size: 18rem;
+    place-items: start end;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto 25rem 1fr;
+}
+.main > div:nth-of-type(5) .names{
+    grid-row: 2;
+    grid-column: 1 /span 2;
+    margin: 6rem;
+}
+.main > div:nth-of-type(5) .logo{
+    grid-row: 1;
+    grid-column: 2 / span 2;
+    font-size: 100rem;
+    color: #fff5;
+}
+.main > div:nth-of-type(6){
+    grid-row: 6 / span 2;
+    grid-column: 5 / span 2;
+    background-color: #cbc0fa;
+    font-size: 18rem;
+    place-items: start end;
+    grid-template-rows: 1fr 10rem auto;
+    grid-template-columns: auto 15rem 1fr;
+}
+.main > div:nth-of-type(6) .names{
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+.main > div:nth-of-type(6) .logo{
+    grid-row: 1;
+    grid-column: 2 / span 2;
+    font-size: 50rem;
+    color: #fff5;
+}
+.main > div:nth-of-type(7){
+    grid-row: 8;
+    grid-column: 5 / span 2;
+    background-color: #d7a9de;
+    font-size: 15rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    place-items: center end;
+}
+.main > div:nth-of-type(7) .names{
+    grid-row: 1;
+    grid-column: 1;
+}
+.main > div:nth-of-type(7) .logo{
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 20rem;
+    color: #fff5;
+}
+/* 主体结束 */
