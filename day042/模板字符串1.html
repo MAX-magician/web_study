@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 50px 0 0 300px;
+        font-size: 22px;
+      }
+      ul {
+        padding: 0;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>学生信息表</p>
+    <ul id="list">
+      <li style="list-style: none">信息加载中……</li>
+    </ul>
+    <script>
+      var x = [
+        {
+          username: "XiaoMing",
+          age: 18,
+          sex: "male",
+        },
+        {
+          username: "ZhangSan",
+          age: 28,
+          sex: "male",
+        },
+        {
+          username: "Lucy",
+          age: 20,
+          sex: "female",
+        },
+      ];
+      var li = document.querySelector("li");
+      li.style.display = "none";
+      for (let i = 0; i < x.length; i++) {
+        let y = document.createElement("li");
+        let { username: aa, sex: bb, age: cc } = x[i];
+        y.innerHTML = `我叫${aa}，性别${
+          bb === "male" ? "男" : "女"
+        }，今年${cc}岁。`;
+        list.appendChild(y);
+      }
+    </script>
+  </body>
+</html>

@@ -320,6 +320,12 @@ console.log(hasOwnProperty("toString"));   //false
 
 > 可以进行输入 和alert类似 但不相同 点击确定返回string 点击取消返回null
 
+### 关键词转数字
+
+> 在前面加"+"
+>
+> console.log(+null);  //0
+
 ## 字符处理 小括号表明他是一个方法
 
 ### 判断是不是NaN
@@ -1629,3 +1635,230 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 
 > ![image-20221014222531313](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221014222531313.png)
 
+# ES6
+
+## 箭头函数
+
+### 样式
+
+> ![image-20221019210218099](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019210218099.png)
+>
+> ![image-20221019210315790](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019210315790.png)
+
+### 箭头函数的简化
+
+> 只有一个参数的情况下可以这样
+>
+> ![image-20221019210447088](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019210447088.png)
+>
+> 但是没有参数或者多个参数是不可以省略小括号的
+>
+> 只有一行且内容是return的话 可以简化为
+>
+> ![image-20221019210549269](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019210549269.png)
+>
+> 如果要返回一个对象 需要用小括号包裹
+>
+> ![image-20221019210854527](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019210854527.png)
+
+### this
+
+> 复习函数中的this
+>
+> ![image-20221019211032159](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019211032159.png)
+>
+> 箭头函数的不同
+>
+> ​	箭头函数没有自己对策this和arguments，箭头函数的this是父级的this。
+>
+> ![image-20221019211327362](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019211327362.png)
+
+### 不适合用箭头函数的
+
+> 1.构造函数 会报错 用了箭头函数无法形成构造函数
+>
+> 2.对象中的函数不能用箭头函数 this指向出问题
+>
+> 3.使用arguments是不能使用箭头函数的 会出现arguments is not defined
+
+## ☆数组的解构赋值
+
+### 写法
+
+> ![image-20221019213025703](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213025703.png)
+>
+> 再简化
+>
+> ![image-20221019213036571](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213036571.png)
+>
+> 把对应的值给变量
+>
+> ![image-20221019213150395](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213150395.png)
+
+### 注意事项
+
+> 模式 结构匹配
+>
+> 索引值相同
+>
+> 不想取的要占个坑
+>
+> ![image-20221019213314027](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213314027.png)
+
+### 默认值
+
+> 条件是全等于undefined
+>
+> ![image-20221019213552856](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213552856.png)
+>
+> 打印 undefined undefined
+>
+> ![image-20221019213655434](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213655434.png)
+>
+> 打印 1 3
+>
+> null时
+>
+> ![image-20221019213728818](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213728818.png)
+>
+> 打印 1 null
+>
+> undefined
+>
+> ![image-20221019213756763](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019213756763.png)
+>
+> 打印 1 3
+>
+> ![image-20221019214130045](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019214130045.png)
+>
+> 这种情况下不会运行demo（）  惰性赋值
+
+### 传值
+
+> ![image-20221019214549607](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019214549607.png)
+
+### 换位置
+
+> ![image-20221019215009256](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019215009256.png)
+
+## 对象的解构赋值
+
+### 写法
+
+> ![image-20221019215253102](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019215253102.png)
+>
+> 这个情况下和顺序无关
+>
+> ![image-20221019215346324](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019215346324.png)
+>
+> 再简化 属性名和属性值一样 可以简写
+>
+> ![image-20221019215549667](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019215549667.png)
+
+### 默认值问题
+
+> 全等undefined是触发 支持表达式 惰性赋值
+>
+> ![image-20221019215735217](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019215735217.png)
+
+### 支持别名
+
+> 和第一个同 就是把值赋值给好写的变量
+
+### 已经声明的对象
+
+> ![image-20221019220307682](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019220307682.png)
+
+### 可以获取继承的属性
+
+> ![image-20221019220629847](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019220629847.png)
+>
+> 是tostring的方法
+
+## 字符串的结构赋值
+
+### 写法
+
+> ![image-20221019220735112](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019220735112.png)
+>
+> 打印 h e l
+>
+> 以对象的方式解构
+>
+> ![image-20221019220824355](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019220824355.png)
+>
+> 打印 h e l 5
+
+## 对象声明的两种方式
+
+### 实例化构造函数 声明对象
+
+> ![image-20221019221044751](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019221044751.png)
+
+### 对象字面量
+
+> ![image-20221019221129562](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019221129562.png)
+
+## 简洁表示法
+
+### 属性
+
+> ![image-20221019221329172](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019221329172.png)
+>
+> 属性名和属性值一致可以简写
+
+### 方法
+
+> 传统
+>
+> ![image-20221019221524240](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019221524240.png)
+>
+> 简写
+>
+> ![image-20221019221544567](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019221544567.png)
+
+![image-20221019221749794](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019221749794.png)
+
+![image-20221019221837210](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019221837210.png)
+
+## 函数参数的默认值
+
+### 条件
+
+> 全等undefined
+>
+> 情况
+>
+> ![image-20221019222108847](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019222108847.png)
+>
+> 打印 1
+
+## 剩余参数和展开运算符
+
+### 剩余参数
+
+> ![image-20221019222413999](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019222413999.png)
+>
+> 打印 [4, 5, 6]
+>
+> 是一个正经数组 不和arguments那种类数组
+>
+> 不一定非用在函数上 数组 对象都可以用
+
+### 展开运算符
+
+> 和剩余参数很像 都用了`...`
+>
+> ![image-20221019222842489](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019222842489.png)
+>
+> 会将数组展开
+>
+> 打印 1 2 3 4 5 6 7 8
+>
+> 等同于
+>
+> ![image-20221019222922733](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019222922733.png)
+
+### 区别
+
+> ![image-20221019223235114](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019223235114.png)
