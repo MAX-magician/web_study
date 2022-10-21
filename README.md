@@ -326,6 +326,34 @@ console.log(hasOwnProperty("toString"));   //false
 >
 > console.log(+null);  //0
 
+### 深克隆
+
+> ```js
+> /**
+>  * 深克隆
+>  * @param {*} x 要克隆的数组或者对象
+>  * @returns 克隆结果
+>  */
+> function copy(x) {
+>   //根据传入的数据类型定义变量
+>   if (Array.isArray(x)) {
+>     var a = [];
+>   } else {
+>     var a = {};
+>   }
+>   //遍历
+>   for (var i in x) {
+>     //判断是不是对象
+>     if (typeof x[i] === "object") {
+>       a[i] = copy(x[i]);
+>     } else {
+>       a[i] = x[i];
+>     }
+>   }
+>   return a;
+> }
+> ```
+
 ## 字符处理 小括号表明他是一个方法
 
 ### 判断是不是NaN
@@ -1862,3 +1890,201 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 ### 区别
 
 > ![image-20221019223235114](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221019223235114.png)
+
+### 对象/数组的浅克隆
+
+> 新对象 = {...<原对象>};
+>
+> 新数组 = [...<原数组>];
+>
+> 只适用于浅克隆
+
+### 对象合并
+
+> ![image-20221021211758534](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021211758534.png)
+>
+> 在合并时 相同的属性 后面的会覆盖前面的 特有的会保留
+
+## set类型
+
+### 定义
+
+> 和数组很像
+>
+> 数组是有顺序的数据的集合 可以有重复的值
+>
+> set是没有顺序的数据的集合 没有重复的值
+
+### 用法
+
+> ![image-20221021212311431](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021212311431.png)
+>
+> //右打印结果
+> Set(4) { 4, 3, 2, 1 }
+
+### 链式操作
+
+> ![image-20221021212625488](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021212625488.png)
+>
+> set1和set2的打印结果同
+
+### has()方法
+
+> 判断set里面是否包含某个成员
+>
+> ![image-20221021213252073](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021213252073.png)
+
+### delete()方法
+
+> ![image-20221021213316153](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021213316153.png)
+>
+> 第九行删除2之后 就set里面就没有2了 11行就打印false
+
+### clear()方法
+
+> 全部清除
+>
+> ![image-20221021213435030](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021213435030.png)
+>
+> ![image-20221021213538432](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021213538432.png)
+
+### forEach()方法
+
+> 可以遍历set或者数组
+>
+> <数组/set>.forEach(方法);
+>
+> 方法可以用普通的 也可以用箭头函数 (value,index) => {console.log(value,index)}
+>
+> 但是 set 里面没有索引值
+>
+> ![image-20221021213931954](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021213931954.png)
+>
+> forEach里面的this指向的是Window
+
+### size获取set成员个数
+
+> ![image-20221021214707160](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021214707160.png)
+
+### 构造方法的参数
+
+> ![image-20221021214817108](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021214817108.png)
+>
+> 可以是 数组 字符串 arguments nodelist
+>
+> nodelist是 图片里面的pList
+>
+> ![image-20221021214945637](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021214945637.png)
+
+### set判断重复的标准
+
+> ![image-20221021215351458](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021215351458.png)
+
+### 浅克隆
+
+> ![image-20221021221831798](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021221831798.png)
+
+### 什么时候用set
+
+> ![image-20221021215546737](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021215546737.png)
+
+### 数组去重
+
+> ![image-20221021215749984](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021215749984.png)
+
+### 字符串去重
+
+> ![image-20221021215915927](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021215915927.png)
+
+### 操作dom元素
+
+> 黑色用的多 白色不多
+>
+> ![image-20221021220229587](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021220229587.png)
+>
+> ![image-20221021220239019](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021220239019.png)
+
+## Map类型
+
+### 写法
+
+> ![image-20221021220549978](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021220549978.png)
+
+### 与对象的区别
+
+> 还有number类型
+>
+> ![image-20221021220614098](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021220614098.png)
+>
+> ![image-20221021220721663](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021220721663.png)
+
+### 链式操作
+
+> 链式后 同一键名后面的会覆盖前面的
+
+### get()方法
+
+> ![image-20221021220900770](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021220900770.png)
+>
+> 通过键值获取值
+>
+> 获取不存在的键名 返回undefined
+
+### has()方法
+
+> 查询有没有某键名
+
+### delete()方法
+
+> 通过键名删除 如果没有输入的键名的话 也不会报错
+
+### clear()方法
+
+> 清楚所有
+
+### forEach()方法
+
+> ![image-20221021221333882](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021221333882.png)
+
+### Map可以接收的类型
+
+> 可以接收 二维数组 set 
+>
+> ![image-20221021221540095](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021221540095.png)
+>
+> ![image-20221021221552049](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021221552049.png)
+
+### 浅克隆
+
+> ![image-20221021221901413](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021221901413.png)
+
+### map中判断重复的标准
+
+> ![image-20221021222027216](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021222027216.png)
+
+### 什么时候用map
+
+> ![image-20221021222200924](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021222200924.png)
+
+## 遍历器与for...of循环
+
+### iterator解释
+
+> ![image-20221021222250979](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021222250979.png)
+>
+> 数组中 forin获取的是下标
+>
+> 对象中没有forof
+
+### 遍历数组
+
+> ![image-20221021222551164](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021222551164.png)
+>
+> values换成keys的话 就会变成下标
+>
+> ![image-20221021222813329](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021222813329.png)
+>
+> 遍历数组获取下标和值
+>
+> ![image-20221021222759277](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021222759277.png)
+
