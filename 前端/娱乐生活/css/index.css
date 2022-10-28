@@ -6,7 +6,10 @@
 html {
   font-size: 0.2666vw;
 }
-body {
+a{
+  text-decoration: none;
+}
+#maindiv {
   position: absolute;
   top: 0;
   right: 0;
@@ -15,17 +18,16 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-}
-#maindiv {
-  display: grid;
-  grid-template-rows: 1fr;
+  background-color: #eee6;
 }
 /* 尾部开始 */
 footer {
   position: fixed;
   bottom: 0;
+  bottom: 0;
   height: 95rem;
   width: 100%;
+  z-index: 1;
 }
 .lines {
   z-index: -1;

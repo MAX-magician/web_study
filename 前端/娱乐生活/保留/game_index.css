@@ -1,7 +1,3 @@
-.game_index_main{
-  display: grid;
-  grid-template-rows: auto 1fr 95rem;
-}
 /* 头部开始 */
 header {
     height: 65rem;

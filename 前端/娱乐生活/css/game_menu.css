@@ -1,0 +1,275 @@
+.game_div {
+  display: grid;
+  grid-template-rows: auto 1fr 95rem;
+  grid-template-columns: 1fr;
+}
+/* 头部开始 */
+header {
+  height: 65rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+}
+.header_title {
+  margin-left: 27rem;
+  font-size: 28rem;
+}
+header .header_menu {
+  grid-column: 3;
+  color: rgb(174, 174, 178);
+  font-size: 24rem;
+  margin-right: 27rem;
+}
+/* 头部结束 */
+/* 主体样式一开始 */
+.main {
+  display: grid;
+  gap: 12rem 12rem;
+  font-size: 20rem;
+  grid-template-rows: repeat(8, 1fr) 5rem;
+  grid-template-columns: 15rem repeat(5, 1fr) 15rem;
+}
+.main > div {
+  display: grid;
+  border-radius: 12rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 14rem;
+}
+.main > div:nth-of-type(1) {
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 2;
+  background: url("../imgs/gameL1.jpg");
+  font-size: 18rem;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+}
+.main > div:nth-of-type(1) .logo {
+  color: #fff5;
+}
+.main > div:nth-of-type(1) .logo div {
+  font-size: 75rem;
+}
+.main > div:nth-of-type(2) {
+  grid-row: 1;
+  grid-column: 4 / span 3;
+  font-size: 15rem;
+  background: url("../imgs/gameL2.jpg");
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  place-items: center end;
+}
+.main > div:nth-of-type(2) .names {
+  grid-row: 1;
+  grid-column: 1;
+}
+.main > div:nth-of-type(2) .logo {
+  grid-row: 1;
+  grid-column: 2;
+  color: #fff5;
+}
+.main > div:nth-of-type(2) .logo div {
+  font-size: 20rem;
+}
+.main > div:nth-of-type(3) {
+  grid-row: 2 / span 2;
+  grid-column: 4 / span 3;
+  background: url("../imgs/gameL3.png");
+  font-size: 20rem;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  place-items: end;
+}
+.main > div:nth-of-type(3) .names {
+  grid-row: 1;
+  grid-column: 1;
+}
+.main > div:nth-of-type(3) .logo {
+  grid-row: 2;
+  grid-column: 2;
+  color: #fff5;
+}
+.main > div:nth-of-type(3) .logo div {
+  font-size: 55rem;
+}
+.main > div:nth-of-type(4) {
+  grid-row: 4 / span 2;
+  grid-column: 2 / span 5;
+  background: url("../imgs/gameL4.jpg");
+  font-size: 24rem;
+  place-items: end start;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 20rem auto;
+}
+.main > div:nth-of-type(4) .names {
+  grid-row: 1;
+  grid-column: 3;
+}
+.main > div:nth-of-type(4) .logo {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  color: #fff5;
+}
+.main > div:nth-of-type(4) .logo div {
+  font-size: 80rem;
+}
+.main > div:nth-of-type(5) {
+  grid-row: 6 / span 3;
+  grid-column: 2 / span 3;
+  background: url("../imgs/gameL5.jpg");
+  font-size: 18rem;
+  place-items: start end;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 25rem 1fr;
+}
+.main > div:nth-of-type(5) .names {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  margin: 6rem;
+}
+.main > div:nth-of-type(5) .logo {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+  color: #fff5;
+}
+.main > div:nth-of-type(5) .logo div {
+  font-size: 100rem;
+}
+.main > div:nth-of-type(6) {
+  grid-row: 6 / span 2;
+  grid-column: 5 / span 2;
+  background: url("../imgs/gameL6.jpg");
+  font-size: 18rem;
+  place-items: start end;
+  grid-template-rows: 1fr 10rem auto;
+  grid-template-columns: auto 15rem 1fr;
+}
+.main > div:nth-of-type(6) .names {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+.main > div:nth-of-type(6) .logo {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+  color: #fff5;
+}
+.main > div:nth-of-type(6) .logo div {
+  font-size: 50rem;
+}
+.main > div:nth-of-type(7) {
+  grid-row: 8;
+  grid-column: 5 / span 2;
+  background: url("../imgs/gameL7.jpg");
+  font-size: 15rem;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  place-items: center end;
+}
+.main > div:nth-of-type(7) .names {
+  grid-row: 1;
+  grid-column: 1;
+}
+.main > div:nth-of-type(7) .logo {
+  grid-row: 1;
+  grid-column: 2;
+  color: #fff5;
+}
+.main > div:nth-of-type(7) .logo div {
+  font-size: 20rem;
+}
+.main .introduces {
+  display: none;
+}
+/* 主体样式一结束 */
+/* 主体样式二开始 */
+.mainList {
+  display: grid;
+  gap: 12rem 12rem;
+  font-size: 20rem;
+  grid-template-rows: repeat(7, 1fr) 5rem;
+  grid-template-columns: 15rem 1fr 15rem;
+}
+.mainList > div {
+  display: grid;
+  padding: 5rem;
+  place-items: center start;
+  background-color: red;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 74rem 1fr;
+  background-color: #fff;
+  border-radius: 10rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.mainList > div:nth-child(1) {
+  grid-row: 1;
+  grid-column: 2;
+}
+.mainList > div:nth-child(2) {
+  grid-row: 2;
+  grid-column: 2;
+}
+.mainList > div:nth-child(3) {
+  grid-row: 3;
+  grid-column: 2;
+}
+.mainList > div:nth-child(4) {
+  grid-row: 4;
+  grid-column: 2;
+}
+.mainList > div:nth-child(5) {
+  grid-row: 5;
+  grid-column: 2;
+}
+.mainList > div:nth-child(6) {
+  grid-row: 6;
+  grid-column: 2;
+}
+.mainList > div:nth-child(7) {
+  grid-row: 7;
+  grid-column: 2;
+}
+.mainList > div .logo {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  margin-left: 14rem;
+  width: 44rem;
+  height: 44rem;
+  border-radius: 5rem;
+  display: grid;
+  place-items: center;
+}
+.mainList > div:nth-child(1) .logo {
+  background-color: #ff5f40;
+}
+.mainList > div:nth-child(2) .logo {
+  background-color: #ff9502;
+}
+.mainList > div:nth-child(3) .logo {
+  background-color: #ffcb01;
+}
+.mainList > div:nth-child(4) .logo {
+  background-color: #2979ff;
+}
+.mainList > div:nth-child(5) .logo {
+  background-color: #00e676;
+}
+.mainList > div:nth-child(6) .logo {
+  background-color: #9254de;
+}
+.mainList > div:nth-child(7) .logo {
+  background-color: #ff5f40;
+}
+.mainList > div .logo div {
+  color: #fff;
+  font-size: 20rem;
+}
+.mainList > div .names {
+  font-size: 16rem;
+  font-weight: bold;
+}
+.mainList > div .introduces {
+  font-size: 14rem;
+  color: #999;
+}
+/* 主体样式二结束 */

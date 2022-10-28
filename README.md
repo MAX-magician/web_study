@@ -326,6 +326,10 @@ console.log(hasOwnProperty("toString"));   //false
 >
 > console.log(+null);  //0
 
+### ontransitionend()方法
+
+> 过渡结束时触发
+
 ### 深克隆
 
 > ```js
@@ -2088,3 +2092,244 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 >
 > ![image-20221021222759277](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221021222759277.png)
 
+## 字符串新增方法
+
+### includes()
+
+> 判断字符串里面是否包含某字符串
+>
+> <字符串>.includes("字符");
+>
+> 返回布尔值
+
+### padStart()
+
+> 补全字符串长度，从头开始补充
+>
+> ![image-20221024213411686](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024213411686.png)
+>
+> 打印 ！！！hello world
+>
+> 用途 前补零
+>
+> ![image-20221024213751756](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024213751756.png)
+>
+> 超出不动 不写第二个参数默认填充空格
+
+### padEnd()
+
+> 从后面开始填
+
+### trim()
+
+> ![image-20221024214236793](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024214236793.png)
+>
+> ![image-20221024214349135](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024214349135.png)
+
+## 数组新增方法
+
+### includes()
+
+> 判断条件是全等   特例 NaN
+>
+> ![image-20221024220429591](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024220429591.png)
+
+### 数组去重
+
+> 没有set优雅
+>
+> ![image-20221024220500196](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024220500196.png)
+
+### map()方法 区分数据类型map
+
+> ![image-20221024221138824](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024221138824.png)
+>
+> ![image-20221024220911730](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024220911730.png)
+>
+> 打印  1\n 2\n 3\n 4\n 5 
+>
+> ![image-20221024221102925](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024221102925.png)
+>
+> arr1 = [1, 4, 9, 16, 25];
+
+### from()其他类型转数组
+
+> ![image-20221024221310502](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024221310502.png)
+>
+> arr = ['h', 'e', 'l', 'l', 'o'];
+>
+> ![image-20221024221407426](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024221407426.png)
+>
+> ![image-20221024221514134](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024221514134.png)
+>
+> ![image-20221024221548519](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024221548519.png)
+>
+> ![image-20221024221627765](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024221627765.png)
+
+### find()和findIndex()
+
+> find()返回第一个符合条件的元素
+>
+> findIndex()返回第一个符合条件的元素的索引
+>
+> ![image-20221024222042134](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024222042134.png)
+>
+> result = 9；
+>
+> ![image-20221024222110203](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024222110203.png)
+>
+> result = 6；
+
+## 对象新增的方法
+
+### assign()
+
+> ![image-20221024222532944](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024222532944.png)
+>
+> ![image-20221024222546705](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024222546705.png)
+>
+> zhangsan会覆盖lilei  female会覆盖male
+>
+> obj1会发生改变
+>
+> ![image-20221024222820278](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024222820278.png)
+>
+> 1.不想改变就用展开运算
+>
+> 2.![image-20221024222858768](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024222858768.png)
+>
+> 不是对象的合并
+>
+> ![image-20221024223007231](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024223007231.png)
+
+### keys()/values()/entries()
+
+> ![image-20221024223021262](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024223021262.png)
+>
+> ![image-20221024223126039](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024223126039.png)
+>
+> ![image-20221024223111310](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024223111310.png)
+
+#### 数组和对象的区别
+
+> ![image-20221024223237625](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024223237625.png)
+
+### for……of遍历对象
+
+> ![image-20221024223313357](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024223313357.png)
+>
+> 返回 0 1 2
+>
+> ![image-20221024223345977](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221024223345977.png)
+>
+> 返回 username sex
+
+## promise
+
+> ![image-20221026210128299](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026210128299.png)
+
+### 回调函数
+
+> 被作为参数传递的函数
+
+### 回调地狱
+
+> 回调本身不是问题 回调地狱才是问题
+>
+> callback hell
+>
+> 异步好用不好看
+
+### promise的作用
+
+> 把异步代码写的像同步代码 既好看又好用
+
+### 使用方法
+
+> 用new调用函数
+>
+> new Promise()
+
+### new promise的状态
+
+> ![image-20221026212620915](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026212620915.png)
+>
+> ![image-20221026212639988](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026212639988.png)
+>
+> 失败状态要写处理方法 要不然就会抛出错误
+
+### then方法
+
+> ![image-20221026213220449](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026213220449.png)
+>
+> 传参
+>
+> ![image-20221026213815749](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026213815749.png)
+>
+> 返回值是一个新的promise对象
+
+### then连写
+
+> p.then([function],[function]).then(...,...).then(...,...)....
+>
+> 连写传参问题
+>
+> ![image-20221026215020558](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026215020558.png)
+>
+> 李四会作用在name2上
+
+### catch方法
+
+> 是then的一个特例
+>
+> 失败就会触发catch
+>
+> 作用
+>
+> then专门用来处理成功 catch专门用来处理失败
+>
+> ![image-20221026215949945](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026215949945.png)
+>
+> 上面这个会报错 在失败状态
+>
+> 简写
+>
+> ![image-20221026220030643](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026220030643.png)
+
+### finally方法
+
+> 状态发生变化时触发
+>
+> 也是then的一个特例
+>
+> 要写在then和catch后面
+>
+> 不管什么状态最终都会执行 成功或者失败
+>
+> 避免相同的代码在then和catch里面都写
+
+### promise.all()
+
+> 关注多个promise对象状态的变化
+>
+> 传入多个实例 返回一个promise
+>
+> 都真则真 有假则假
+
+![image-20221026221558952](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026221558952.png)
+
+### promise.resolve()
+
+> 成功状态的简写
+
+### promise.reject()
+
+> 失败状态的简写
+
+### async和await的用法
+
+> ![image-20221026222319037](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026222319037.png)
+>
+> ![image-20221026222915049](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026222915049.png)
+>
+> ![image-20221026222925385](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026222925385.png)

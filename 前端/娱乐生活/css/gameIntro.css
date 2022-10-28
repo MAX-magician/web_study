@@ -1,0 +1,125 @@
+.introMM{
+    display: grid;
+    grid-template-rows: 3fr 1.2fr 11fr;
+    grid-template-columns: 1fr;
+}
+.introImg {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    background-color: #6662;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 14fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+.introImg span:nth-child(1){
+    font-size: 80rem;
+    font-weight: bold;
+    color: #8E8E9388;
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+}
+.introImg span:nth-child(2){
+    place-self: start end;
+    grid-row: 2;
+    grid-column: 2;
+    color: #8889;
+}
+.introContent{
+    grid-row: 2 / span 2;
+    grid-column: 1;
+    background-color: #fff;
+    display: grid;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    box-shadow: 0rem -5rem 5rem #5553;
+    grid-template-rows: 24rem 1fr 60rem;
+    grid-template-columns: 27rem 1fr 27rem;
+}
+.introLine{
+    width: 75rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: #CACACA;
+    place-self: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+.introCMMM{
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    gap: 10rem 0;
+    grid-template-rows: 3fr 1.5fr 1fr;
+}
+.introCMain{
+    grid-row: 1;
+    display: grid;
+    gap: 5rem 0;
+    grid-template-rows: 28rem 22rem 145rem;
+}
+.introName{
+    color: #554D84;
+    font-size: 20rem;
+    font-weight: bold;
+}
+.introIntroduces{
+    color: #8E8E93;
+    font-size: 16rem;
+}
+.introCcarouselChart{
+    background-color: #eee;
+}
+.introDescription{
+    grid-row: 2;
+    display: grid;
+    gap: 5rem 0;
+    grid-template-rows: 22rem 1fr;
+    grid-template-columns: auto 1fr;
+}
+.introDescriptionTitle{
+    font-size: 16rem;
+    font-weight: bold;
+    color: #464646;
+}
+.introDescriptionText{
+    grid-column: 1 / span 2;
+    font-size: 15rem;
+    color: #8E8E93;
+}
+.introRules{
+    grid-row: 3;
+    display: grid;
+    gap: 5rem 0;
+    grid-template-rows: 22rem 1fr;
+    grid-template-columns: auto 1fr;
+}
+.introRulesTitle{
+    font-size: 16rem;
+    font-weight: bold;
+    color: #464646;
+}
+.introRulesText{
+    grid-column: 1 / span 2;
+    font-size: 15rem;
+    color: #8E8E93;
+}
+.introStart{
+    grid-row: 3;
+    grid-column: 2;
+    background-color: #554D84;
+    margin-bottom: 10rem;
+    border-radius: 25rem;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+.introStartLogo{
+    grid-row: 1;
+    grid-column: 1;
+}
+.introStartText{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 14rem;
+}
