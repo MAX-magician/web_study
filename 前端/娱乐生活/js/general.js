@@ -1,5 +1,3 @@
-//公共变量 保存状态
-var mainLM = "";
 // 局部刷新 同步
 function ajaxs(urls, maindiv) {
   var divs = document.getElementById(maindiv);

@@ -10,6 +10,13 @@ for (let i = 0; i < footer_click.length; i++) {
     for (let footers = 0; footers < footer_click.length; footers++) {
       if (footers === i) {
         footer_click[footers].setAttribute("class", "footers selected");
+        if (footers === 0) {
+          ajaxs("./page/game_menu.html", "maindiv");
+          headerMenuSet();
+          bindPager();
+        }else if (footers === 1) {
+          ajaxs("./page/circle.html", "maindiv");
+        }
         continue;
       }
       footer_click[footers].setAttribute("class", "footers");

@@ -2333,3 +2333,402 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 > ![image-20221026222915049](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026222915049.png)
 >
 > ![image-20221026222925385](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221026222925385.png)
+
+## 面向对象
+
+### 什么是class
+
+> 类
+>
+> 具体的人 实例 对象
+>
+> 类是模板 创建出来很多对象
+
+### 定义class
+
+> 类的首字母要大写
+>
+> ![image-20221028210216353](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028210216353.png)
+
+### 添加构造方法
+
+> ![image-20221028210310859](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028210310859.png)
+>
+> ![image-20221028210320408](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028210320408.png)
+
+### 实例化传值
+
+> ![image-20221028210637045](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028210637045.png)
+
+### 定义方法
+
+> ![image-20221028211120335](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028211120335.png)
+
+### 类属性或者方法
+
+> 属性 = 属性值    // 不要加 var const let
+>
+> 方法名(){}
+>
+> ![image-20221028211332038](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028211332038.png)
+>
+> ![image-20221028211432689](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028211432689.png)
+>
+> 单词错了 问题不大
+>
+> ![image-20221028211631404](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028211631404.png)
+
+### 类的静态属性或者方法
+
+> ![image-20221028211703726](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028211703726.png)
+>
+> ![image-20221028211715198](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028211715198.png)
+>
+> 只有类可以调用 实例无法调用
+>
+> ![image-20221028212305169](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028212305169.png)
+>
+> 在静态方法中调用静态属性要加this
+
+### 静态属性和方法和实例化的属性与方法 不冲突
+
+> 静态方法调用静态属性 实例方法调用实例属性
+
+### 添加静态属性和方法的方式
+
+> ![image-20221028212618800](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028212618800.png)
+>
+> ![image-20221028212805512](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028212805512.png)
+>
+> ![image-20221028213132648](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028213132648.png)
+>
+> 相同属性名或者方法名 下面的会覆盖上面的
+
+### this
+
+> 类.静态方法 中的 this指向的类
+>
+> 实例.静态方法 中的 this指向实例
+
+### 类的私有熟悉和方法
+
+> ![image-20221028213644228](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028213644228.png)
+>
+> ![image-20221028213659344](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028213659344.png)
+>
+> ![image-20221028213944909](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028213944909.png)
+
+### extends
+
+> ![image-20221028214411912](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028214411912.png)
+>
+> ![image-20221028214759729](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028214759729.png)
+>
+> ![image-20221028214746173](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028214746173.png)
+>
+> ![image-20221028214951971](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028214951971.png)
+>
+> super代表父类的构造方法
+
+### 子类改写继承的属性和方法
+
+> ![image-20221028215355856](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028215355856.png)
+>
+> 新增
+>
+> ![image-20221028215928062](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028215928062.png)
+>
+> 正确的写法是修改在super之后
+
+### super
+
+> 代表父类的构造方法 但是内部的this都是指向子类的实例
+>
+> 相当于直接把父类的那段代码复制到子类
+>
+> super的位置不同 其含义也不同
+>
+> ​	作为对象 super。say()  在构造方法中使用super的话 代表父类的原型对象    父类.prototype
+>
+> ------
+>
+> 局部修改
+>
+> ![image-20221028221247292](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028221247292.png)
+>
+> ![image-20221028221310347](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028221310347.png)
+>
+> 不写super.say()的话就是直接覆盖 而不是修改了
+>
+> ------
+>
+> 如果super在静态方法里面 代表着父类而不是父类的原型
+>
+> ​					 this指向子类
+>
+> ![image-20221028222157517](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028222157517.png)
+
+### super的注意事项
+
+> super添加的条件
+>
+> ![image-20221028222410065](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221028222410065.png)
+
+## 模块和模块化
+
+### 定义
+
+> 经过封装的js文件 里面的功能可以直接拿来用
+>
+> 按功能 按逻辑进行拆分 提升开发效率 降低维护成本
+
+### 导入
+
+> ![image-20221031211641262](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031211641262.png)
+>
+> 导入很多次的话 只会执行一次
+>
+> ```html
+> <script type="module">
+> 	import "<路径>";
+> </script>
+> ```
+
+### export和import
+
+> 导入与导出
+>
+> ![image-20221031212227842](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031212227842.png)
+>
+> 不能直接导出变量或者值 要是一个语句
+>
+> ```js
+> export const a = 123;
+> ```
+>
+> 导入时不能直接import变量 并且变量不能改名字
+>
+> 要用花括号来进行调用
+>
+> ```js
+> import {<变量名>} from "<模块路径>";
+> ```
+>
+> 要配套使用
+>
+> ![image-20221031212730973](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031212730973.png)
+
+### 更常用的导入导出
+
+> 用`{}`来进行导入导出
+>
+> ![image-20221031212913570](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031212913570.png)
+>
+> ​	最后一行进行导出 可以导出多个
+>
+> ​	导入的变量名顺序不限 多个导出不一定非要导入
+>
+> 导出时设置别名
+>
+> ![image-20221031213618789](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031213618789.png)
+>
+> 导入时改别名
+>
+> ![image-20221031213922605](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031213922605.png)
+>
+> 批量导入
+>
+> ![image-20221031214407288](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031214407288.png)
+>
+> ​	上面的`*`设置了别名 将`*`设置为`obj`
+>
+> ​	使用时 <别名>.<变量名>
+
+### export default
+
+> ![image-20221031214944387](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031214944387.png)
+>
+> ```js
+> export default <变量名>;
+> ```
+>
+> ​	缺点：只能导出一个变量 不能写多行
+>
+> ​	数据类型不限
+>
+> 确实需要导出多个变量的话 可以导出一个对象
+>
+> ```js
+> export default {
+>     <变量1>:<变量1>,
+>     <变量2>:<变量2>,
+>     <变量3>:<变量3>,
+>     // es6特性 变量名和值相同时可以简写
+> }
+> ```
+>
+> ![image-20221031220055924](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031220055924.png)
+>
+> 导入时名字不限 也就不用写成`* as obj`可以直接用`obj`来使用
+>
+> ![image-20221031220441203](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031220441203.png)
+>
+> ​	可以先解构 再使用
+
+### 同时使用export{}和export default
+
+> ![image-20221031220654881](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031220654881.png)
+>
+> ![image-20221031220706719](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031220706719.png)
+
+### import和import()
+
+> import会提升到代码第一行执行
+>
+> 按需导入的话需要用import()
+>
+> ![image-20221031221544712](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031221544712.png)
+
+### 注意事项
+
+> ![image-20221031221806688](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031221806688.png)
+>
+> ![image-20221031221957778](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031221957778.png)
+>
+> ![image-20221031222013130](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031222013130.png)
+>
+> ![image-20221031222026136](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031222026136.png)
+>
+> 只能用 不能改 要想改的话 赋值给其他变量再改
+>
+> 直接改的话会出错
+>
+> ![image-20221031222730262](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031222730262.png)
+
+## 什么是node
+
+### 定义
+
+> nodejs 是一个平台或者工具
+>
+> ![image-20221031222923607](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221031222923607.png)
+
+### 使用
+
+> ![image-20221102210829522](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102210829522.png)
+>
+> ![image-20221102210929255](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102210929255.png)
+
+### package.json批量安装
+
+> 直接用npm install就可以根据文件来进行安装
+
+### 删除node_modules
+
+> ![image-20221102212741280](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102212741280.png)
+
+## webPack
+
+### 定义
+
+> 是js静态模块打包工具
+>
+> 本地的资源数据静态文件
+
+### 作用
+
+> 将多个不同类型的文件打包
+>
+> 编译代码 确保浏览器能够解析
+
+### webpack的核心配置
+
+> ![image-20221102214741092](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102214741092.png)
+>
+> 入口
+>
+> ![image-20221102214759508](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102214759508.png)
+>
+> 出口
+>
+> ![image-20221102214843340](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102214843340.png)
+>
+> 加载器
+>
+> ![image-20221102214949909](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102214949909.png)
+>
+> 插件
+>
+> ![image-20221102215039748](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102215039748.png)
+>
+> 模式
+>
+> ![image-20221102215157170](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102215157170.png)
+
+## 上手webpack
+
+### 初始化项目
+
+> npm -init -y
+
+![image-20221102215453428](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102215453428.png)
+
+### 创建入口文件`src/index.js`
+
+> ![image-20221102215553860](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102215553860.png)
+
+### 打包命令
+
+> ![image-20221102215615286](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102215615286.png)
+
+### webpack配置文件
+
+> ![image-20221102215758125](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102215758125.png)
+>
+> ![image-20221102220303495](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102220303495.png)
+
+### HTML资源打包
+
+> ![image-20221102220946267](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102220946267.png)
+>
+> npm i html-webpack-plugin -D
+>
+> ![image-20221102221114160](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102221114160.png)
+>
+> ![image-20221102221340829](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102221340829.png)
+>
+> 进行插件的相关配置
+>
+> ![image-20221102221410904](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102221410904.png)
+>
+> 代码压缩
+>
+> ![image-20221102221835566](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102221835566.png)
+
+### css打包
+
+> ![image-20221102222126946](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102222126946.png)
+>
+> 在入口文件里面引入css `import <路径>`
+>
+> ![image-20221102222345348](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102222345348.png)
+>
+> ![image-20221102222650681](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102222650681.png)
+>
+> 加载顺序应该是从右到左
+
+### css抽离成单独的文件
+
+> ![image-20221102222904833](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102222904833.png)
+>
+> 引入
+>
+> ![image-20221102222926870](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102222926870.png)
+>
+> 配置
+>
+> ![image-20221102222942440](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102222942440.png)
+>
+> 作用
+>
+> ![image-20221102223141378](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102223141378.png)
