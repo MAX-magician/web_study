@@ -5,6 +5,7 @@
 }
 html {
   font-size: 0.2666vw;
+  background-color: #eee6;
 }
 a{
   text-decoration: none;
@@ -18,7 +19,6 @@ a{
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  background-color: #eee6;
 }
 /* 尾部开始 */
 footer {

@@ -16,6 +16,7 @@ for (let i = 0; i < footer_click.length; i++) {
           bindPager();
         }else if (footers === 1) {
           ajaxs("./page/circle.html", "maindiv");
+          circleHeaderBtn();
         }
         continue;
       }

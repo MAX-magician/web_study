@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	color: olivedrab;
+	font-size: 44px;
+	margin-bottom: 20px;
+}
+body {
+	background: url(../img/good.jpg) no-repeat center top;
+}

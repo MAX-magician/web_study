@@ -2732,3 +2732,79 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 > 作用
 >
 > ![image-20221102223141378](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221102223141378.png)
+
+# 前后端交互
+
+### 概述
+
+> ![image-20221104210158510](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104210158510.png)
+>
+> 请求页面 是后端向前端发送数据
+>
+> 登录注册 是前端向后端发送数据
+
+### 请求
+
+> GET 没有请求体 数据在url里面
+>
+> POST 有请求体
+
+## 常见的http方法
+
+> ![image-20221104213420651](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104213420651.png)
+
+### get和post的区别
+
+> 语义不同 get是获取 post是创建
+>
+> ![image-20221104213557079](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104213557079.png)
+
+### http状态码
+
+> ![image-20221104213935857](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104213935857.png)
+
+### http协议
+
+> ![image-20221104221003450](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104221003450.png)
+
+### get请求
+
+> ![image-20221104221028460](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104221028460.png)
+
+### post请求
+
+> ![image-20221104221154443](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104221154443.png)
+
+### 返回格式
+
+> ![image-20221104221500665](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104221500665.png)
+
+### 服务器如何处理并返回数据
+
+> ![image-20221104221810546](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104221810546.png)
+
+### 前端ajax时需要url
+
+> ![image-20221104221847153](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104221847153.png)
+
+### 什么是路由
+
+> ![image-20221104221916966](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104221916966.png)
+
+### 路由包含什么
+
+> ![image-20221104222004414](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104222004414.png)
+
+### 路由和url
+
+> ![image-20221104222223596](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104222223596.png)
+
+### 请求与响应
+
+> ![image-20221104222501286](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104222501286.png)
+>
+> ![image-20221104222754962](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221104222754962.png)
+
+## 数据库
+
+> 数据存储

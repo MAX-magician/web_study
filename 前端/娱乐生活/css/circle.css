@@ -94,7 +94,7 @@
 }
 .circleMain1_contents{
     width: 100%;
-    height: 198rem;
+    height: auto;
     padding: 15rem 12rem;
     background-color: #fff;
     display: grid;
@@ -102,6 +102,17 @@
     grid-template-columns: 36rem 1fr;
     grid-template-rows: 36rem 1fr 20rem;
     margin-bottom: 7rem;
+}
+.circleMain1_contents1{
+    animation: circleMain1_contents1 0.1s linear;
+}
+@keyframes circleMain1_contents1 {
+    0%{
+        margin-top: 142rem;
+    }
+    100%{
+        margin-top: 0;
+    }
 }
 .circleMain1_contents > img{
     width: 100%;
@@ -126,11 +137,13 @@
 .circleMain1_contentsInfo > div:nth-child(2){
     grid-column: 1;
     grid-row: 2;
+    font-size: 10rem;
     color: #c7c7cc;
 }
 .circleMain1_contentsInfo > div:nth-child(3){
     grid-column: 2;
     grid-row: 1 / span 2;
+    font-size: 12rem;
     justify-self: end;
     color: #8e8e93;
 }
@@ -142,17 +155,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
-#circleMainDiv div:nth-child(5) .circleMain1_contentImgs{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    color: #8E8E93;
-    font-size: 14rem;
-}
 .circleMain1_contentImgs > div{
     width: 94rem;
     height: 88rem;
     line-height: 88rem;
+    font-size: 14rem;
     text-align: center;
     color: #8e8e93;
     background-color: #0002;
@@ -173,9 +180,84 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: 1fr;
 }
+.circleMain_contentGame{
+    grid-template-columns: 1fr;
+}
+.circleMain_contentGame > div{
+    width: 297rem;
+    height: 70rem;
+    border-radius: 8rem;
+    padding: 17rem 19rem;
+    line-height: 14rem;
+    background-image: linear-gradient(90deg, #bac8e0 0%,#6a85b6 50%, #bac8e0 100%);
+    display: grid;
+    gap: 4rem 9rem;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: 36rem 1fr 61rem;
+    grid-template-rows: 1fr 1fr;
+}
+.circleMain_contentGame > div > div:nth-child(1){
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    background-color: #8E8E93;
+    color: #C7C7CC;
+    font-size: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circleMain_contentGame > div > div:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 14rem;
+    color: #fff;
+}
+.circleMain_contentGame > div > div:nth-child(3){
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 12rem;
+    color: #fff;
+}
+.circleMain_contentGame > div > div:nth-child(4){
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 90%;
+    background-color: #554D84;
+    border-radius: 4rem;
+    color: #fff;
+    font-size: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circleMain_contentText{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    color: #8E8E93;
+    font-size: 14rem;
+}
 .circleMain_contentNoMore{
     text-align: center;
     color: #c7c7cc;
     font-size: 12rem;
-    margin-bottom: 80rem;
+    margin: 10rem 0 150rem;
 }
+/* 好友评论开始 */
+.circleComment_main{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0008;
+    z-index: 1000;
+}
+.circleComment_mainList{
+    
+}
+/* 好友评论结束 */
