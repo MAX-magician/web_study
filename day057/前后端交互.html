@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@1.2.0/dist/axios.min.js"></script>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      h2 {
+        font-weight: normal;
+      }
+      h2 .rank,
+      h2 a {
+        font-weight: bold;
+      }
+      .score {
+        font-weight: bold;
+        color: red;
+      }
+      .person-number {
+        font-style: italic;
+        font-weight: bold;
+      }
+      p {
+        margin-bottom: 50px;
+      }
+      div.container {
+        width: 1000px;
+        margin: 50px auto;
+      }
+      .actor {
+        font-style: italic;
+        color: blue;
+      }
+      .show-date {
+        font-weight: bold;
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      const maindiv = document.querySelector(".container");
+      var mainCon = "<h1>豆瓣电影热度top10</h1>";
+      axios
+        .get(
+          "https://www.fastmock.site/mock/8cef68aeae4797ea9f418e08bec0610f/api/movie/list"
+        )
+        .then(function (response) {
+          let xx = response.data.data;
+          xx.forEach((element, index) => {
+            // 排行
+            index = index + 1 + "";
+            let paihang = index.padStart(3, 0);
+            // 视频链接
+            const movie_url = element.info.url;
+            // 视频名称
+            const movie_title = element.title;
+            // 视频评分
+            const movie_pingfen = element.info.pingfen;
+            // 评价人数
+            const movie_pingjia = element.info.pingjia.slice(1, -4);
+            // 视频图片
+            const movie_img = element.info.imgurl;
+            // 上映时间与演员
+            let movie_time = [];
+            let movie_actor = [];
+            let movie_TA = element.info.yanyuan;
+            movie_TA = movie_TA.split(" / ");
+            for (let i = 0; i < movie_TA.length; i++) {
+                if(movie_TA[i].indexOf("-") != -1 || movie_TA[i].indexOf("分钟") != -1){
+                    movie_time.push(movie_TA[i]);
+                }else if(movie_TA[i] == ""){
+                    continue;
+                }else{
+                    movie_actor.push(movie_TA[i]);
+                }
+            }
+            movie_time = movie_time.join(" / ");
+            movie_actor = movie_actor.join(" / ");
+            mainCon += `<h2>`;
+            mainCon += `<span class="rank">排行: ${paihang}</span>`;
+            mainCon += `<a href=${movie_url}>《${movie_title}》</a>`;
+            mainCon += `评分:<span class="score">${movie_pingfen}</span>(<span class="person-number">${movie_pingjia}</span>人评价)`;
+            mainCon += `</h2>`;
+            mainCon += `<div>`;
+            mainCon += `<img src=${movie_img} alt="" />`;
+            mainCon += `</div>`;
+            mainCon += `<h3>上映时间: <span class="show-date">${movie_time}</span></h3>`;
+            mainCon += `<p>`;
+            mainCon += `<b>演员:</b>`;
+            mainCon += `<span class="actor">${movie_actor}</span>`;
+            mainCon += `</p>`;
+          });
+          maindiv.innerHTML = mainCon;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    </script>
+  </body>
+</html>
