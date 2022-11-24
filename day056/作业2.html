@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>todolist</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="topNav">
+          <h3>TodoList</h3>
+          <form id="form" action="javascript:postaction()" method="post">
+            <input
+              type="text"
+              name="todoList"
+              id="inputTodo"
+              placeholder="输入内容"
+              required="required"
+              autocomplete="off"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="todo">
+        <div class="lists">
+          <div class="todoNav" id="todoNav">
+            <span class="title1">正在进行</span>
+            <span class="todoCount" id="todoCount">0</span>
+          </div>
+          <div class="todoList">
+            <ul id="todoList">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="done">
+        <div class="lists1">
+          <div class="doneNav">
+            <span class="title2">已经完成</span>
+            <span class="doneCount" id="doneCount">0</span>
+          </div>
+          <div class="doneList">
+            <ul id="doneList">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="siteFoot">
+        <div class="foot">
+          <p>
+            Copyright © 2014 todolist.cn
+            <a style="color: #8c9796" href="javascript:clear()">clear</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/index.js"></script>
+</html>

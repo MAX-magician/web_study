@@ -1,7 +1,14 @@
-.introMM{
+#gameMenuMain_Infos{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
     display: grid;
     grid-template-rows: 3fr 1.2fr 11fr;
     grid-template-columns: 1fr;
+    z-index: 1000;
 }
 .introImg {
     grid-row: 1 / span 2;

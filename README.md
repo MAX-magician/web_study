@@ -2808,3 +2808,198 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 ## 数据库
 
 > 数据存储
+
+## node
+
+### nodejs启动web服务
+
+> ![image-20221109213821650](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109213821650.png)
+>
+> ![image-20221109213840540](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109213840540.png)
+>
+> nodemon 可以让服务被修改时不用重启服务
+>
+> res.end 返回数据给浏览器
+>
+> ![image-20221109215054054](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109215054054.png)
+>
+> req.url 返回请求的url
+>
+> ![image-20221109215147416](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109215147416.png)
+>
+> ![image-20221109215826681](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109215826681.png)
+
+### 接口测试工具
+
+> ![image-20221109215250168](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109215250168.png)
+
+### 定义GET路由
+
+> 注意大小写 GET
+>
+> ![image-20221109220559974](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109220559974.png)
+
+### 定义POST路由
+
+> 注意大小写 POST
+>
+> ![image-20221109220701953](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221109220701953.png)
+>
+> 第4行可以只截取 "?"前面的url
+
+## koa2框架
+
+> 框架 frame
+>
+> 框架和库是有区别的 框架只有一个 库可以有多个
+>
+> 框架是全流程 库是单个功能
+
+### fetch（）
+
+> 前端请求数据的一个方法
+
+## 本地存储
+
+### 解释
+
+> ![image-20221118221015059](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221118221015059.png)
+
+### 属性
+
+> ![image-20221118221814973](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221118221814973.png)
+
+### cookie失效时间
+
+> ![image-20221118222214811](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221118222214811.png)
+>
+> ![image-20221118222318965](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221118222318965.png)
+>
+> ![image-20221118222339073](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221118222339073.png)
+>
+> ![image-20221118222425432](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221118222425432.png)
+
+### Domain域
+
+> ![image-20221118222608796](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221118222608796.png)
+>
+> {username=zhangsan; Domain=.bilibili.com}
+
+### Path路径
+
+> 控制cookie
+
+### cookie限制
+
+> ![image-20221121211120600](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121211120600.png)
+
+### localStorage
+
+> ![image-20221121211143329](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121211143329.png)
+>
+> 添加
+>
+> ![image-20221121211452101](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121211452101.png)
+>
+> 获取内容
+>
+> ![image-20221121212527231](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121212527231.png)
+>
+> 删除
+>
+> ![image-20221121212755109](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121212755109.png)
+>
+> 清空
+>
+> ![image-20221121213027335](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121213027335.png)
+>
+> 注意事项
+>
+> ![image-20221121213222177](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121213222177.png)
+
+### localStorage的储存期限
+
+> ![image-20221121213326812](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121213326812.png)
+
+### 和sessionStorage的区别
+
+> 重启浏览器sessionStorage会被清空
+>
+> 其他与localStorage相同
+
+### localStorage储存的键和值的类型
+
+> 储存的是字符串类型的 如果不是 她会自动转换为字符串
+>
+> ![image-20221121214127531](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121214127531.png)
+>
+> ![image-20221121214559790](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121214559790.png)
+
+### cookie、localStorage、sessionStorage的区别
+
+> ![image-20221121215212994](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121215212994.png)
+
+## AJAX
+
+### 定义
+
+> ![image-20221121215702488](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121215702488.png)
+
+### 使用步骤
+
+> ![image-20221121220119696](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121220119696.png)
+>
+> ![image-20221121220207089](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121220207089.png)
+>
+> ![image-20221121220246981](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121220246981.png)
+>
+> ![image-20221121220303016](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121220303016.png)
+>
+> ![image-20221121220331654](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121220331654.png)
+>
+> ![image-20221121220434786](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121220434786.png)
+>
+> ![image-20221121220457080](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121220457080.png)
+>
+> ![image-20221121220636092](C:\Users\19371\AppData\Roaming\Typora\typora-user-images\image-20221121220636092.png)
+>
+> ![image-20221121221046697](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121221046697.png)
+
+### JSON
+
+> 简单值形式
+>
+> ![image-20221121221742888](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121221742888.png)
+>
+> 对象形式
+>
+> ![image-20221121221841410](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121221841410.png)
+>
+> 数组形式 可以放多个对象
+>
+> ![image-20221121221952201](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121221952201.png)
+
+### 跨域解决方案
+
+> ![image-20221121222530753](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121222530753.png)
+>
+> ![image-20221121222711111](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121222711111.png)
+>
+> ![image-20221121222751167](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121222751167.png)
+>
+> ![image-20221121222859120](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121222859120.png)
+
+### 在线接口网站
+
+> ![image-20221121223022949](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221121223022949.png)
+>
+> ![image-20221123210716622](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221123210716622.png)
+
+### axios
+
+> 封装好的ajax库
+>
+> ![image-20221123210128152](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221123210128152.png)
+>
+> ![image-20221123212855477](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221123212855477.png)
+
