@@ -3003,3 +3003,8 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 >
 > ![image-20221123212855477](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221123212855477.png)
 
+## git
+
+### 推送
+
+> ![image-20221128211043014](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221128211043014.png)
