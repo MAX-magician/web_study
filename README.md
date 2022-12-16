@@ -3008,3 +3008,452 @@ console.log(reg.test(15508061887));   // 返回值是布尔值 正则匹配到�
 ### 推送
 
 > ![image-20221128211043014](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221128211043014.png)
+
+# scss
+
+### 代码段
+
+> ![image-20221130214520229](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221130214520229.png)
+>
+> 加不加小括号都行 引用时 可以传参
+
+### less
+
+> ![image-20221130215809862](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221130215809862.png)
+
+# TypeScript
+
+## 区别
+
+### js与ts
+
+> ts是js的超集
+>
+> 是2012年微软发布的
+>
+> ts在js的基础上加了一层类型定义
+>
+> ts强类型编程语言
+
+## TS基础
+
+### 数组类型
+
+> ![image-20221205214807546](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221205214807546.png)
+
+### 元组类型
+
+> 元组 固定长度和类型 tuple
+>
+> ![image-20221205214909610](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221205214909610.png)
+
+### 联合类型
+
+> union
+>
+> var aaa: string | number | string[] | number[] | boolean;
+>
+> ![image-20221205220555560](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221205220555560.png)
+
+### 字面量类型
+
+> literal
+>
+> 类型就是值 值就是类型
+>
+> ```tsx
+> const a = 123;  //字面量类型 无法修改
+> let b:456; //字面量类型 此时 b只能被赋值456 只能执行 b=456   如果执行b=789会报错
+> let c = 789; //不是字面量类型 c可以被修改为其他值 不可控
+> ```
+>
+> ![image-20221205220949204](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221205220949204.png)
+
+### 枚举类型
+
+> enum
+>
+> 多选一 但是值是数字
+>
+> ![image-20221205221949446](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221205221949446.png)
+>
+> 控制台打印 2
+>
+> ![image-20221205222155310](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221205222155310.png)
+>
+> 打印  这是蓝色！！！！
+
+### 任意类型
+
+> any
+>
+> 对应原生JS
+
+### 未知类型
+
+> unknown
+>
+> 和any很像   但是限制多 可以保证类型安全
+>
+> ![image-20221205222604635](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221205222604635.png)
+
+### void
+
+> void
+>
+> 方法没有返回值 就是void
+
+### undefined
+
+> ![image-20221207210204183](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207210204183.png)
+>
+> TS把undefined当成了值 如果设置类型 必须加return
+>
+> ![image-20221207210342090](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207210342090.png)
+
+### never
+
+> ![image-20221207210502854](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207210502854.png)
+
+### 类型断言、类型适配
+
+> 如果要正常运行的话 要用es6 不然无法使用endsWith
+>
+> 
+>
+> ![image-20221207211423346](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207211423346.png)
+>
+> ![image-20221207210727633](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207210727633.png)
+>
+> 此时返回false
+>
+> ![image-20221207210754927](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207210754927.png)
+>
+> 这是类型断言
+
+### 对象
+
+> ![image-20221207212159106](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207212159106.png)
+>
+> 访问不存在的属性会报错
+>
+> 对象类型是 键值类型对
+
+### 接口 interface
+
+> ![image-20221207212413194](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207212413194.png)
+>
+> 逻辑问题 编译器无法发现
+>
+> ![image-20221207212633349](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207212633349.png)
+>
+> 用interface进行限制
+>
+> ![image-20221207212832757](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207212832757.png)
+>
+> ![image-20221207212939515](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207212939515.png)
+>
+> implements实现
+
+### 高内聚 低耦合
+
+> ![image-20221207213014366](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207213014366.png)
+
+### 访问修饰符
+
+> ![image-20221207215145908](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207215145908.png)
+
+### 关键字
+
+> ![image-20221207221518212](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207221518212.png)
+>
+> ![image-20221207221525271](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207221525271.png)
+>
+> ![image-20221207221607552](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221207221607552.png)
+
+### 泛型
+
+```js
+let test : Array<number> = [1, 2, 3];
+```
+
+> ![image-20221209210503863](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209210503863.png)
+>
+> 传什么类型的就返回什么类型的 不一定叫Type
+>
+> ![image-20221209210754639](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209210754639.png)
+
+### 类型守护
+
+> ![image-20221209211411371](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209211411371.png)
+
+### 函数重载
+
+> ![image-20221209212704917](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209212704917.png)
+>
+> ![image-20221209212922238](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209212922238.png)
+>
+> ![image-20221209213820487](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209213820487.png)
+
+### 函数调用签名
+
+> 函数调用关键字
+>
+> ![image-20221209214421075](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209214421075.png)
+>
+> 提取相同部分 定义一个类型
+>
+> ![image-20221209214458049](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209214458049.png)
+>
+> 签名count
+>
+> ![image-20221209214517440](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209214517440.png)
+>
+> 可以很方便的设置重载
+>
+> ![image-20221209214655887](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209214655887.png)
+>
+> ![image-20221209214724633](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209214724633.png)
+
+### 索引签名
+
+> ![image-20221209215225365](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209215225365.png)
+>
+> PersonDictionary定义key的类型是string (`key`指的是下图中的`zhangsan`、`lisi`) 值参考Person
+>
+> Person定义对象里面必须有name和email 值是string
+>
+> ![image-20221209215418545](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209215418545.png)
+
+### 只读类型
+
+> readonly
+>
+> ![image-20221209220202507](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209220202507.png)
+
+### 双重断言
+
+> ![image-20221209220603170](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209220603170.png)
+>
+> ![image-20221209220620825](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209220620825.png)
+>
+> 双重类型断言
+>
+> ![image-20221209220803079](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209220803079.png)
+
+### 常量断言
+
+> ![image-20221209220941399](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209220941399.png)
+>
+> 把对象作为常量 只读不可修改 这操作是递归的
+>
+> 情况二
+>
+> ![image-20221209221459120](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209221459120.png)
+>
+> ![image-20221209221440841](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209221440841.png)
+
+### TS中的this
+
+> ![image-20221209221745239](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209221745239.png)
+>
+> 定义this的类型就可以检查错误 this的定义必须是第一个 其他形参靠后
+
+### typeof操作符
+
+> 可以检查出错误 少某些键值对的时候 
+>
+> ```tsx
+> type Point = typeof center;
+> 
+> const center = {
+>     x: 0,
+>     y: 0,
+>     z: 0,
+> }
+> 
+> const unit1: Point = {
+>     x: center.x + 1,
+>     y: center.y + 1,
+>     z: center.z + 1,
+> } // 方式一
+> 
+> const unit2: typeof center = {
+>     x: center.x + 2,
+>     y: center.y + 2,
+>     z: center.z + 2,
+> } // 方式二
+> 
+> const unit: Point = {
+>     x: center.x + 3,
+>     y: center.y + 3,
+> } // 这个会报错 缺少z
+> ```
+
+### 检查错误
+
+> ![image-20221209222807055](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221209222807055.png)
+
+# React
+
+### 介绍
+
+> 轻量级视图层库
+>
+> 不是完整的mvc框架 v是view
+>
+> 是构建页面的ui库
+>
+> 将页面分城独立的小块
+
+### 特性
+
+> ![image-20221212210305748](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212210305748.png)
+
+### 虚拟dom
+
+> ![image-20221212210456955](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212210456955.png)
+>
+> ![image-20221212210537792](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212210537792.png)
+
+### 为什么学习react
+
+> ![image-20221212210732954](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212210732954.png)
+>
+> ![image-20221212210752989](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212210752989.png)
+>
+> ![image-20221212210818897](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212210818897.png)
+
+### 创建项目
+
+> ![image-20221212211357847](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212211357847.png)
+
+### npm与npx的区别
+
+> ![image-20221212211815248](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212211815248.png)
+
+### jsx
+
+> ![image-20221212212317511](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212212317511.png)
+
+### npm与yarn
+
+> ![image-20221212212420861](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212212420861.png)
+>
+> ![image-20221212212435702](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212212435702.png)
+>
+> ![image-20221212212446370](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212212446370.png)
+>
+> ![image-20221212212452815](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212212452815.png)
+
+## jsx
+
+### 什么是jsx
+
+> ![image-20221212212926864](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212212926864.png)
+>
+> ![image-20221212212934134](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212212934134.png)
+
+### js表达式
+
+> ![image-20221212213115887](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212213115887.png)
+>
+> ![image-20221212213231705](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212213231705.png)
+
+### jsx写style
+
+> ![image-20221212215044155](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212215044155.png)
+
+### 定义class
+
+> ![image-20221212215543452](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212215543452.png)
+
+### 幽灵节点
+
+```txt
+<> </>
+```
+
+### 函数组件
+
+> ![image-20221214210715584](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214210715584.png)
+>
+> ![image-20221214210741085](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214210741085.png)
+
+### 类组件
+
+> 需要继承父类
+>
+> ![image-20221214210925335](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214210925335.png)
+
+### 事件绑定
+
+> ![image-20221214211310818](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214211310818.png)
+>
+> ![image-20221214211328668](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214211328668.png)
+
+### 向方法传递参数
+
+#### 正常传参
+
+> ![image-20221214212357269](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214212357269.png)
+>
+> ![image-20221214212447715](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214212447715.png)
+>
+> 直接在后面的括号里加的话 会直接触发
+>
+> 所以要用箭头函数 然后在后面的括号里添加参数
+>
+> ![image-20221214212609797](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214212609797.png)
+>
+> ![image-20221214212632507](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214212632507.png)
+
+#### 有e且有自定义参数
+
+> ![image-20221214212821778](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214212821778.png)
+
+### 类组件事件绑定
+
+> 和函数组件差不多
+
+### 类组件传参
+
+> 和函数组件传参差不多
+
+### 组件状态
+
+> ![image-20221214213312536](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214213312536.png)
+>
+> 初始化及其读取
+>
+> ![image-20221214213706456](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214213706456.png)
+>
+> 修改
+>
+> ![image-20221214214145838](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214214145838.png)
+>
+> 要先展开 再修改
+>
+> ![image-20221214214409657](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214214409657.png)
+
+### 非受控组件
+
+> ![image-20221214215900256](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214215900256.png)
+>
+> ![image-20221214215907376](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214215907376.png)
+>
+> ![image-20221214220516544](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214220516544.png)
+
+### 随机字符串 uuid
+
+> npm i uuid
+>
+> ![image-20221214222240823](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214222240823.png)
+>
+> ![image-20221214222302732](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214222302732.png)
+
+### 过滤
+
+> ![image-20221214222800595](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214222800595.png)
+>
+> 如果真 就会删除 括号里传一个方法
