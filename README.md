@@ -3296,6 +3296,8 @@ let test : Array<number> = [1, 2, 3];
 
 # React
 
+## 基本
+
 ### 介绍
 
 > 轻量级视图层库
@@ -3363,6 +3365,8 @@ let test : Array<number> = [1, 2, 3];
 ### jsx写style
 
 > ![image-20221212215044155](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221212215044155.png)
+
+## 组件
 
 ### 定义class
 
@@ -3457,3 +3461,231 @@ let test : Array<number> = [1, 2, 3];
 > ![image-20221214222800595](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221214222800595.png)
 >
 > 如果真 就会删除 括号里传一个方法
+
+### react组件通信
+
+> ![image-20221216210106075](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216210106075.png)
+
+#### 父传子
+
+> ![image-20221216210203313](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216210203313.png)
+>
+> 类组件形式
+>
+> ![image-20221216210346189](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216210346189.png)
+>
+> 1.
+>
+> ![image-20221216210531332](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216210531332.png)
+>
+> 2.
+>
+> ![image-20221216210615756](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216210615756.png)
+>
+> ![image-20221216210647118](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216210647118.png)
+>
+> 3.1 类组件
+>
+> ![image-20221216210720415](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216210720415.png)
+>
+> 3.2 函数
+>
+> ![image-20221216211203761](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216211203761.png)
+>
+> 注意 发送的时候 msg={this.state.message} 的话 接收就要用 {this.props.msg} 或者 {props.msg}  msg要相同 list其他名字都行 要一样
+>
+> 传递方法
+>
+> ![image-20221216212354031](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216212354031.png)
+>
+> 传递HTML
+>
+> ![image-20221216212558679](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216212558679.png)
+>
+> ![image-20221216212635776](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216212635776.png)
+
+#### props说明
+
+> ![image-20221216211324693](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216211324693.png)
+
+#### 子传父
+
+> ![image-20221216212726031](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216212726031.png)
+>
+> 1.
+>
+> ![image-20221216213012657](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216213012657.png)
+>
+> 2.
+>
+> ![image-20221216213047315](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216213047315.png)
+>
+> 3.
+>
+> ![image-20221216213248686](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216213248686.png)
+
+#### 兄弟组件通信
+
+> 子传父 再父传子 => 兄弟通信
+>
+> ![image-20221216213837595](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216213837595.png)
+>
+> ![image-20221216213634383](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216213634383.png)
+>
+> ![image-20221216213816070](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216213816070.png)
+>
+> ![image-20221216213849672](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216213849672.png)
+>
+> ![image-20221216214320401](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216214320401.png)
+
+#### 跨组件通信 context
+
+> ![image-20221216214538250](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216214538250.png)
+>
+> ![image-20221216214641592](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216214641592.png)
+>
+> ![image-20221216214612670](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216214612670.png)
+>
+> ![image-20221216214623740](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216214623740.png)
+>
+> 1.
+>
+> ![image-20221216214815093](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216214815093.png)
+>
+> 2.
+>
+> ![image-20221216214859127](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216214859127.png)
+>
+> 3.
+>
+> ![image-20221216215011782](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216215011782.png)
+>
+> 4.
+>
+> ![image-20221216215132451](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216215132451.png)
+
+### children属性
+
+> ![image-20221216220418092](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216220418092.png)
+>
+> ![image-20221216220522291](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216220522291.png)
+
+### props校验
+
+> ![image-20221216220937481](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216220937481.png)
+>
+> ![image-20221216220951048](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216220951048.png)
+>
+> 解决
+>
+> ![image-20221216221020861](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216221020861.png)
+>
+> ![image-20221216221646241](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216221646241.png)
+>
+> 规则说明
+>
+> ![image-20221216221751835](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216221751835.png)
+>
+> ![image-20221216221806883](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216221806883.png)
+>
+> 方法 - 设置默认值
+>
+> ![image-20221216222418953](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216222418953.png)
+>
+> 结构并且给默认值
+>
+> ![image-20221216222535054](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216222535054.png)
+>
+> 类 - 设置默认值
+>
+> ![image-20221216222646747](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216222646747.png)
+>
+> ![image-20221216222735876](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221216222735876.png)
+
+### 生命周期
+
+> 只有类组件才有生命周期 函数组件没有
+>
+> ![image-20221219210344997](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219210344997.png)
+
+#### 挂载阶段
+
+> ![image-20221219210447013](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219210447013.png)
+>
+> ![image-20221219210903194](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219210903194.png)
+
+#### 卸载阶段
+
+> ![image-20221219211605114](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219211605114.png)
+>
+> ![image-20221219211708912](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219211708912.png)
+
+### hooks
+
+> ![image-20221219214625187](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219214625187.png)
+>
+> ![image-20221219214637905](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219214637905.png)
+>
+> ![image-20221219214646555](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219214646555.png)
+
+#### useState
+
+> ![image-20221219214755494](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219214755494.png)
+>
+> ![image-20221219220247222](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219220247222.png)
+>
+> ![image-20221219220344105](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219220344105.png)
+
+#### 组件更新过程
+
+> ![image-20221219220530088](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219220530088.png)
+>
+> ![image-20221219220536406](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219220536406.png)
+
+#### 注意事项
+
+> ![image-20221219220944649](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219220944649.png)
+>
+> ![image-20221219220957879](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219220957879.png)
+>
+> count是值 setCount是修改的方法 给的名字
+
+### 作用与副作用
+
+> ![image-20221219221405389](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219221405389.png)
+
+#### useEffect
+
+> 为react函数组件提供副作用处理
+>
+> ​	useEffect(函数,依赖项)
+>
+> ![image-20221219222147096](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219222147096.png)
+>
+> ![image-20221219222237724](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219222237724.png)
+>
+> ![image-20221219222312907](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219222312907.png)
+>
+> 只有修改依赖项的内容时才执行 `但是可以没有依赖项 没有就是全部`
+>
+> ![image-20221219221657056](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219221657056.png)
+>
+> ![image-20221219221709302](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219221709302.png)
+>
+> ![image-20221219221716331](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219221716331.png)
+>
+> document.title可以修改`<title></title>`标签内容
+
+### 获取滚动距离
+
+> ![image-20221219222819153](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219222819153.png)
+>
+> ![image-20221219224017146](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219224017146.png)
+
+### 修改名字
+
+> ![image-20221219224307762](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219224307762.png)
+>
+> ![image-20221219224507472](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219224507472.png)
+>
+> ![image-20221219223319367](http://magic-markd.oss-cn-hangzhou.aliyuncs.com/img/image-20221219223319367.png)
